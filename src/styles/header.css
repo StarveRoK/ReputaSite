@@ -1,0 +1,59 @@
+header {
+    height: 90px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--color-bg);
+    box-shadow: 0 4px 20px 0 rgba(23, 82, 251, 0.04);
+    z-index: 1000;
+}
+
+.cst-center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cst-gap-header-div {
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.cst-header-products {
+    display: flex;
+    gap: 2px;
+}
+
+.cst-header-text {
+    color: var(--color-dark);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.16px;
+}
+
+.cst-header-btn {
+    display: inline-flex;
+    padding: 15px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    background: var(--color-blue-light);
+    color: var(--color-primary);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.cst-product-arrow {
+    width: 20px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,93 @@
+.cst-block-3-section {
+    width: 1160px;
+    height: 457px;
+    margin-top: 130px;
+    border-radius: 30px;
+    background: var(--gradient-blue);
+    padding: 40px 0 70px 35px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.cst-block-3-title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cst-block-3-title {
+    width: 432px;
+    color: var(--color-bg);
+    font-family: var(--font-onest), serif;
+    font-size: var(--font-size-2xl);
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.cst-block-3-description {
+    width: 252px;
+    color: var(--color-bg);
+    font-family: var(--font-inter), sans-serif;
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.cst-block-3-title-apps {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.cst-block-3-title-container-app-store {
+    display: inline-flex;
+    padding: 24px 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(172, 233, 253, 0.20);
+    background: var(--gradient-blue);
+}
+
+.cst-block-3-title-app-store {
+    width: 137.112px;
+    height: 35px;
+}
+
+.cst-block-3-title-container-google-play {
+    display: inline-flex;
+    padding: 24px 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
+    background: var(--color-bg);
+}
+
+.cst-block-3-title-google-play {
+    width: 172px;
+    height: 35px;
+}
+
+.cst-block-3-title-images {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.cst-block-3-phone-image {
+    width: 497px;
+    height: 480px;
+    margin-right: 62px;
+    position: absolute;
+}
+
+.cst-block-3-background-phone-image {
+    width: 559px;
+    height: 480px;
+    margin-right: 33px;
+    z-index: 1;
+}
