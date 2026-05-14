@@ -36,12 +36,12 @@ export default function Header() {
             </div>
 
             <div className="cst-header-btn-container">
-                <div className="cst-header-btn-login">
+                <a href="https://app.reputa.ru" className="cst-header-btn-login">
                     Войти
-                </div>
-                <div className="cst-header-btn-register">
+                </a>
+                <a href="https://app.reputa.ru" className="cst-header-btn-register">
                     Зарегистрироваться
-                </div>
+                </a>
             </div>
         </header>
     )

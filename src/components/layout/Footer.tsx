@@ -39,10 +39,10 @@ export default function Footer() {
                         <a href={ROUTES.blog} className='cst-footer-links-column-link'>Блог</a>
                     </div>
                     <div className="cst-footer-links-column">
-                        <span className='cst-footer-links-column-info'>ИП: ...</span>
-                        <span className='cst-footer-links-column-info'>ИНН: ...</span>
-                        <span className='cst-footer-links-column-info'>ОГРНИП: ...</span>
-                        <span className='cst-footer-links-column-info'>000000, г.Москва, г.Москва, г.Москва, г.Москва,</span>
+                        <span className='cst-footer-links-column-info'>ИП: РОМАНОВ ЕГОР НИКОЛАЕВИЧ</span>
+                        <span className='cst-footer-links-column-info'>ИНН: 760210593072</span>
+                        <span className='cst-footer-links-column-info'>ОГРНИП: 325762700011721</span>
+                        <span className='cst-footer-links-column-info'>150043, РОССИЯ, ЯРОСЛАВСКАЯ ОБЛ, Г. ЯРОСЛАВЛЬ, УЛ. АВТОЗАВОДСКАЯ, Д 23, КВ 148</span>
                     </div>
                 </div>
             </div>
