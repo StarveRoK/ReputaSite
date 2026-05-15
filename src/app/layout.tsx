@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, Onest } from 'next/font/google'
 import './globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import CookieConsentBanner from '@/components/ui/CookieConsentBanner'
 
 const inter = Inter({ subsets: ['latin', 'cyrillic'], variable: '--font-inter' })
 const onest = Onest({ subsets: ['latin', 'cyrillic'], variable: '--font-onest' })
@@ -27,7 +28,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru" className={`${inter.variable} ${onest.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <CookieConsentBanner />
+      </body>
     </html>
   )
 }
