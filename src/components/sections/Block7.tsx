@@ -30,7 +30,7 @@ export default function Block7() {
                         года
                     </div>
                     <div className='cst-block-7-card-description'>
-                        по версии<br /> MP Sellers Awords
+                        по версии<br /> MP Sellers Awards
                     </div>
                 </div>
 
