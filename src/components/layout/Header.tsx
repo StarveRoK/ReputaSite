@@ -28,11 +28,11 @@ export default function Header() {
             </div>
 
             <div className="cst-header-links-icons">
-                <a href={ROUTES.social.telegram}><TelegramIcon/></a>
-                <a href={ROUTES.social.vk}><VkIcon/></a>
-                <a href={ROUTES.social.max}><MaxIcon/></a>
-                <a href={ROUTES.social.youtube}><YouTubeIcon/></a>
-                <a href={ROUTES.social.dzen}><DzenIcon/></a>
+                <a target="_blank" href={ROUTES.social.telegram}><TelegramIcon/></a>
+                <a target="_blank" href={ROUTES.social.vk}><VkIcon/></a>
+                <a target="_blank" href={ROUTES.social.max}><MaxIcon/></a>
+                <a target="_blank" href={ROUTES.social.youtube}><YouTubeIcon/></a>
+                <a target="_blank" href={ROUTES.social.dzen}><DzenIcon/></a>
             </div>
 
             <div className="cst-header-btn-container">

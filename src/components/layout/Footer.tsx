@@ -16,11 +16,11 @@ export default function Footer() {
                         <Logo/>
                     </a>
                     <div className="cst-footer-icons-container">
-                        <a href={ROUTES.social.telegram}><TelegramIconBlue /></a>
-                        <a href={ROUTES.social.vk}><VkIconBlue/></a>
-                        <a href={ROUTES.social.max}><MaxIconBlue/></a>
-                        <a href={ROUTES.social.youtube}><YouTubeIconBlue/></a>
-                        <a href={ROUTES.social.dzen}><DzenIconBlue/></a>
+                        <a target="_blank" href={ROUTES.social.telegram}><TelegramIconBlue /></a>
+                        <a target="_blank" href={ROUTES.social.vk}><VkIconBlue/></a>
+                        <a target="_blank" href={ROUTES.social.max}><MaxIconBlue/></a>
+                        <a target="_blank" href={ROUTES.social.youtube}><YouTubeIconBlue/></a>
+                        <a target="_blank" href={ROUTES.social.dzen}><DzenIconBlue/></a>
                     </div>
                 </div>
                 <div className="cst-footer-top-right-container">
