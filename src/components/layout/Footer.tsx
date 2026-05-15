@@ -54,6 +54,7 @@ export default function Footer() {
                     <a href={ROUTES.legal.userAgreement} className='cst-footer-links-column-link-bot'>Пользовательское соглашение</a>
                     <a href={ROUTES.legal.cookiesPolicy} className='cst-footer-links-column-link-bot'>Политика cookies</a>
                     <a href={ROUTES.legal.advertisingConsent} className='cst-footer-links-column-link-bot'>Согласие на рекламную / информационную рассылку</a>
+                    <a href={ROUTES.legal.personalDataConsentTemplate} className='cst-footer-links-column-link-bot'>Шаблон на обработку персональных данных</a>
                 </div>
             </div>
         </footer>

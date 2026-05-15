@@ -15,7 +15,8 @@ export const ROUTES = {
 
     legal: {
         privacyPolicy: '/privacy',
-        personalDataConsent: '#',
+        personalDataConsent: '/consent',
+        personalDataConsentTemplate: '/withdrawal',
         publicOffer: '/offer',
         userAgreement: '/agreement',
         cookiesPolicy: '/cookies',
