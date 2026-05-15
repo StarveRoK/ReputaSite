@@ -14,7 +14,7 @@ export const ROUTES = {
     blog: '#',
 
     legal: {
-        privacyPolicy: '#',
+        privacyPolicy: '/privacy',
         personalDataConsent: '#',
         publicOffer: '#',
         userAgreement: '#',

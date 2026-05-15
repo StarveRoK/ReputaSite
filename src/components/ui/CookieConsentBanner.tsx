@@ -42,7 +42,7 @@ export default function CookieConsentBanner() {
     >
       Мы используем файлы cookie для улучшения работы сайта и анализа трафика.
       Продолжая использовать сайт, вы соглашаетесь с нашей{' '}
-      <a href="/privacy" style={{ color: '#a29bfe', textDecoration: 'underline' }}>
+      <a href="/privacy" style={{ color: '#0163FC', textDecoration: 'underline' }}>
         политикой конфиденциальности
       </a>
       .
