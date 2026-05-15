@@ -19,14 +19,14 @@ export default function Block8() {
                     <span className='cst-block-8-question'><b>Зачем мне сервис</b>, если менеджер и так отвечает?</span>
                    <span className='cst-block-8-dropdown-icon'><DropDownIcon /></span>
                 </div>
-                <div className='cst-block-8-card'>
-                    <span className='cst-block-8-question'><b>Зачем</b></span>
-                   <span className='cst-block-8-dropdown-icon'><DropDownIcon /></span>
-                </div>
-                <div className='cst-block-8-card'>
-                    <span className='cst-block-8-question'><b>Зачем</b></span>
-                    <span className='cst-block-8-dropdown-icon'><DropDownIcon /></span>
-                </div>
+                {/*<div className='cst-block-8-card'>*/}
+                {/*    <span className='cst-block-8-question'><b>Зачем</b></span>*/}
+                {/*   <span className='cst-block-8-dropdown-icon'><DropDownIcon /></span>*/}
+                {/*</div>*/}
+                {/*<div className='cst-block-8-card'>*/}
+                {/*    <span className='cst-block-8-question'><b>Зачем</b></span>*/}
+                {/*    <span className='cst-block-8-dropdown-icon'><DropDownIcon /></span>*/}
+                {/*</div>*/}
             </div>
         </section>
     )

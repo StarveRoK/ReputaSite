@@ -1,0 +1,23 @@
+.cstBlueButton {
+    display: inline-flex;
+    padding: 24px 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 20px;
+    margin-top: 30px;
+    width: max-content;
+    background: linear-gradient(90deg, #0163FC, #3AADFD, #0163FC);
+    background-size: 200% 100%;
+    background-position: 0% 0%;
+    color: #FFF;
+    font-family: var(--font-inter), sans-serif;
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    line-height: 25px;
+    transition: background-position 0.4s ease;
+}
+
+.cstBlueButton:hover {
+    background-position: 100% 0%;
+}

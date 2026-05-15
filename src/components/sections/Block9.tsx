@@ -1,5 +1,5 @@
 import '@/styles/block_9.css'
-import PlaySVGBlue from "@/components/ui/PlaySVGBlue";
+import WhiteButton from "@/components/buttons/WhiteButton/WhiteButton";
 
 export default function Block9() {
     return (
@@ -12,20 +12,18 @@ export default function Block9() {
 
                 <div className='cst-block-9-description-container'>
                     <div className='cst-block-9-description'>
-                        Простое подключение <b>за 5 минут</b>
+                        Простое подключение <b> за 5 минут</b>
                     </div>
                     <div className='cst-block-9-description'>
-                        Окупаемость за счёт <b>роста воронки и допродаж</b>
+                        Окупаемость за счёт <b> роста воронки и допродаж</b>
                     </div>
                     <div className='cst-block-9-description'>
-                        Работа по <b>проверенным сценариям</b>
+                        Работа по <b> проверенным сценариям</b>
                     </div>
                 </div>
 
-                <button className='cst-block-9-btn'>
-                    Попробовать бесплатно <b>14 дней</b>
-                    <PlaySVGBlue/>
-                </button>
+
+                <WhiteButton href="https://app.reputa.ru">Попробовать бесплатно <b>14 дней</b></WhiteButton>
             </div>
 
             <div className='cst-block-9-title-image'>

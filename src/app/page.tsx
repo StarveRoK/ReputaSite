@@ -12,8 +12,9 @@ import Block9 from "@/components/sections/Block9";
 
 export default function HomePage() {
     return (
+        <>
+        <Header />
         <main>
-            <Header />
             <HeroSection />
             <Block2 />
             <Block3 />
@@ -25,5 +26,6 @@ export default function HomePage() {
             <Block9 />
             <Footer />
         </main>
+        </>
     )
 }

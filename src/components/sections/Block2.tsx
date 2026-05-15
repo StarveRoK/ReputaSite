@@ -1,6 +1,7 @@
 import '@/styles/block_2.css'
 import PlaySVG from "@/components/ui/PlaySVG";
 import LittleStarSVG from "@/components/ui/LittleStarSVG";
+import BlueButton from "@/components/buttons/BlueButton/BlueButton";
 
 export default function Block2() {
     return (
@@ -89,10 +90,7 @@ export default function Block2() {
                     </div>
                 </div>
             </div>
-            <button className='cst-block-2-btn'>
-                Попробовать бесплатно <b>14 дней</b>
-                <PlaySVG/>
-            </button>
+            <BlueButton href="https://app.reputa.ru">Попробовать бесплатно <b>14 дней</b></BlueButton>
         </section>
     )
 }

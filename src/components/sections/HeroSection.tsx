@@ -5,6 +5,8 @@ import Benefit1 from "@/components/ui/Benefit1";
 import Benefit2 from "@/components/ui/Benefit2";
 import Benefit3 from "@/components/ui/Benefit3";
 import Benefit4 from "@/components/ui/Benefit4";
+import WhiteButton from "@/components/buttons/WhiteButton/WhiteButton";
+import BlueButton from "@/components/buttons/BlueButton/BlueButton";
 
 export default function HeroSection() {
     return (
@@ -26,10 +28,8 @@ export default function HeroSection() {
                 Убираем негатив, автоматизируем ответы на отзывы, вопросы с помощью AI
             </span>
 
-            <button className='cst-hero-btn'>
-                Попробовать бесплатно <b>14 дней</b>
-                <PlaySVG />
-            </button>
+            <BlueButton href="https://app.reputa.ru">Попробовать бесплатно <b>14 дней</b></BlueButton>
+
 
             <div className="cst-social-proof-container">
                 <div className="cst-social-proof-icons-container">

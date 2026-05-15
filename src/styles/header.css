@@ -4,11 +4,20 @@ header {
     position: sticky;
     top: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background: var(--color-bg);
     box-shadow: 0 4px 20px 0 rgba(23, 82, 251, 0.04);
     z-index: 1000;
+
+}
+
+.cst-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    min-width: 1440px;
     padding: 0 70px;
 }
 

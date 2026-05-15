@@ -63,6 +63,7 @@
     box-shadow: 0 10px 40px 0 rgba(23, 82, 251, 0.06);
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .cst-block-5-step {

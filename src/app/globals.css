@@ -29,9 +29,6 @@ a {
 
 html {
     scroll-behavior: smooth;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background: #FBFBFD !important;
 }
 
@@ -39,8 +36,8 @@ body {
     margin: 0;
     padding: 0;
     color: black;
-    width: 1440px;
-    max-width: 1440px;
+    width: 100vw;
+    /*max-width: 1440px;*/
 
     font-family: 'Inter', sans-serif;
     font-size: 14px;
