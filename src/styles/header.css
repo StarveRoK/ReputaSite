@@ -55,8 +55,7 @@ header {
 }
 
 .cst-header-btn,
-.cst-header-btn-login,
-.cst-header-btn-register {
+.cst-header-btn-login{
     display: inline-flex;
     padding: 15px 20px;
     justify-content: center;
@@ -73,11 +72,6 @@ header {
 .cst-header-btn-login {
     background: var(--color-blue-light);
     color: var(--color-primary);
-}
-
-.cst-header-btn-register {
-    background: var(--color-primary);
-    color: var(--color-bg);
 }
 
 .cst-header-links-icons {

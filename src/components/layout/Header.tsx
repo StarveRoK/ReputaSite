@@ -7,6 +7,8 @@ import MaxIcon from "@/components/ui/MaxIcon";
 import YouTubeIcon from "@/components/ui/YouTubeIcon";
 import DzenIcon from "@/components/ui/DzenIcon";
 import {ROUTES} from "@/lib/routes";
+import RegisterButton from "@/components/buttons/RegisterButton/RegisterButton";
+import LoginButton from "@/components/buttons/LoginButton/LoginButton";
 
 export default function Header() {
     return (
@@ -37,12 +39,8 @@ export default function Header() {
                 </div>
 
                 <div className="cst-header-btn-container">
-                    <a href="https://app.reputa.ru" className="cst-header-btn-login">
-                        Войти
-                    </a>
-                    <a href="https://app.reputa.ru" className="cst-header-btn-register">
-                        Зарегистрироваться
-                    </a>
+                    <LoginButton />
+                    <RegisterButton />
                 </div>
             </div>
         </header>

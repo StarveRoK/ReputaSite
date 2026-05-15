@@ -1,0 +1,22 @@
+.cstRegisterButton {
+    display: inline-flex;
+    padding: 15px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    font-family: var(--font-inter);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    line-height: 20px;
+    background: var(--color-primary);
+    color: var(--color-bg);
+    transition: background .3s, color .3s, border-color .3s;
+}
+
+.cstRegisterButton:hover {
+    border-color: var(--color-primary);
+    background: var(--color-blue-light);
+    color: var(--color-primary);
+}
