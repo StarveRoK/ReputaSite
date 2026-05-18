@@ -1,4 +1,4 @@
-import '@/styles/footer.css'
+import style from '@/styles/footer.module.css'
 import Logo from '@/components/ui/Logo'
 import TelegramIconBlue from "@/components/ui/TelegramIconBlue";
 import VkIconBlue from "@/components/ui/VkIconBlue";
@@ -10,12 +10,12 @@ import { ROUTES } from "@/lib/routes";
 export default function Footer() {
     return (
         <footer>
-            <div className="cst-footer-top-container">
-                <div className="cst-footer-top-left-container">
+            <div className={style.cstFooterTopContainer}>
+                <div className={style.cstFooterTopLeftContainer}>
                     <a href={ROUTES.home}>
                         <Logo/>
                     </a>
-                    <div className="cst-footer-icons-container">
+                    <div className={style.cstFooterIconsContainer}>
                         <a target="_blank" href={ROUTES.social.telegram}><TelegramIconBlue /></a>
                         <a target="_blank" href={ROUTES.social.vk}><VkIconBlue/></a>
                         <a target="_blank" href={ROUTES.social.max}><MaxIconBlue/></a>
@@ -23,38 +23,38 @@ export default function Footer() {
                         <a target="_blank" href={ROUTES.social.dzen}><DzenIconBlue/></a>
                     </div>
                 </div>
-                <div className="cst-footer-top-right-container">
-                    <div className="cst-footer-links-column">
-                        <span className='cst-footer-links-column-title'>Продукты</span>
-                        <a href={ROUTES.products.negativeReviews} className='cst-footer-links-column-link'>Удаление негативных отзывов</a>
-                        <a href={ROUTES.products.reviews} className='cst-footer-links-column-link'>Отзывы и вопросы</a>
-                        <a href={ROUTES.products.chats} className='cst-footer-links-column-link'>Чаты</a>
-                        <a href={ROUTES.products.newsletter} className='cst-footer-links-column-link'>Рассылка</a>
-                        <a href={ROUTES.pricing} className='cst-footer-links-column-link'>Цены</a>
+                <div className={style.cstFooterTopRightContainer}>
+                    <div className={style.cstFooterLinksColumn}>
+                        <span className={style.cstFooterLinksColumnTitle}>Продукты</span>
+                        <a href={ROUTES.products.negativeReviews} className={style.cstFooterLinksColumnLink}>Удаление негативных отзывов</a>
+                        <a href={ROUTES.products.reviews} className={style.cstFooterLinksColumnLink}>Отзывы и вопросы</a>
+                        <a href={ROUTES.products.chats} className={style.cstFooterLinksColumnLink}>Чаты</a>
+                        <a href={ROUTES.products.newsletter} className={style.cstFooterLinksColumnLink}>Рассылка</a>
+                        <a href={ROUTES.pricing} className={style.cstFooterLinksColumnLink}>Цены</a>
                     </div>
-                    <div className="cst-footer-links-column">
-                        <span className='cst-footer-links-column-title'>Компания</span>
-                        <a href={ROUTES.about} className='cst-footer-links-column-link'>О нас</a>
-                        <a href={ROUTES.partners} className='cst-footer-links-column-link'>Партнёры</a>
-                        <a href={ROUTES.blog} className='cst-footer-links-column-link'>Блог</a>
+                    <div className={style.cstFooterLinksColumn}>
+                        <span className={style.cstFooterLinksColumnTitle}>Компания</span>
+                        <a href={ROUTES.about} className={style.cstFooterLinksColumnLink}>О нас</a>
+                        <a href={ROUTES.partners} className={style.cstFooterLinksColumnLink}>Партнёры</a>
+                        <a href={ROUTES.blog} className={style.cstFooterLinksColumnLink}>Блог</a>
                     </div>
-                    <div className="cst-footer-links-column">
-                        <span className='cst-footer-links-column-info'>ИП: РОМАНОВ ЕГОР НИКОЛАЕВИЧ</span>
-                        <span className='cst-footer-links-column-info'>ИНН: 760210593072</span>
-                        <span className='cst-footer-links-column-info'>ОГРНИП: 325762700011721</span>
-                        <span className='cst-footer-links-column-info'>150043, РОССИЯ, ЯРОСЛАВСКАЯ ОБЛ, Г. ЯРОСЛАВЛЬ, УЛ. АВТОЗАВОДСКАЯ, Д 23, КВ 148</span>
+                    <div className={style.cstFooterLinksColumn}>
+                        <span className={style.cstFooterLinksColumnInfo}>ИП: РОМАНОВ ЕГОР НИКОЛАЕВИЧ</span>
+                        <span className={style.cstFooterLinksColumnInfo}>ИНН: 760210593072</span>
+                        <span className={style.cstFooterLinksColumnInfo}>ОГРНИП: 325762700011721</span>
+                        <span className={style.cstFooterLinksColumnInfo}>150043, РОССИЯ, ЯРОСЛАВСКАЯ ОБЛ, Г. ЯРОСЛАВЛЬ, УЛ. АВТОЗАВОДСКАЯ, Д 23, КВ 148</span>
                     </div>
                 </div>
             </div>
-            <div className="cst-footer-bot-container">
-                <div className="cst-footer-bot-links-container">
-                    <a href={ROUTES.legal.privacyPolicy} className='cst-footer-links-column-link-bot'>Политика конфиденциальности</a>
-                    <a href={ROUTES.legal.personalDataConsent} className='cst-footer-links-column-link-bot'>Согласие на обработку персональных данных</a>
-                    <a href={ROUTES.legal.publicOffer} className='cst-footer-links-column-link-bot'>Публичная оферта</a>
-                    <a href={ROUTES.legal.userAgreement} className='cst-footer-links-column-link-bot'>Пользовательское соглашение</a>
-                    <a href={ROUTES.legal.cookiesPolicy} className='cst-footer-links-column-link-bot'>Политика cookies</a>
-                    <a href={ROUTES.legal.advertisingConsent} className='cst-footer-links-column-link-bot'>Согласие на рекламную / информационную рассылку</a>
-                    <a href={ROUTES.legal.personalDataConsentTemplate} className='cst-footer-links-column-link-bot'>Шаблон на обработку персональных данных</a>
+            <div className={style.cstFooterBotContainer}>
+                <div className={style.cstFooterBotLinksContainer}>
+                    <a href={ROUTES.legal.privacyPolicy} className={style.cstFooterLinksColumnLinkBot}>Политика конфиденциальности</a>
+                    <a href={ROUTES.legal.personalDataConsent} className={style.cstFooterLinksColumnLinkBot}>Согласие на обработку персональных данных</a>
+                    <a href={ROUTES.legal.publicOffer} className={style.cstFooterLinksColumnLinkBot}>Публичная оферта</a>
+                    <a href={ROUTES.legal.userAgreement} className={style.cstFooterLinksColumnLinkBot}>Пользовательское соглашение</a>
+                    <a href={ROUTES.legal.cookiesPolicy} className={style.cstFooterLinksColumnLinkBot}>Политика cookies</a>
+                    <a href={ROUTES.legal.advertisingConsent} className={style.cstFooterLinksColumnLinkBot}>Согласие на рекламную / информационную рассылку</a>
+                    <a href={ROUTES.legal.personalDataConsentTemplate} className={style.cstFooterLinksColumnLinkBot}>Шаблон на обработку персональных данных</a>
                 </div>
             </div>
         </footer>

@@ -1,0 +1,87 @@
+.cstBlock32section {
+    display: flex;
+    gap: 15px;
+    padding: 40px 35px 50px;
+    width: 1160px;
+    margin-top: 130px;
+}
+
+.cstBlock32left,
+.cstBlock32right {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.cstBlock32leftTop,
+.cstBlock32leftBot,
+.cstBlock32rightBot {
+    display: flex;
+    flex-direction: column;
+}
+
+.cstBlock32leftTop {
+    max-width: 530px;
+}
+
+.cstBlock32leftBot {
+    max-width: 507px;
+}
+
+.cstBlock32rightTop {
+    max-width: 560px;
+}
+
+.cstBlock32rightBot {
+    max-width: 430px;
+    margin-left: auto;
+  margin-right: auto;
+}
+
+.cstBlock32leftTop,
+.cstBlock32rightTop{
+    height: 513px;
+}
+
+.cstBlock32title {
+    font-family: var(--font-onest);
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    line-height: 110%;
+    margin-bottom: 35px;
+}
+
+.cstBlock32titleBlue {
+    background: var(--gradient-blue-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-onest);
+    font-size: var(--font-size-2xl);
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.cstBlock32description {
+    color: var(--color-gray);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 51px;
+}
+
+.cstBlock32icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    background: var(--color-blue-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+.cstBlock32noMargin{
+    margin: 0 !important;
+}

@@ -1,23 +1,23 @@
-import '@/styles/block_9.css'
+import style from '@/styles/block_9.module.css'
 import WhiteButton from "@/components/buttons/WhiteButton/WhiteButton";
 
 export default function Block9() {
     return (
-        <section className='cst-block-9-section'>
-            <div className='cst-block-9-title-container'>
-                <div className='cst-block-9-title'>
+        <section className={style.cstBlock9section}>
+            <div className={style.cstBlock9titleContainer}>
+                <div className={style.cstBlock9title}>
                     Попробуйте REPUTA<br />
                     <b>бесплатно 14 дней</b>
                 </div>
 
-                <div className='cst-block-9-description-container'>
-                    <div className='cst-block-9-description'>
+                <div className={style.cstBlock9descriptionContainer}>
+                    <div className={style.cstBlock9description}>
                         Простое подключение <b> за 5 минут</b>
                     </div>
-                    <div className='cst-block-9-description'>
+                    <div className={style.cstBlock9description}>
                         Окупаемость за счёт <b> роста воронки и допродаж</b>
                     </div>
-                    <div className='cst-block-9-description'>
+                    <div className={style.cstBlock9description}>
                         Работа по <b> проверенным сценариям</b>
                     </div>
                 </div>
@@ -26,8 +26,8 @@ export default function Block9() {
                 <WhiteButton href="https://app.reputa.ru">Попробовать бесплатно <b>14 дней</b></WhiteButton>
             </div>
 
-            <div className='cst-block-9-title-image'>
-                <img src="/images/Block9.png" alt="Block9" className="cst-block-9-phone-image"/>
+            <div className={style.cstBlock9titleImage}>
+                <img src="/images/Block9.png" alt="Block9" className={style.cstBlock9phoneImage}/>
             </div>
         </section>
     )

@@ -1,0 +1,45 @@
+.cstBlock22section {
+    width: 1160px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 95px;
+}
+
+.cstBlock22features {
+    font-family: var(--font-onest);
+    font-size: var(--font-size-2xl);
+    font-weight: 500;
+    line-height: 110%;
+    margin-top: 20px;
+}
+
+.cstBlock22featuresBlue {
+    background: var(--gradient-blue-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-onest);
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.cstBlock22features2 {
+    width: 379px;
+    color: var(--color-gray);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    line-height: 25px;
+    margin-top: 45px;
+}
+
+.cstBlock22bigImage {
+    width: 699px;
+    height: 549px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}

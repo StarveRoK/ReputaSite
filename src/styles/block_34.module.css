@@ -1,0 +1,61 @@
+.cstBlock34section {
+    width: 1160px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 130px;
+    border-radius: 30px;
+    background: var(--color-bg);
+    box-shadow: 0 10px 40px 0 rgba(23, 82, 251, 0.06);
+    padding: 35px 98px 50px 35px;
+}
+
+.cstBlock34block {
+    display: flex;
+    flex-direction: column;
+}
+
+.cstBlock34icon {
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    background: var(--color-blue-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cstBlock34title {
+    margin-top: 20px;
+    font-family: var(--font-onest);
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+    line-height: 115%;
+}
+
+.cstBlock34titleBlue {
+    background: var(--gradient-blue-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cstBlock34description {
+    color: var(--color-gray);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    line-height: 22px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.cstBlock34iconsContainer {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.cstBlock34iconsContainer svg {
+    width: 73px;
+    height: 73px;
+}

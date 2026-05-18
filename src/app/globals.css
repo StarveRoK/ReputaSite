@@ -6,10 +6,13 @@
     --color-primary: #0163FC;
     --color-primary-light: #3AADFD;
     --color-dark: #1D2032;
+    --color-dark-hover: #8C8D97;
     --color-gray: #6B728E;
+    --color-gray-hover: #B3B6C5;
     --color-bg: #FBFBFD;
     --color-blue-light: #EEF3FD;
     --color-border: #E5E8F1;
+    --color-primary-hover: #78ABFD;
     --gradient-blue: linear-gradient(90deg, #0163FC 0%, #3AADFD 100%);
     --gradient-blue-text: linear-gradient(95deg, #0163FC 62.15%, #3AADFD 108.97%);
     --font-size-sm: 14px;

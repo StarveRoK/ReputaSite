@@ -1,0 +1,154 @@
+.cstBlock2section {
+    width: 1160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+/* <<< 1 блок >>> */
+
+.cstBlock2title {
+    text-align: center;
+    font-family: var(--font-onest), serif;
+    font-size: var(--font-size-2xl);
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.cstBlock2titleBlue {
+    background: var(--gradient-blue-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-onest), serif;
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    line-height: 110%;
+}
+
+/* <<< 2 блок >>> */
+
+.cstBlock2productContainer {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.cstBlock2productBlock {
+    width: 570px;
+    height: 346px;
+    border-radius: 25px;
+    background: var(--color-bg);
+    box-shadow: 0 10px 40px 0 rgba(23, 82, 251, 0.06);
+    padding: 25px;
+    display: flex;
+    gap: 25px;
+}
+
+.cstBlock2productIcon {
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    background: var(--color-blue-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cstBlock2productDescriptionContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.cstBlock2productDescriptionNumber {
+    display: inline-flex;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    background: var(--color-blue-light);
+    color: var(--color-primary);
+    font-family: var(--font-inter), sans-serif;
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    line-height: 20px;
+    width: max-content;
+}
+
+.cstBlock2productDescriptionTitle {
+    font-family: var(--font-onest), serif;
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+    line-height: 115%;
+    margin-top: 20px;
+}
+
+.cstBlock2productDescriptionTitleBlue {
+    background: var(--gradient-blue-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-onest), serif;
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    line-height: 115%;
+}
+
+.cstBlock2productDescriptionDescription {
+    color: var(--color-gray);
+    font-family: var(--font-inter), sans-serif;
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    line-height: 22px;
+    margin-top: 25px;
+}
+
+.cstBlock2productDescriptionMore {
+    color: var(--color-primary);
+    font-family: var(--font-inter), sans-serif;
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    line-height: 20px;
+    margin-top: auto;
+    transition: .3s;
+    text-decoration: underline !important;
+}
+
+.cstBlock2productDescriptionMore:hover{
+    color: var(--color-primary-hover) !important;
+}
+
+.cstBlock2image {
+    width: 87px;
+    height: 87px;
+}
+
+.cstBlock2productLittleStar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+/* <<< 3 блок >>> */
+
+.cstBlock2btn {
+    display: inline-flex;
+    padding: 24px 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
+    margin-top: 45px;
+    width: max-content;
+    background: var(--gradient-blue);
+    color: #FFF;
+    font-family: var(--font-inter), sans-serif;
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    line-height: 25px;
+}

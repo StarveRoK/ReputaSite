@@ -1,0 +1,145 @@
+:global(header) {
+    height: 90px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-bg);
+    box-shadow: 0 4px 20px 0 rgba(23, 82, 251, 0.04);
+    z-index: 1000;
+}
+
+.cstHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    min-width: 1440px;
+    padding: 0 70px;
+}
+
+.cstCenterDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cstGapHeaderDiv {
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: 150px;
+}
+
+.cstHeaderProducts {
+    display: flex;
+    gap: 2px;
+    position: relative;
+    cursor: pointer;
+}
+
+.cstHeaderText {
+    color: var(--color-dark);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.16px;
+    transition: color .3s;
+}
+
+.cstHeaderText:hover {
+    color: var(--color-primary);
+}
+
+.cstHeaderBtnContainer {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.cstHeaderBtn,
+.cstHeaderBtnLogin {
+    display: inline-flex;
+    padding: 15px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    font-family: var(--font-inter);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    line-height: 20px;
+    background: var(--color-blue-light);
+    color: var(--color-primary);
+}
+
+.cstHeaderLinksIcons {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.cstProductArrow {
+    width: 20px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.cstProductArrowOpen path {
+    fill: var(--color-primary) !important;
+}
+
+.cstProductSpanOpen {
+    color: var(--color-primary) !important;
+}
+
+.cstHeaderDropDown {
+    display: inline-flex;
+    padding: 15px 35px 25px 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    border-radius: 12px;
+    background: var(--color-primary);
+    width: max-content;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.cstHeaderDropDownOpen {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.cstHeaderDropDownRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cstHeaderDropDownLink {
+    color: var(--color-bg);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    line-height: 20px;
+    transition: color .3s;
+}
+
+.cstHeaderDropDownLink:hover {
+    color: #8AB7FD;
+}

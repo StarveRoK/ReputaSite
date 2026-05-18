@@ -1,25 +1,19 @@
-import '@/styles/block_13.css'
-import StarSVG from "@/components/ui/StarSVG";
-import PlaySVG from "@/components/ui/PlaySVG";
+import style from '@/styles/block_13.module.css'
+import BlueButton from "@/components/buttons/BlueButton/BlueButton";
+import ForSellerButton from "@/components/buttons/ForSellerButton/ForSellerButton";
 
 export default function Block13() {
     return (
-        <section className='cst-block-13-section'>
-            <div className='cst-block-13-background'>
-                <StarSVG/>
-                <span className='cst-block-13-background-text'>
-                    ИИ для
-                    <b> селлеров ВБ</b>
-                </span>
-            </div>
+        <section className={style.cstBlock13section}>
+            <ForSellerButton hasStar={true}>Для селлеров</ForSellerButton>
 
-            <span className="cst-block-13-features">
+            <span className={style.cstBlock13features}>
                 Удаляем <br/>
                 и исправляем<br/>
-                <span className="cst-block-13-features-blue"> до 90% негативных<br/> отзывов</span>
+                <span className={style.cstBlock13featuresBlue}> до 90% негативных<br/> отзывов</span>
             </span>
 
-            <span className="cst-block-13-features-2">
+            <span className={style.cstBlock13features2}>
                 <ul>
                     <li>Для селлеров WB и OZON</li>
                     <li>С оплатой за результат</li>
@@ -28,13 +22,10 @@ export default function Block13() {
                 </ul>
             </span>
 
-            <button className='cst-block-13-btn'>
-                Оставить заявку
-                <PlaySVG />
-            </button>
+            <BlueButton href="https://app.reputa.ru">Оставить заявку</BlueButton>
 
-            <div className='cst-block-13-big-image'>
-                <img src="/images/Block13.png" alt="Block13" />
+            <div className={style.cstBlock13bigImage}>
+                <img src="/images/Block13.png" alt="Block13"/>
             </div>
         </section>
     )

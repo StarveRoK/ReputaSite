@@ -1,6 +1,8 @@
+import style from '@/styles/icons/logo.module.css'
+
 export default function Logo() {
     return (
-        <svg width="130" height="21" viewBox="0 0 130 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="130" height="21" viewBox="0 0 130 21" fill="none" xmlns="http://www.w3.org/2000/svg" className={style.logoSvg}>
             <g clipPath="url(#clip0_1_384)">
                 <path
                     d="M111.359 4.14514H123.093L129.999 20.5292H123.422L122.19 17.324H112.278L111.052 20.5292H104.495L111.359 4.14514ZM120.7 13.3925L117.297 4.47397H117.202L113.795 13.3925H120.7Z"

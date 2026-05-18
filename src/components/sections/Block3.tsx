@@ -1,30 +1,31 @@
-import '@/styles/block_3.css'
+import style from '@/styles/block_3.module.css'
+import Block3GooglePlay from "@/components/ui/Block3GooglePlay";
 
 export default function Block3() {
     return (
-        <section className='cst-block-3-section'>
-            <div className='cst-block-3-title-container'>
-                <div className='cst-block-3-title'>
+        <section className={style.cstBlock3section}>
+            <div className={style.cstBlock3titleContainer}>
+                <div className={style.cstBlock3title}>
                     <b>Приложение</b><br />
                     REPUTA на вашем <br />
                     устройстве
                 </div>
-                <div className='cst-block-3-description'>
+                <div className={style.cstBlock3description}>
                     Установите приложение через <br />
                     App Store и Google Play
                 </div>
             </div>
-            <div className='cst-block-3-title-apps'>
-                <div className="cst-block-3-title-container-app-store">
-                    <img src="/images/Block3AppStore.png" alt="AppStore" className="cst-block-3-title-app-store"/>
+            <div className={style.cstBlock3titleApps}>
+                <div className={style.cstBlock3titleContainerAppStore}>
+                    <img src="/images/Block3AppStore.png" alt="AppStore" className={style.cstBlock3titleAppStore}/>
                 </div>
-                <div className="cst-block-3-title-container-google-play">
-                    <img src="/images/Block3GooglePlay.png" alt="GooglePlay" className="cst-block-3-title-google-play"/>
+                <div className={style.cstBlock3titleContainerGooglePlay}>
+                    <Block3GooglePlay />
                 </div>
             </div>
-            <div className='cst-block-3-title-images'>
-                <img src="/images/Block3Phone.png" alt="Block3Phone" className="cst-block-3-phone-image"/>
-                <img src="/images/Block3BackgroundPhone.png" alt="Block3BackgroundPhone" className="cst-block-3-background-phone-image"/>
+            <div className={style.cstBlock3titleImages}>
+                <img src="/images/Block3Phone.png" alt="Block3Phone" className={style.cstBlock3phoneImage}/>
+                <img src="/images/Block3BackgroundPhone.png" alt="Block3BackgroundPhone" className={style.cstBlock3backgroundPhoneImage}/>
             </div>
         </section>
     )

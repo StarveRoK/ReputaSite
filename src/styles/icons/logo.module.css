@@ -1,0 +1,7 @@
+.logoSvg {
+    transition: fill .3s;
+}
+
+.logoSvg:hover path {
+    fill: var(--color-primary) !important;
+}

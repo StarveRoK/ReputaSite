@@ -1,0 +1,23 @@
+.headerIcon * {
+    transition: fill .3s;
+}
+
+/* Background */
+.headerIcon:hover > rect {
+    fill: var(--color-primary) !important;
+}
+
+/* Simple icons: YouTube, Telegram, VK, Max (paths are direct svg children) */
+.headerIcon:hover > path {
+    fill: var(--color-blue-light) !important;
+}
+
+/* Dzen: outer shape → light blue */
+.headerIcon:hover g > g > path:first-child {
+    fill: var(--color-blue-light) !important;
+}
+
+/* Dzen: inner star → primary (синий "вырез" на светло-синем фоне) */
+.headerIcon:hover g > g > path:last-child {
+    fill: var(--color-primary) !important;
+}

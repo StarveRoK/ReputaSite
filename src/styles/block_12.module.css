@@ -1,0 +1,89 @@
+.cstBlock12section {
+    width: 1160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.cstBlock12productContainer {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.cstBlock12productBlock {
+    width: 570px;
+    height: 284px;
+    border-radius: 25px;
+    background: var(--color-bg);
+    box-shadow: 0 10px 40px 0 rgba(23, 82, 251, 0.06);
+    padding: 25px;
+    display: flex;
+    gap: 25px;
+}
+
+.cstBlock12productIcon {
+    width: 110px;
+    height: 110px;
+    border-radius: 15px;
+    background: var(--color-blue-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cstBlock12productDescriptionContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.cstBlock12productDescriptionNumber {
+    display: inline-flex;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    background: var(--color-blue-light);
+    color: var(--color-primary);
+    font-family: var(--font-inter), sans-serif;
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    line-height: 20px;
+    width: max-content;
+}
+
+.cstBlock12productDescriptionTitle {
+    font-family: var(--font-onest), sans-serif;
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+    line-height: 115%;
+    margin-top: 20px;
+}
+
+.cstBlock12productDescriptionTitleBlue {
+    background: var(--gradient-blue-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-onest), sans-serif;
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    line-height: 115%;
+}
+
+.cstBlock12productDescriptionDescription {
+    color: var(--color-gray);
+    font-family: var(--font-inter), sans-serif;
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    line-height: 22px;
+    margin-top: 25px;
+}
+
+.cstBlock12image {
+    width: 87px;
+    height: 87px;
+}

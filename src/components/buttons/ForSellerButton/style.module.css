@@ -1,0 +1,53 @@
+
+.cstForSellerbackground {
+    display: inline-flex;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    background: var(--color-blue-light);
+    width: max-content;
+}
+
+.cstForSellerbackgroundText {
+    color: var(--color-primary);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.cstForSellerForSellerContainer {
+    display: flex;
+    gap: 4px;
+}
+
+.cstForSellerForSeller {
+    width: 24px;
+    height: 24px;
+    aspect-ratio: 1/1;
+}
+
+.cstForSellerbackgroundWhite {
+border-radius: 12px;
+background: #EEF3FD;
+}
+
+.cstForSellerbackgroundTextWhite {
+color: #0163FC;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 142.857% */
+}
+
+.cstForSellerForSellerContainerWhite {
+    display: flex;
+    gap: 4px;
+}
+
+.cstForSellerForSellerWhite {
+    width: 24px;
+    height: 24px;
+    aspect-ratio: 1/1;
+}

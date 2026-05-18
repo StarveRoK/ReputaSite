@@ -1,6 +1,8 @@
+import style from '@/styles/icons/headerIcon.module.css'
+
 export default function DzenIcon() {
     return (
-        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" className={style.headerIcon}>
             <rect width="27" height="27" rx="7" fill="#EEF3FD"/>
             <g clipPath="url(#clip0_30_126)">
                 <mask id="mask0_30_126" style={{maskType: 'luminance'}} maskUnits="userSpaceOnUse" x="7" y="7" width="13"

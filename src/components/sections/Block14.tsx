@@ -1,37 +1,37 @@
-import '@/styles/block_14.css'
+import style from '@/styles/block_14.module.css'
 
 export default function Block14() {
     return (
-        <section className='cst-block-14-section'>
+        <section className={style.cstBlock14section}>
 
-            <div className='cst-block-14-title'>
-                Возвращаем <span className="cst-block-14-title-blue"> доверие</span> <br />
-                покупателя и <span className="cst-block-14-title-blue"> рост продаж</span> <br />
+            <div className={style.cstBlock14title}>
+                Возвращаем <span className={style.cstBlock14titleBlue}> доверие</span> <br />
+                покупателя и <span className={style.cstBlock14titleBlue}> рост продаж</span> <br />
             </div>
 
-            <div className='cst-block-14-card-container'>
-                <div className='cst-block-14-card'>
-                    <div className='cst-block-14-card-description'>
+            <div className={style.cstBlock14cardContainer}>
+                <div className={style.cstBlock14card}>
+                    <div className={style.cstBlock14cardDescription}>
                         Превращаем<br />
                         4 звезды<br />
-                        <span className='cst-block-14-card-description-blue'>→ в 5 звезд</span>
+                        <span className={style.cstBlock14cardDescriptionBlue}>→ в 5 звезд</span>
                     </div>
                 </div>
 
-                <div className='cst-block-14-card'>
-                    <div className='cst-block-14-card-description'>
-                        Убираем <span className='cst-block-14-card-description-blue'> до 90%<br />
+                <div className={style.cstBlock14card}>
+                    <div className={style.cstBlock14cardDescription}>
+                        Убираем <span className={style.cstBlock14cardDescriptionBlue}> до 90%<br />
                         негативных <br />
                         отзывов
                     </span>
                     </div>
                 </div>
 
-                <div className='cst-block-14-card'>
-                    <div className='cst-block-14-card-description'>
+                <div className={style.cstBlock14card}>
+                    <div className={style.cstBlock14cardDescription}>
                         Повышаем<br />
                         рейтинг карточек<br />
-                        <span className='cst-block-14-card-description-blue'>до 4.9-5.0</span>
+                        <span className={style.cstBlock14cardDescriptionBlue}>до 4.9-5.0</span>
                     </div>
                 </div>
 

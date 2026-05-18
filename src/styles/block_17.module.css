@@ -1,0 +1,104 @@
+.cstBlock17section {
+    width: 1160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.cstBlock17title {
+    margin-top: 20px;
+    text-align: center;
+    font-family: var(--font-onest), sans-serif;
+    font-size: var(--font-size-2xl);
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.cstBlock17titleBlue {
+    background: var(--gradient-blue-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-onest), sans-serif;
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.cstBlock17cardContainer {
+    margin-top: 50px;
+    display: inline-flex;
+    padding: 25px 24px 40px 25px;
+    align-items: flex-start;
+    gap: 100px;
+    border-radius: 25px;
+    background: var(--color-bg);
+    box-shadow: 0 10px 40px 0 rgba(23, 82, 251, 0.06);
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cstBlock17card {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.cstBlock17cardImage {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: var(--color-blue-light);
+}
+
+.cstBlock17cardTitle {
+    font-family: var(--font-onest), sans-serif;
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+    line-height: 115%;
+    margin-top: 20px;
+}
+
+.cstBlock17cardTitleBlue {
+    background: var(--gradient-blue-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+.cstBlock17cardDescription {
+    color: var(--color-gray);
+    font-family: var(--font-inter), sans-serif;
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    line-height: 22px;
+    margin-top: 25px;
+}
+
+.cstBlock17cardWithBtn {
+    display: flex;
+}
+
+.cstBlock17cardButton {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 20px;
+    align-items: center;
+    border-radius: 15px;
+    background: var(--color-primary);
+    color: var(--color-bg);
+    font-family: var(--font-inter), sans-serif;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    line-height: 20px;
+    height: max-content;
+}

@@ -1,0 +1,34 @@
+.cstBlock35section {
+    width: 1160px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 130px;
+    justify-content: center;
+}
+
+.cstBlock35title {
+    text-align: center;
+    font-family: var(--font-onest);
+    font-size: var(--font-size-2xl);
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.cstBlock35titleBlue {
+    background: var(--gradient-blue-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cstBlock35iconsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.cstBlock35iconsContainer svg {
+    width: 73px;
+    height: 73px;
+}

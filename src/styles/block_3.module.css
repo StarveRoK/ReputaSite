@@ -1,0 +1,110 @@
+.cstBlock3section {
+    width: 1160px;
+    margin-top: 130px;
+    border-radius: 30px;
+    background: var(--gradient-blue);
+    padding: 40px 0 70px 35px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.cstBlock3titleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cstBlock3title {
+    width: 432px;
+    color: var(--color-bg);
+    font-family: var(--font-onest);
+    font-size: var(--font-size-2xl);
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.cstBlock3description {
+    width: 252px;
+    color: var(--color-bg);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.cstBlock3titleApps {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.cstBlock3titleContainerAppStore {
+    display: inline-flex;
+    padding: 24px 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(172, 233, 253, 0.20);
+    background: linear-gradient(90deg, #0163FC 0%, #3AADFD 50%, #0163FC 100%);
+    background-size: 200% 100%;
+    background-position: 0% 0%;
+    transition: background-position .3s ease;
+    cursor: pointer;
+}
+
+.cstBlock3titleContainerAppStore:hover {
+    background-position: 100% 0%;
+}
+
+.cstBlock3titleAppStore {
+    width: 137.112px;
+    height: 35px;
+}
+
+.cstBlock3titleContainerGooglePlay {
+    display: inline-flex;
+    padding: 24px 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: var(--color-bg);
+    color: var(--color-dark);
+    transition: background .3s, border-color .3s, color .3s;
+    cursor: pointer;
+}
+
+.cstBlock3titleContainerGooglePlay:hover {
+    border-color: var(--color-bg);
+    background: none;
+    color: var(--color-bg);
+}
+
+.cstBlock3titleGooglePlay {
+    width: 172px;
+    height: 35px;
+}
+
+.cstBlock3titleImages {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.cstBlock3phoneImage {
+    width: 497px;
+    height: 480px;
+    margin-right: 62px;
+    position: absolute;
+}
+
+.cstBlock3backgroundPhoneImage {
+    width: 559px;
+    height: 480px;
+    margin-right: 33px;
+    z-index: 1;
+}

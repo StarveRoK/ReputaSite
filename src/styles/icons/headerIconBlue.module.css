@@ -1,0 +1,23 @@
+.headerIconBlue * {
+    transition: fill .3s;
+}
+
+/* Background */
+.headerIconBlue:hover > rect {
+    fill: var(--color-blue-light) !important;
+}
+
+/* Simple icons: Telegram, VK, Max, YouTube */
+.headerIconBlue:hover > path {
+    fill: var(--color-primary) !important;
+}
+
+/* Dzen: outer shape → primary */
+.headerIconBlue:hover g > g > path:first-child {
+    fill: var(--color-primary) !important;
+}
+
+/* Dzen: inner star → light blue */
+.headerIconBlue:hover g > g > path:last-child {
+    fill: var(--color-blue-light) !important;
+}

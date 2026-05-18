@@ -1,0 +1,88 @@
+.cstBlock21section {
+    width: 1160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.cstBlock21title {
+    text-align: center;
+    font-family: var(--font-onest), sans-serif;
+    font-size: var(--font-size-2xl);
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.cstBlock21titleBlue {
+    background: var(--gradient-blue-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-onest), sans-serif;
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.cstBlock21cardContainer {
+flex-wrap: wrap;
+  gap: 110px 45px;
+  margin-top: 50px;
+  display: flex;
+  position: relative;
+}
+
+.cstBlock21card {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 25px 40px 25px;
+    min-width: 300px;
+
+    flex: 1;
+    border-radius: 25px;
+    background: var(--color-bg);
+    box-shadow: 0 10px 40px 0 rgba(23, 82, 251, 0.06);
+    position: relative;
+    z-index: 1;
+}
+
+.cstBlock21cardStep {
+    display: flex;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    background: var(--color-blue-light);
+    color: var(--color-primary);
+    font-family: var(--font-inter), sans-serif;
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    line-height: 20px;
+    width: max-content;
+    position: relative;
+}
+
+.cstBlock21cardText {
+    font-family: var(--font-onest), sans-serif;
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+    line-height: 115%;
+}
+
+.cstBlock21cardTextBlue {
+    background: var(--gradient-blue-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cstBlock21cardSvgArrow {
+    position: absolute;
+top: 62%;
+  left: 51%;
+    transform: translate(-50%, -50%);
+        z-index: 0;
+}

@@ -1,0 +1,31 @@
+.cstBlock29section {
+    width: 1160px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+    border-radius: 30px;
+    background: var(--gradient-blue);
+    align-items: center;
+    padding: 40px 0 50px;
+}
+
+.cstBlock29title {
+    color: var(--color-bg);
+    text-align: center;
+    font-family: var(--font-onest);
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.cstBlock29description {
+    color: var(--color-bg);
+    text-align: center;
+    font-family: var(--font-inter);
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    line-height: 25px;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}

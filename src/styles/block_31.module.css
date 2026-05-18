@@ -1,0 +1,61 @@
+.cstBlock31section {
+    width: 1160px;
+    margin-top: 130px;
+    border-radius: 30px;
+    background: var(--gradient-blue);
+    padding: 35px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    justify-content: space-between;
+}
+
+.cstBlock31titleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cstBlock31title {
+    color: var(--color-bg);
+    font-family: var(--font-onest);
+    font-size: var(--font-size-2xl);
+    font-weight: 500;
+    line-height: 110%;
+    margin-bottom: 10px;
+}
+
+.cstBlock31descriptionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: auto;
+}
+
+.cstBlock31description {
+    display: inline;
+    padding: 14px 20px;
+    border-radius: 14px;
+    background: rgba(251, 251, 253, 0.10);
+    color: var(--color-bg);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    line-height: 22px;
+    width: max-content;
+}
+
+.cstBlock31imgContainer {
+    display: flex;
+    gap: 14px;
+    height: max-content;
+}
+
+.cstBlock31imgCol {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 280px;
+    border-radius: 15px;
+    overflow: hidden;
+}

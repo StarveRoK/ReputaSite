@@ -1,0 +1,80 @@
+.cstBlock7section {
+    width: 1160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.cstBlock7ownManager {
+    display: inline-flex;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    background: var(--color-blue-light);
+    color: var(--color-primary);
+    font-family: var(--font-inter), sans-serif;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.cstBlock7title {
+    margin-top: 20px;
+    text-align: center;
+    font-family: var(--font-onest), sans-serif;
+    font-size: var(--font-size-2xl);
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.cstBlock7cardContainer {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.cstBlock7card {
+    display: flex;
+    width: 373px;
+    height: 208px;
+    padding: 35px 151px 40px 35px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 25px;
+    background: #FBFBFD;
+    box-shadow: 0 10px 40px 0 rgba(23, 82, 251, 0.06);
+}
+
+.cstBlock7cardTitle {
+    font-family: var(--font-onest), sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 115%;
+}
+
+.cstBlock7cardBlue {
+    background: var(--gradient-blue-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cstBlock7cardTitleBig {
+    font-size: 45px;
+    line-height: 110%;
+}
+
+.cstBlock7titleBlue {
+    background: var(--gradient-blue-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-onest), serif;
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    line-height: 110%;
+}

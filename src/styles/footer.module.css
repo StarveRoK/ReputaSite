@@ -1,0 +1,102 @@
+:global(footer) {
+    width: 1160px;
+    margin-top: 200px;
+    padding: 40px 0 0 0;
+}
+
+.cstFooterTopContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cstFooterTopLeftContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.cstFooterIconsContainer {
+    display: flex;
+    gap: 8px;
+}
+
+.cstFooterTopRightContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.cstFooterLinksColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 215px;
+}
+
+.cstFooterLinksColumnTitle {
+    color: var(--color-gray);
+    font-family: var(--font-onest), sans-serif;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.cstFooterLinksColumnLink {
+    color: var(--color-dark);
+    font-family: var(--font-inter), sans-serif;
+    font-size: var(--font-size-sm);
+    font-weight: 400;
+    line-height: 20px;
+    transition: .3s;
+}
+
+.cstFooterLinksColumnLink:hover {
+    color: var(--color-dark-hover);
+}
+
+.cstFooterLinksColumnInfo {
+    color: var(--color-gray);
+    font-family: var(--font-inter), sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.cstFooterBotContainer {
+    margin-top: 100px;
+    position: relative;
+}
+
+.cstFooterBotContainer:before {
+    content: '';
+    width: 100vw;
+    border-top: 1px solid #E6E6E6;
+    top: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.cstFooterBotLinksContainer {
+    display: flex;
+    gap: 25px 40px;
+    padding: 35px 0 70px 0;
+    max-width: 675px;
+    flex-wrap: wrap;
+}
+
+.cstFooterLinksColumnLinkBot {
+    color: var(--color-gray);
+    font-family: var(--font-inter), sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    transition: .3s;
+}
+
+.cstFooterLinksColumnLinkBot:hover{
+    color: var(--color-gray-hover)
+}

@@ -1,0 +1,84 @@
+.cstBlock18section {
+    width: 1160px;
+    position: relative;
+    padding: 40px 0 50px 35px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+    border-radius: 30px;
+    background: var(--color-bg);
+    box-shadow: 0 10px 40px 0 rgba(23, 82, 251, 0.06);
+}
+
+.cstBlock18features {
+    font-family: var(--font-onest), sans-serif;
+    font-size: var(--font-size-2xl);
+    font-weight: 500;
+    line-height: 110%;
+    margin-top: 20px;
+}
+
+.cstBlock18featuresBlue {
+    background: var(--gradient-blue-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-onest), sans-serif;
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.cstBlock18list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.cstBlock18row {
+    display: flex;
+    gap: 25px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    border: 1px solid var(--color-border);
+    align-items: center;
+    width: max-content;
+}
+
+.cstBlock18colIcon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: var(--color-blue-light);
+}
+
+.cstBlock18colText {
+    color: var(--color-gray);
+    font-family: var(--font-inter), sans-serif;
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.cstBlock18description {
+    color: var(--color-gray);
+    font-family: var(--font-inter), sans-serif;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 25px;
+}
+
+.cstBlock18bigImage {
+    width: 667.269px;
+    height: 518.987px;
+    aspect-ratio: 9/7;
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    z-index: -1;
+}

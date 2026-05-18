@@ -4,13 +4,13 @@ export const ROUTES = {
     products: {
         negativeReviews: '/negative-reviews',
         reviews: '/reviews',
-        chats: '#',
-        newsletter: '#',
+        chats: '/chats',
+        newsletter: '/newsletter',
     },
 
-    pricing: '#',
+    pricing: '/price',
     partners: '#',
-    about: '#',
+    about: '/about',
     blog: '#',
 
     legal: {

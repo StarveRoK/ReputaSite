@@ -1,0 +1,92 @@
+.cstBlock30section {
+    width: 1160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.cstBlock30ownManager {
+    display: inline-flex;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    background: var(--color-blue-light);
+    color: var(--color-primary);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.cstBlock30title {
+    margin-top: 20px;
+    text-align: center;
+    font-family: var(--font-onest);
+    font-size: var(--font-size-2xl);
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.cstBlock30titleBlue {
+    background: var(--gradient-blue-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-onest);
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.cstBlock30cardContainer {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.cstBlock30card {
+    display: flex;
+    padding: 35px 40px 40px 35px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 25px;
+    background: var(--color-bg);
+    box-shadow: 0 10px 40px 0 rgba(23, 82, 251, 0.06);
+    justify-content: start;
+    flex: 1;
+}
+
+.cstBlock30cardIcon {
+    border-radius: 12px;
+    background: var(--color-blue-light);
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cstBlock30cardTitle {
+    background: var(--gradient-blue-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-onest);
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    margin-top: 20px;
+    line-height: 110%;
+}
+
+.cstBlock30cardDescription {
+    color: var(--color-gray);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    line-height: 22px;
+    margin-top: 25px;
+}

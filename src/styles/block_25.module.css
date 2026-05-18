@@ -1,0 +1,112 @@
+.cstBlock25section {
+    width: 1160px;
+    margin-top: 130px;
+    border-radius: 30px;
+    background: var(--gradient-blue);
+    padding: 40px 0 70px 35px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.cstBlock25titleContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.cstBlock25preTitle {
+    color: var(--color-bg);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    line-height: 20px;
+    display: inline-flex;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    width: max-content;
+    background: rgba(251, 251, 253, 0.10);
+}
+
+.cstBlock25title {
+    color: var(--color-bg);
+    font-family: var(--font-onest);
+    font-size: var(--font-size-2xl);
+    font-weight: 500;
+    line-height: 110%;
+    margin-top: 20px;
+}
+
+.cstBlock25description {
+    color: var(--color-bg);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    line-height: 22px;
+    margin-top: 45px;
+}
+
+.cstBlock25titleImages {
+    position: absolute;
+    right: 18px;
+    width: 567px;
+    bottom: 0;
+}
+
+.cstBlock25absContainerIn {
+    position: absolute;
+    top: 124px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cstBlock25absTop {
+    display: flex;
+    width: 272px;
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    border-radius: 15px;
+    border: 1px solid var(--color-border);
+}
+
+.cstBlock25absIcon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: var(--color-blue-light);
+}
+
+.cstBlock25absTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cstBlock25absTitle {
+    color: var(--color-dark);
+    text-align: center;
+    font-family: var(--font-inter);
+    font-size: var(--font-size-md);
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.cstBlock25absDescription {
+    color: var(--color-gray);
+    text-align: center;
+    font-family: var(--font-inter);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    line-height: 20px;
+}

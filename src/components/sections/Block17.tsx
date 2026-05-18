@@ -1,4 +1,4 @@
-import '@/styles/block_17.css'
+import style from '@/styles/block_17.module.css'
 import PlaySVG from "@/components/ui/PlaySVG";
 import Block17svg1 from "@/components/ui/Block17svg1";
 import Block17svg2 from "@/components/ui/Block17svg2";
@@ -6,61 +6,61 @@ import Block17svg3 from "@/components/ui/Block17svg3";
 
 export default function Block17() {
     return (
-        <section className='cst-block-17-section'>
+        <section className={style.cstBlock17section}>
 
-            <div className='cst-block-17-title'>
-                Почему REPUTA — <span className="cst-block-17-title-blue"> это безопасно?</span>
+            <div className={style.cstBlock17title}>
+                Почему REPUTA — <span className={style.cstBlock17titleBlue}> это безопасно?</span>
             </div>
 
-            <div className='cst-block-17-card-container'>
-                <div className='cst-block-17-card'>
-                    <div className='cst-block-17-card-image'>
+            <div className={style.cstBlock17cardContainer}>
+                <div className={style.cstBlock17card}>
+                    <div className={style.cstBlock17cardImage}>
                         <Block17svg1 />
                     </div>
-                    <div className='cst-block-17-card-title'>
+                    <div className={style.cstBlock17cardTitle}>
                         Работа строго
-                        <span className='cst-block-17-card-title-blue'> в рамках <br/></span>
+                        <span className={style.cstBlock17cardTitleBlue}> в рамках <br/></span>
                         правил маркетплейса
                     </div>
-                    <div className='cst-block-17-card-description'>
+                    <div className={style.cstBlock17cardDescription}>
                         Решаем вопросы через диалог <br/>
                         с покупателем и юридическое <br/>
                         обращения в поддержку
                     </div>
                 </div>
 
-                <div className='cst-block-17-card'>
-                    <div className='cst-block-17-card-image'>
+                <div className={style.cstBlock17card}>
+                    <div className={style.cstBlock17cardImage}>
                         <Block17svg2 />
                     </div>
-                    <div className='cst-block-17-card-title'>
+                    <div className={style.cstBlock17cardTitle}>
                         Опыт на
-                        <span className='cst-block-17-card-title-blue'> 550+ <br/></span>
+                        <span className={style.cstBlock17cardTitleBlue}> 550+ <br/></span>
                         кабинетах
                     </div>
-                    <div className='cst-block-17-card-description'>
+                    <div className={style.cstBlock17cardDescription}>
                         Отработанные алгоритмы <br/>
                         и скрипты на 350 000+ <br/>
                         негативных отзывов
                     </div>
                 </div>
 
-                <div className='cst-block-17-card-with-btn'>
-                    <div className='cst-block-17-card'>
-                    <div className='cst-block-17-card-image'>
+                <div className={style.cstBlock17cardWithBtn}>
+                    <div className={style.cstBlock17card}>
+                    <div className={style.cstBlock17cardImage}>
                         <Block17svg3 />
                     </div>
-                    <div className='cst-block-17-card-title'>
+                    <div className={style.cstBlock17cardTitle}>
                         Работает <br />
-                        <span className='cst-block-17-card-title-blue'>по договору</span>
+                        <span className={style.cstBlock17cardTitleBlue}>по договору</span>
                     </div>
-                    <div className='cst-block-17-card-description'>
+                    <div className={style.cstBlock17cardDescription}>
                         Оплата по факту выполненной <br />
                         работы, все договоренности <br />
                         закреплены юридически
                     </div>
                     </div>
-                    <div className='cst-block-17-card-button'>
+                    <div className={style.cstBlock17cardButton}>
                         <b>700+ селлеров</b>
                         доверяют нам
                     </div>
