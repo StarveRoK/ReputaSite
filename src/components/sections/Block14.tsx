@@ -1,12 +1,12 @@
 import style from '@/styles/block_14.module.css'
 import { rich } from '@/lib/richText'
 
-const TITLE = 'Возвращаем <blue> доверие</blue> <br />покупателя и <blue> рост продаж</blue>'
+const TITLE = 'Возвращаем <blue> доверие</blue> покупателя и <blue> рост продаж</blue>'
 
 const CARDS = [
-    { text: 'Превращаем<br />4 звезды<br /><blue>→ в 5 звезд</blue>' },
-    { text: 'Убираем <blue> до 90%<br />негативных <br />отзывов</blue>' },
-    { text: 'Повышаем<br />рейтинг карточек<br /><blue>до 4.9-5.0</blue>' },
+    { text: 'Превращаем4 звезды<blue>→ в 5 звезд</blue>' },
+    { text: 'Убираем <blue> до 90%негативных отзывов</blue>' },
+    { text: 'Повышаемрейтинг карточек<blue>до 4.9-5.0</blue>' },
 ]
 
 const titleTags = {

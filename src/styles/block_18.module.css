@@ -27,6 +27,7 @@
     font-size: var(--font-size-2xl);
     font-weight: 600;
     line-height: 110%;
+    max-width: 624px;
 }
 
 .cstBlock18list {
@@ -44,6 +45,7 @@
     border: 1px solid var(--color-border);
     align-items: center;
     width: max-content;
+    max-width: 400px;
 }
 
 .cstBlock18colIcon {

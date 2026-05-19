@@ -24,7 +24,7 @@
     display: inline-flex;
     padding: 12px 20px;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     border-radius: 12px;
     width: max-content;
     background: rgba(251, 251, 253, 0.10);
@@ -37,6 +37,7 @@
     font-weight: 500;
     line-height: 110%;
     margin-top: 20px;
+    max-width: 630px;
 }
 
 .cstBlock25description {
@@ -46,6 +47,7 @@
     font-weight: 500;
     line-height: 22px;
     margin-top: 45px;
+    max-width: 524px;
 }
 
 .cstBlock25titleImages {

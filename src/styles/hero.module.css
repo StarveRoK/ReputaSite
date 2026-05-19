@@ -51,6 +51,7 @@
     font-size: var(--font-size-sm);
     font-weight: 500;
     line-height: 20px;
+    max-width: 160px;
 }
 
 .cstSocialProofIconsContainer {

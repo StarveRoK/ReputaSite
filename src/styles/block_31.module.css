@@ -23,6 +23,7 @@
     font-weight: 500;
     line-height: 110%;
     margin-bottom: 10px;
+    max-width: 625px;
 }
 
 .cstBlock31descriptionContainer {
@@ -42,6 +43,7 @@
     font-size: var(--font-size-md);
     font-weight: 500;
     line-height: 22px;
+    max-width: 410px;
     width: max-content;
 }
 

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import style from '@/styles/block_23.module.css'
 import { rich } from '@/lib/richText'
 
-const TITLE = '<blue>Безлимитные рассылки по вашей лояльной <br />аудитории,</blue> которая уже поставила 5★'
+const TITLE = '<blue>Безлимитные рассылки по вашей лояльной аудитории,</blue> которая уже поставила 5★'
 
 const ITEMS = [
     {
@@ -17,13 +17,13 @@ const ITEMS = [
         imageSrc: '/images/Block23Img2.png',
         imageAlt: 'Block23Img2',
         title: 'Экономия <blue>до 40%</blue> рекламногобюджета',
-        description: 'Повторные продажи по своей базе <br />помогают снижать зависимость от <br />постоянных вложений в рекламу',
+        description: 'Повторные продажи по своей базе помогают снижать зависимость от постоянных вложений в рекламу',
     },
     {
         number: '3',
         imageSrc: '/images/Block23Img3.png',
         imageAlt: 'Block23Img3',
-        title: 'Рост <blue> лояльности <br />и узнаваемости</blue><br />бренда',
+        title: 'Рост <blue> лояльности и узнаваемости</blue>бренда',
         description: 'Регулярные касания через рассылкипомогают покупателям чаще возвращаться именно квашему магазину',
     },
     {

@@ -14,6 +14,7 @@
     font-size: var(--font-size-2xl);
     font-weight: 500;
     line-height: 110%;
+    max-width: 720px;
 }
 
 .cstBlock15titleBlue {

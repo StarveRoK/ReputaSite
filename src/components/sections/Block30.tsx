@@ -11,7 +11,7 @@ const STATS = [
     {
         Icon: Block30svg1,
         title: '350 000+',
-        description: 'обработанных негативных<br />отзывов',
+        description: 'обработанных негативныхотзывов',
     },
     {
         Icon: Block30svg2,

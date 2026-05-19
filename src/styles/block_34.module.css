@@ -46,7 +46,8 @@
     font-weight: 500;
     line-height: 22px;
     margin-top: 25px;
-    margin-bottom: 15px;
+    margin-bottom: auto;
+    max-width: 397px;
 }
 
 .cstBlock34iconsContainer {

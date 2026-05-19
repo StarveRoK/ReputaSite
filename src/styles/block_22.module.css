@@ -3,6 +3,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    height: 540px;
     margin-top: 95px;
 }
 
@@ -12,6 +13,7 @@
     font-weight: 500;
     line-height: 110%;
     margin-top: 20px;
+    max-width: 508px;
 }
 
 .cstBlock22featuresBlue {

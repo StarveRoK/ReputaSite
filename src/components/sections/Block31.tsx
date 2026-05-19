@@ -4,7 +4,7 @@ import ForSellerButton from "@/components/buttons/ForSellerButton/ForSellerButto
 import { rich } from '@/lib/richText'
 
 const SELLER_BADGE = 'Для селлеров'
-const TITLE = 'REPUTA — лидерыв репутационномменеджментена маркетплейсах'
+const TITLE = 'REPUTA — лидеры в репутационном менеджментена маркетплейсах'
 const DESCRIPTIONS = [
     'Стартап года по версии <b>MPseller Awards 2025</b>',
     'Участники и спикеры <b>профильных выставок, форумов и конференций</b>',

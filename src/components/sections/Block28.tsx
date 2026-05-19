@@ -2,7 +2,7 @@ import Image from 'next/image'
 import style from '@/styles/block_28.module.css'
 import { rich } from '@/lib/richText'
 
-const TITLE = '<blue>Как происходит <br /></blue>работа с чатами?'
+const TITLE = '<blue>Как происходит </blue>работа с чатами?'
 
 const ITEMS = [
     {

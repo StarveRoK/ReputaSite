@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 95px;
+    height: 565px;
 }
 
 .cstBlock10features {
@@ -12,6 +13,7 @@
     font-weight: 500;
     line-height: 110%;
     margin-top: 20px;
+    max-width: 508px;
 }
 
 .cstBlock10featuresBlue {

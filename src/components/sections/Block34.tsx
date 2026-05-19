@@ -8,7 +8,7 @@ import { rich } from '@/lib/richText'
 const JOURNAL = {
     imageSrc: '/images/Block34Img1.png',
     imageAlt: 'Block34Img1',
-    title: 'Первый журнал<br /><blue>о репутации на маркетплейсах</blue>',
+    title: 'Первый журнал<blue>о репутации на маркетплейсах</blue>',
     description: 'Делимся кейсами, исследованиями, аналитикойи практическим опытом работы с отзывами, покупателями и репутацией брендов',
     ctaHref: '#',
     ctaLabel: '<b>Подписаться</b> на журнал',
@@ -17,7 +17,7 @@ const JOURNAL = {
 const PODCAST = {
     imageSrc: '/images/Block34Img2.png',
     imageAlt: 'Block34Img2',
-    title: 'Подкасты Reputa<br /><blue>о маркетплейсах и репутации</blue>',
+    title: 'Подкасты Reputa<blue>о маркетплейсах и репутации</blue>',
     description: 'Записываем интервью и подкасты с селлерами,экспертами и предпринимателями рынкамаркетплейсов',
 }
 

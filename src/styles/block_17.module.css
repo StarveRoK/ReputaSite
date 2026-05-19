@@ -46,6 +46,7 @@
     padding: 0;
     flex-direction: column;
     align-items: flex-start;
+    height: 250px;
 }
 
 .cstBlock17cardImage {
@@ -81,11 +82,12 @@
     font-size: var(--font-size-md);
     font-weight: 500;
     line-height: 22px;
-    margin-top: 25px;
+    margin-top: auto;
 }
 
 .cstBlock17cardWithBtn {
     display: flex;
+    min-width: 386px;
 }
 
 .cstBlock17cardButton {

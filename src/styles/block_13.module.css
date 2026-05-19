@@ -12,6 +12,8 @@
     font-weight: 500;
     line-height: 110%;
     margin-top: 20px;
+    max-width: 490px;
+    height: 537px;
 }
 
 .cstBlock13featuresBlue {
@@ -78,6 +80,7 @@
 
     .cstBlock13features {
         font-size: 25px;
+        height: auto;
     }
 
     .cstBlock13featuresBlue {

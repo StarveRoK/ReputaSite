@@ -2,7 +2,7 @@ import style from '@/styles/block_18.module.css'
 import Block18svg1 from "@/components/ui/Block18svg1"
 import { rich } from '@/lib/richText'
 
-const TITLE = 'Когда нужно <blue> работать <br />с негативными отзывами?</blue>'
+const TITLE = 'Когда нужно <blue> работать с негативными отзывами?</blue>'
 const FOOTER_TEXT = 'Сигналы, которые показывают, что репутация товара уже влияет на продажи'
 const IMAGE = { src: '/images/Block18Img1.png', alt: 'Block18Img1' }
 
