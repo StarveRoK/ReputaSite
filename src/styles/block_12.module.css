@@ -27,7 +27,7 @@
 }
 
 .cstBlock12productIcon {
-    width: 110px;
+    min-width: 110px;
     height: 110px;
     border-radius: 15px;
     background: var(--color-blue-light);

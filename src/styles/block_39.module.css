@@ -26,6 +26,7 @@
     font-size: var(--font-size-2xl);
     font-weight: 500;
     line-height: 110%;
+    max-width: 626px;
 }
 
 .cstBlock39titleBlue {
@@ -46,6 +47,8 @@
     font-size: var(--font-size-md);
     font-weight: 500;
     line-height: 22px;
+        max-width: 720px;
+
     margin-top: 45px;
 }
 

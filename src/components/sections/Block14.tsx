@@ -4,9 +4,9 @@ import { rich } from '@/lib/richText'
 const TITLE = 'Возвращаем <blue> доверие</blue> покупателя и <blue> рост продаж</blue>'
 
 const CARDS = [
-    { text: 'Превращаем4 звезды<blue>→ в 5 звезд</blue>' },
-    { text: 'Убираем <blue> до 90%негативных отзывов</blue>' },
-    { text: 'Повышаемрейтинг карточек<blue>до 4.9-5.0</blue>' },
+    { text: 'Превращаем 4 звезды<blue>→ в 5 звезд</blue>' },
+    { text: 'Убираем <blue> до 90% негативных отзывов</blue>' },
+    { text: 'Повышаем рейтинг карточек<blue>до 4.9-5.0</blue>' },
 ]
 
 const titleTags = {
