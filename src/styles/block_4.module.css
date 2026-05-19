@@ -70,6 +70,7 @@
     font-weight: 500;
     line-height: 115%;
     margin-top: 20px;
+    max-width: 420px;
 }
 
 .cstBlock4productDescriptionTitleBlue {
@@ -90,10 +91,59 @@
     font-weight: 500;
     line-height: 22px;
     margin-top: 25px;
+    max-width: 450px;
 }
 
 
 .cstBlock4image {
     width: 87px;
     height: 87px;
+}
+
+
+@media (max-width: 1280px) {
+    .cstBlock4section {
+        width: 320px;
+        margin-top: 70px;
+        padding: 0 10px;
+    }
+
+    .cstBlock4title {
+        width: 272px;
+        text-align: left;
+        font-size: 25px;
+
+    }
+
+    .cstBlock4titleBlue {
+        font-size: 25px;
+
+    }
+
+    .cstBlock4productContainer {
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .cstBlock4productBlock {
+        width: 100%;
+    }
+
+    .cstBlock4productDescriptionNumber {
+        padding: 12px 19px;
+    }
+
+    .cstBlock4productDescriptionTitle {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .cstBlock4productDescriptionTitleBlue {
+        font-size: 20px;
+    }
+
+    .cstBlock4productDescriptionDescription {
+        font-size: 14px;
+        margin-top: 20px;
+    }
 }

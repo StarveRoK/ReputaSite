@@ -1,76 +1,49 @@
 import style from '@/styles/block_21.module.css'
-import Block19svg1 from "@/components/ui/Block19svg1";
-import Block19svg2 from "@/components/ui/Block19svg2";
-import Block21svg1 from "@/components/ui/Block21svg1";
+import Block21svg1 from "@/components/ui/Block21svg1"
+import { rich } from '@/lib/richText'
+
+const TITLE = 'От заявки <br />до результата <blue>за 6 шагов</blue>'
+
+const STEPS = [
+    { step: 'Шаг 1', text: 'Разбираем <br />ситуацию <br/><blue>на созвоне</blue>', hasArrow: true },
+    { step: 'Шаг 2', text: 'Готовим<br/><blue> стратегию <br/>и расчёт</blue>', hasArrow: true },
+    { step: 'Шаг 3', text: 'Заключаем<br/><blue>договор</blue>', hasArrow: false },
+    { step: 'Шаг 4', text: 'Подключаем<br/><blue> работу <br/>на кабинете</blue>', hasArrow: true },
+    { step: 'Шаг 5', text: 'Обрабатываем<br/><blue>негативные <br />отзывы</blue>', hasArrow: true },
+    { step: 'Шаг 6', text: 'Получаем<br/><blue>результат</blue>', hasArrow: false },
+]
+
+const titleTags = {
+    blue: (c: string | null, k: number) => (
+        <span key={k} className={style.cstBlock21titleBlue}>{c}</span>
+    ),
+}
+
+const stepTags = {
+    blue: (c: string | null, k: number) => (
+        <span key={k} className={style.cstBlock21cardTextBlue}>{c}</span>
+    ),
+}
 
 export default function Block21() {
     return (
         <section className={style.cstBlock21section}>
-
             <div className={style.cstBlock21title}>
-                От заявки <br />
-                до результата <span className={style.cstBlock21titleBlue}>за 6 шагов</span>
+                {rich(TITLE, titleTags)}
             </div>
 
             <div className={style.cstBlock21cardContainer}>
-                <div className={`${style.cstBlock21card} ${style.cstBlock21cardArrowRight}`}>
-                    <div className={style.cstBlock21cardStep}>
-                        Шаг 1
+                {STEPS.map((step) => (
+                    <div
+                        key={step.step}
+                        className={`${style.cstBlock21card}${step.hasArrow ? ` ${style.cstBlock21cardArrowRight}` : ''}`}
+                    >
+                        <div className={style.cstBlock21cardStep}>{step.step}</div>
+                        <div className={style.cstBlock21cardText}>
+                            {rich(step.text, stepTags)}
+                        </div>
                     </div>
-                    <div className={style.cstBlock21cardText}>
-                        Разбираем <br />
-                        ситуацию <br/>
-                        <span className={style.cstBlock21cardTextBlue}>на созвоне</span>
-                    </div>
-                </div>
-                <div className={`${style.cstBlock21card} ${style.cstBlock21cardArrowRight}`}>
-                    <div className={style.cstBlock21cardStep}>
-                        Шаг 2
-                    </div>
-                    <div className={style.cstBlock21cardText}>
-                        Готовим<br/>
-                        <span className={style.cstBlock21cardTextBlue}> стратегию <br/>
-                        и расчёт</span>
-                    </div>
-                </div>
-                <div className={style.cstBlock21card}>
-                    <div className={style.cstBlock21cardStep}>
-                        Шаг 3
-                    </div>
-                    <div className={style.cstBlock21cardText}>
-                        Заключаем<br/>
-                        <span className={style.cstBlock21cardTextBlue}>договор</span>
-                    </div>
-                </div>
-                <div className={`${style.cstBlock21card} ${style.cstBlock21cardArrowRight}`}>
-                    <div className={style.cstBlock21cardStep}>
-                        Шаг 4
-                    </div>
-                    <div className={style.cstBlock21cardText}>
-                        Подключаем<br/>
-                        <span className={style.cstBlock21cardTextBlue}> работу <br/>
-                        на кабинете</span>
-                    </div>
-                </div>
-                <div className={`${style.cstBlock21card} ${style.cstBlock21cardArrowRight}`}>
-                    <div className={style.cstBlock21cardStep}>
-                        Шаг 5
-                    </div>
-                    <div className={style.cstBlock21cardText}>
-                        Обрабатываем<br/>
-                        <span className={style.cstBlock21cardTextBlue}>негативные <br />
-                        отзывы</span>
-                    </div>
-                </div>
-                <div className={style.cstBlock21card}>
-                    <div className={style.cstBlock21cardStep}>
-                        Шаг 6
-                    </div>
-                    <div className={style.cstBlock21cardText}>
-                        Получаем<br/>
-                        <span className={style.cstBlock21cardTextBlue}>результат</span>
-                    </div>
-                </div>
+                ))}
                 <div className={style.cstBlock21cardSvgArrow}>
                     <Block21svg1 />
                 </div>

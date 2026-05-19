@@ -102,6 +102,55 @@
 }
 
 .cstBlock8botOpen {
-    max-height: 300px;
+    max-height: 600px;
     margin-top: 35px;
+}
+
+@media (max-width: 1280px) {
+    .cstBlock8section {
+        width: 320px;
+        margin-top: 70px;
+        align-items: start;
+        padding: 0 10px;
+    }
+
+    .cstBlock8ownManager {
+        padding: 10px 15px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+    .cstBlock8title {
+        margin-top: 15px;
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .cstBlock8titleBlue {
+        font-size: 25px;
+    }
+
+    .cstBlock8cardContainer {
+        gap: 10px;
+        margin-top: 25px;
+    }
+
+    .cstBlock8card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .cstBlock8question {
+        font-size: 14px;
+    }
+
+    .cstBlock8bot {
+        font-size: 14px;
+    }
+
+    .cstBlock8botOpen {
+        max-height: 600px;
+        margin-top: 15px;
+    }
+
 }

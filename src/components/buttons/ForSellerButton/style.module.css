@@ -28,17 +28,17 @@
 }
 
 .cstForSellerbackgroundWhite {
-border-radius: 12px;
-background: #EEF3FD;
+    border-radius: 12px;
+    background: #EEF3FD;
 }
 
 .cstForSellerbackgroundTextWhite {
-color: #0163FC;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 20px; /* 142.857% */
+    color: #0163FC;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
 }
 
 .cstForSellerForSellerContainerWhite {
@@ -50,4 +50,19 @@ line-height: 20px; /* 142.857% */
     width: 24px;
     height: 24px;
     aspect-ratio: 1/1;
+}
+
+@media (max-width: 1280px) {
+    .cstForSellerbackground {
+        padding: 10px;
+    }
+
+    .cstForSellerbackgroundText {
+        font-size: 12px;
+    }
+
+    .cstForSellerForSeller {
+        width: 18px;
+        height: 18px;
+    }
 }

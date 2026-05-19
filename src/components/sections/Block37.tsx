@@ -1,25 +1,33 @@
 import style from '@/styles/block_37.module.css'
-import BlueButton from "@/components/buttons/BlueButton/BlueButton";
-import ForSellerButton from "@/components/buttons/ForSellerButton/ForSellerButton";
+import BlueButton from "@/components/buttons/BlueButton/BlueButton"
+import ForSellerButton from "@/components/buttons/ForSellerButton/ForSellerButton"
+import { rich } from '@/lib/richText'
+
+const SELLER_BADGE = 'Для селлеров'
+const TITLE = '<blue>1 подписка = полный безлимит</blue> <br/>на работу с отзывами, вопросами,<br/>чатами и рассылками'
+const DESCRIPTION = 'Подключайте все инструменты Reputa в рамках одного <br/>тарифа и автоматизируйте коммуникацию с покупателями  <br/>без ограничений по объёму'
+const CTA_HREF = 'https://app.reputa.ru'
+const CTA_LABEL = 'Попробовать бесплатно <b>14 дней</b>'
+
+const titleTags = {
+    blue: (c: string | null, k: number) => (
+        <span key={k} className={style.cstBlock37titleBlue}>{c}</span>
+    ),
+}
 
 export default function Block37() {
     return (
         <section className={style.cstBlock37section}>
-            <ForSellerButton hasStar={true}>Для селлеров</ForSellerButton>
+            <ForSellerButton hasStar={true}>{SELLER_BADGE}</ForSellerButton>
             <span className={style.cstBlock37title}>
-                <span className={style.cstBlock37titleBlue}>1 подписка = полный безлимит</span> <br/>
-                на работу с отзывами, вопросами,<br/>
-                чатами и рассылками
+                {rich(TITLE, titleTags)}
             </span>
 
             <span className={style.cstBlock37descriptions}>
-                Подключайте все инструменты Reputa в рамках одного <br/>
-                тарифа и автоматизируйте коммуникацию с покупателями  <br/>
-                без ограничений по объёму
+                {rich(DESCRIPTION)}
             </span>
 
-            <BlueButton href="https://app.reputa.ru">Попробовать бесплатно <b>14 дней</b></BlueButton>
-
+            <BlueButton href={CTA_HREF} label={CTA_LABEL}/>
         </section>
     )
 }

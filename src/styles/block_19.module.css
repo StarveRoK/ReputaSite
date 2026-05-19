@@ -75,3 +75,78 @@
     right: calc(100% + 20px);
     padding: 8px 11px 8px 9px;
 }
+
+.cstBlock19mobileSlider {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cstBlock19mobileCard {
+    width: 100%;
+}
+
+.cstBlock19mobileCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+}
+
+.cstBlock19mobileControls {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cstBlock19mobileArrow {
+    display: inline-flex;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    background: #066AFC;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.cstBlock19arrowDisabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+@media (max-width: 1280px) {
+    .cstBlock19section {
+        width: 320px;
+        margin-top: 70px;
+        padding: 0 10px;
+        align-items: start;
+    }
+
+    .cstBlock19ownManager {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .cstBlock19title {
+        font-size: 25px;
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    .cstBlock19titleBlue {
+        font-size: 25px;
+    }
+
+    .cstBlock19cardContainer {
+        display: none;
+    }
+
+    .cstBlock19mobileSlider {
+        display: flex;
+    }
+}

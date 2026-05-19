@@ -16,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
     max-width: 1440px;
-    min-width: 1440px;
+    width: 100%;
     padding: 0 70px;
 }
 
@@ -40,14 +40,18 @@
     cursor: pointer;
 }
 
-.cstHeaderText {
-    color: var(--color-dark);
+.cstHeaderText,
+.cstHeaderDropDownLink {
     font-family: var(--font-inter);
     font-size: var(--font-size-sm);
     font-weight: 500;
     line-height: 20px;
-    letter-spacing: -0.16px;
     transition: color .3s;
+}
+
+.cstHeaderText {
+    color: var(--color-dark);
+    letter-spacing: -0.16px;
 }
 
 .cstHeaderText:hover {
@@ -112,7 +116,7 @@
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translateX(-50%);
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
@@ -133,13 +137,55 @@
 
 .cstHeaderDropDownLink {
     color: var(--color-bg);
-    font-family: var(--font-inter);
-    font-size: var(--font-size-sm);
-    font-weight: 500;
-    line-height: 20px;
-    transition: color .3s;
 }
 
 .cstHeaderDropDownLink:hover {
     color: #8AB7FD;
+}
+
+.cstHeaderBtnBurger {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 7px;
+    background: #EEF3FD;
+}
+
+/* Десктоп */
+@media (max-width: 1280px) {
+    :global(header) {
+        height: 60px;
+    }
+    .cstHeader{
+        padding: 0 10px;
+        width: 320px;
+    }
+
+    .cstHeaderBtnBurger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cstHeaderBtnContainer,
+    .cstHeaderLinksIcons,
+    .cstGapHeaderDiv{
+        display: none;
+    }
+}
+
+/* Ноутбуки */
+@media (max-width: 1024px) {
+}
+
+/* Планшеты */
+@media (max-width: 768px) {
+}
+
+/* Мобильные */
+@media (max-width: 480px) {
 }

@@ -59,3 +59,33 @@
     width: 73px;
     height: 73px;
 }
+
+@media (max-width: 1280px) {
+    .cstBlock34section {
+        width: 320px;
+        margin-top: 70px;
+        padding: 20px;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .cstBlock34icon {
+        width: 65px;
+        height: 65px;
+    }
+
+    .cstBlock34title {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .cstBlock34description {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .cstBlock34iconsContainer svg {
+        width: 50px;
+        height: 50px;
+    }
+}

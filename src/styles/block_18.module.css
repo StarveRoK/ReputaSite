@@ -82,3 +82,45 @@
     right: 0;
     z-index: -1;
 }
+
+@media (max-width: 1280px) {
+    .cstBlock18section {
+        width: 320px;
+        margin-top: 70px;
+        padding: 20px 20px 30px 20px;
+    }
+
+    .cstBlock18features {
+        font-size: 25px;
+    }
+
+    .cstBlock18featuresBlue {
+        font-size: 25px;
+    }
+
+    .cstBlock18list {
+        margin-top: 20px;
+    }
+
+    .cstBlock18row {
+        padding: 12px 15px;
+        width: auto;
+    }
+
+    .cstBlock18colText {
+        font-size: 14px;
+    }
+
+    .cstBlock18description {
+        font-size: 12px;
+    }
+
+    .cstBlock18bigImage {
+        margin-top: 20px;
+                position: relative;
+        width: 100%;
+        top: 0;
+        right: 0;
+        height: auto;
+    }
+}

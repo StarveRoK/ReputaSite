@@ -1,44 +1,48 @@
 import style from '@/styles/block_25.module.css'
-import BlueButton from "@/components/buttons/BlueButton/BlueButton";
-import Block25svg1 from "@/components/ui/Block25svg1";
+import BlueButton from "@/components/buttons/BlueButton/BlueButton"
+import Block25svg1 from "@/components/ui/Block25svg1"
+import { rich } from '@/lib/richText'
+
+const PRE_TITLE = 'Полная автоматизация рассылок <b>в один клик</b>'
+const TITLE = 'Запускайте рассылки <br/>по базе покупателей<br/>с оценкой 5★, просто <br/>нажав кнопку «Отправить»'
+const DESCRIPTION = 'От вас нужен только текст сообщения <b>— напишите свой,<br/>или адаптируйте готовые шаблоны Reputa</b> под вашу <br/>акцию, новинку или повторную продажу'
+const IMAGE = { src: '/images/Block25.png', alt: 'Block25' }
+const FLOAT_TITLE = 'Ваша рассылка:'
+const FLOAT_DESCRIPTION = 'Как насчет зaказать<br/>новый набор?'
+const CTA_HREF = 'https://app.reputa.ru'
+const CTA_LABEL = 'Отправить'
 
 export default function Block25() {
     return (
         <section className={style.cstBlock25section}>
             <div className={style.cstBlock25titleContainer}>
                 <div className={style.cstBlock25preTitle}>
-                    Полная автоматизация рассылок <b>в один клик</b>
+                    {rich(PRE_TITLE)}
                 </div>
                 <div className={style.cstBlock25title}>
-                    Запускайте рассылки <br/>
-                    по базе покупателей<br/>
-                    с оценкой 5★, просто <br/>
-                    нажав кнопку «Отправить»
+                    {rich(TITLE)}
                 </div>
                 <div className={style.cstBlock25description}>
-                    От вас нужен только текст сообщения <b>— напишите свой,<br/>
-                    или адаптируйте готовые шаблоны Reputa</b> под вашу <br/>
-                    акцию, новинку или повторную продажу
+                    {rich(DESCRIPTION)}
                 </div>
             </div>
 
             <div className={style.cstBlock25titleImages}>
-                <img src="/images/Block25.png" alt="Block25"/>
+                <img src={IMAGE.src} alt={IMAGE.alt}/>
                 <div className={style.cstBlock25absContainerIn}>
                     <div className={style.cstBlock25absTop}>
                         <div className={style.cstBlock25absIcon}>
                             <Block25svg1 />
                         </div>
                         <div className={style.cstBlock25absTextContainer}>
-                            <span className={style.cstBlock25absTitle}>Ваша рассылка:</span>
+                            <span className={style.cstBlock25absTitle}>{FLOAT_TITLE}</span>
                             <span className={style.cstBlock25absDescription}>
-                                Как насчет зaказать<br/>
-                                новый набор?
+                                {rich(FLOAT_DESCRIPTION)}
                             </span>
                         </div>
                     </div>
                     <div className={style.cstBlock25Btn}>
-                        <BlueButton href="https://app.reputa.ru">Отправить</BlueButton>
+                        <BlueButton href={CTA_HREF}>{CTA_LABEL}</BlueButton>
                     </div>
                 </div>
             </div>

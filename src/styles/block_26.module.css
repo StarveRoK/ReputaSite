@@ -27,3 +27,22 @@
     font-weight: 600;
     line-height: 110%;
 }
+
+@media (max-width: 1280px) {
+    .cstBlock26section {
+        width: 320px;
+        margin-top: 70px;
+        padding: 0 10px;
+        align-items: start;
+    }
+
+    .cstBlock26features {
+        font-size: 25px;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .cstBlock26featuresBlue {
+        font-size: 25px;
+    }
+}

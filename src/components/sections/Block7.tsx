@@ -1,51 +1,62 @@
-import style from '@/styles/block_7.module.css'
-import ReputaSVG from "@/components/ui/ReputaSVG";
+import style from '@/styles/block_7.module.css';
+import ReputaSVG from '@/components/ui/ReputaSVG';
+import { rich } from '@/lib/richText';
+
+const TITLE = 'Лидеры <blue> в репутационном </blue> <blue> менеджменте </blue>на маркетплейсах';
+
+const STATS = [
+    {
+        title: '<blue>350 000</blue>',
+        big: true,
+        description: 'успешно отработанных негативных отзывов',
+    },
+    {
+        title: '<blue>Стартап</blue> года',
+        big: false,
+        description: 'по версии MP Sellers Awards',
+    },
+    {
+        title: 'Участники <blue>и спикеры</blue>',
+        big: false,
+        description: 'на выставках, форумах и конференциях',
+    },
+];
+
+const titleTags = {
+    blue: (c: string | null, k: number) => (
+        <span key={k} className={style.cstBlock7titleBlue}>{c}</span>
+    ),
+};
+
+const cardTitleTags = {
+    blue: (c: string | null, k: number) => (
+        <span key={k} className={style.cstBlock7cardBlue}>{c}</span>
+    ),
+};
 
 export default function Block7() {
     return (
         <section className={style.cstBlock7section}>
-
             <div className={style.cstBlock7ownManager}>
                 <ReputaSVG />
             </div>
 
             <div className={style.cstBlock7title}>
-                Лидеры <span className={style.cstBlock7titleBlue}> в репутационном <br/> менеджменте </span>
-                на маркетплейсах
+                {rich(TITLE, titleTags)}
             </div>
 
             <div className={style.cstBlock7cardContainer}>
-                <div className={style.cstBlock7card}>
-                    <div className={`${style.cstBlock7cardTitle} ${style.cstBlock7cardBlue} ${style.cstBlock7cardTitleBig}`}>
-                        350 000
+                {STATS.map((item) => (
+                    <div key={item.description} className={style.cstBlock7card}>
+                        <div className={`${style.cstBlock7cardTitle}${item.big ? ` ${style.cstBlock7cardTitleBig}` : ''}`}>
+                            {rich(item.title, cardTitleTags)}
+                        </div>
+                        <div className={style.cstBlock7cardDescription}>
+                            {rich(item.description)}
+                        </div>
                     </div>
-                    <div className={style.cstBlock7cardDescription}>
-                        успешно отработанных<br /> негативных отзывов
-                    </div>
-                </div>
-
-                <div className={style.cstBlock7card}>
-                    <div className={style.cstBlock7cardTitle}>
-                        <span className={style.cstBlock7cardBlue}>Стартап</span><br/>
-                        года
-                    </div>
-                    <div className={style.cstBlock7cardDescription}>
-                        по версии<br /> MP Sellers Awards
-                    </div>
-                </div>
-
-                <div className={style.cstBlock7card}>
-                    <div className={style.cstBlock7cardTitle}>
-                        Участники<br />
-                        <span className={style.cstBlock7cardBlue}>и спикеры</span>
-
-                    </div>
-                    <div className={style.cstBlock7cardDescription}>
-                        на выставках, форумах<br /> и конференциях
-                    </div>
-                </div>
-
+                ))}
             </div>
         </section>
-    )
+    );
 }

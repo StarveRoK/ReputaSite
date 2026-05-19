@@ -106,3 +106,58 @@
     font-weight: 500;
     line-height: 22px;
 }
+
+@media (max-width: 1280px) {
+    .cstBlock39section {
+        width: 320px;
+        margin-top: 70px;
+        padding: 0 10px;
+        align-items: start;
+    }
+
+    .cstBlock39ownManager {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .cstBlock39title {
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .cstBlock39titleBlue {
+        font-size: 25px;
+    }
+
+    .cstBlock39description {
+        font-size: 14px;
+        text-align: left;
+        margin-top: 25px;
+    }
+
+    .cstBlock39subDescription {
+        font-size: 20px;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .cstBlock39cardContainer {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 25px;
+    }
+
+    .cstBlock39card {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .cstBlock39cardTop {
+        width: 100%;
+        height: auto;
+    }
+
+    .cstBlock39cardTopText {
+        font-size: 14px;
+    }
+}

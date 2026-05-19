@@ -7,22 +7,33 @@
     border-radius: 20px;
     margin-top: 30px;
     width: max-content;
-    background: linear-gradient(90deg, #0163FC, #3AADFD, #0163FC);
+    height: max-content;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light), var(--color-primary));
     background-size: 200% 100%;
     background-position: 0% 0%;
-    color: #FFF;
-    font-family: var(--font-inter), sans-serif;
+    color: #fff;
+    font-family: var(--font-inter);
     font-size: var(--font-size-lg);
     font-weight: 500;
     line-height: 25px;
     transition: background-position 0.4s ease;
-    height: max-content;
 }
 
-.cstBlueButtonNoMargin{
+.cstBlueButtonNoMargin {
     margin: 0;
 }
 
 .cstBlueButton:hover {
     background-position: 100% 0%;
+}
+
+@media (max-width: 1280px) {
+    .cstBlueButton {
+        display: flex;
+        padding: 15px 20px;
+        width: 100%;
+        max-width: 300px;
+        margin-top: 20px;
+        font-size: var(--font-size-sm);
+    }
 }

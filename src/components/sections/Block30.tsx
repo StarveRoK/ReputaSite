@@ -1,62 +1,61 @@
 import style from '@/styles/block_30.module.css'
-import ReputaSVG from "@/components/ui/ReputaSVG";
-import Block30svg1 from "@/components/ui/Block30svg1";
-import Block30svg2 from "@/components/ui/Block30svg2";
-import Block30svg3 from "@/components/ui/Block30svg3";
+import ReputaSVG from "@/components/ui/ReputaSVG"
+import Block30svg1 from "@/components/ui/Block30svg1"
+import Block30svg2 from "@/components/ui/Block30svg2"
+import Block30svg3 from "@/components/ui/Block30svg3"
+import { rich } from '@/lib/richText'
+
+const DESCRIPTION = 'Помогаем селлерам <blue>убирать до 90% <br/>негативных отзывов</blue>, повышать рейтинг товаров <br/>и выстраивать <blue>автоматизированную работу <br/>с отзывами, вопросами, чатами и рассылками</blue>'
+
+const STATS = [
+    {
+        Icon: Block30svg1,
+        title: '350 000+',
+        description: 'обработанных негативных<br />отзывов',
+    },
+    {
+        Icon: Block30svg2,
+        title: '500+',
+        description: 'кабинетов в работе',
+    },
+    {
+        Icon: Block30svg3,
+        title: '100+',
+        description: 'ниш на маркетплейсах',
+    },
+]
+
+const descriptionTags = {
+    blue: (c: string | null, k: number) => (
+        <span key={k} className={style.cstBlock30titleBlue}>{c}</span>
+    ),
+}
 
 export default function Block30() {
     return (
         <section className={style.cstBlock30section}>
-
             <div className={style.cstBlock30ownManager}>
                 <ReputaSVG />
             </div>
 
             <div className={style.cstBlock30title}>
-                Помогаем селлерам <span className={style.cstBlock30titleBlue}>убирать до 90% <br/>
-                негативных отзывов</span>, повышать рейтинг товаров <br/>
-                и выстраивать <span className={style.cstBlock30titleBlue}>автоматизированную работу <br/>
-                с отзывами, вопросами, чатами и рассылками</span>
+                {rich(DESCRIPTION, descriptionTags)}
             </div>
 
             <div className={style.cstBlock30cardContainer}>
-                <div className={style.cstBlock30card}>
-                    <div className={style.cstBlock30cardIcon}>
-                        <Block30svg1/>
+                {STATS.map((stat) => (
+                    <div key={stat.title} className={style.cstBlock30card}>
+                        <div className={style.cstBlock30cardIcon}>
+                            <stat.Icon/>
+                        </div>
+                        <div className={style.cstBlock30cardTitle}>
+                            {stat.title}
+                        </div>
+                        <div className={style.cstBlock30cardDescription}>
+                            {rich(stat.description)}
+                        </div>
                     </div>
-                    <div className={style.cstBlock30cardTitle}>
-                        350 000+
-                    </div>
-                    <div className={style.cstBlock30cardDescription}>
-                        обработанных негативных<br />
-                        отзывов
-                    </div>
-                </div>
-
-                <div className={style.cstBlock30card}>
-                    <div className={style.cstBlock30cardIcon}>
-                        <Block30svg2/>
-                    </div>
-                    <div className={style.cstBlock30cardTitle}>
-                        500+
-                    </div>
-                    <div className={style.cstBlock30cardDescription}>
-                        кабинетов в работе
-                    </div>
-                </div>
-
-                <div className={style.cstBlock30card}>
-                    <div className={style.cstBlock30cardIcon}>
-                        <Block30svg3/>
-                    </div>
-                    <div className={style.cstBlock30cardTitle}>
-                        100+
-                    </div>
-                    <div className={style.cstBlock30cardDescription}>
-                        ниш на маркетплейсах
-                    </div>
-                </div>
-
+                ))}
             </div>
         </section>
     )

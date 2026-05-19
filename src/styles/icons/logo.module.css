@@ -5,3 +5,9 @@
 .logoSvg:hover path {
     fill: var(--color-primary) !important;
 }
+
+@media (max-width: 1280px) {
+    .logoSvg{
+        width: 90px;
+    }
+}

@@ -59,3 +59,38 @@
     -webkit-text-fill-color: transparent;
     font-weight: 600;
 }
+
+@media (max-width: 1280px) {
+    .cstBlock14section {
+        width: 320px;
+        margin-top: 70px;
+        padding: 0 10px;
+        align-items: start;
+    }
+
+    .cstBlock14title {
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .cstBlock14titleBlue {
+        font-size: 25px;
+    }
+
+    .cstBlock14cardContainer {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .cstBlock14card {
+        width: 100%;
+        padding: 20px 20px 30px 20px;
+    }
+
+    .cstBlock14cardDescription {
+        font-size: 20px;
+        width: 100%;
+    }
+}

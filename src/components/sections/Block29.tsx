@@ -1,20 +1,22 @@
 import style from '@/styles/block_29.module.css'
-import WhiteButton from "@/components/buttons/WhiteButton/WhiteButton";
+import WhiteButton from "@/components/buttons/WhiteButton/WhiteButton"
+import { rich } from '@/lib/richText'
 
+const TITLE = '<b>Не теряйте клиентов</b> <br />из-за пропущенных чатов'
+const DESCRIPTION = 'Оставьте заявку — покажем, как выстроить<br/>работу с чатами и ускорить ответы'
+const CTA_HREF = 'https://app.reputa.ru'
+const CTA_LABEL = 'Попробовать бесплатно <b>14 дней</b>'
 
 export default function Block29() {
     return (
         <section className={style.cstBlock29section}>
             <span className={style.cstBlock29title}>
-                <b>Не теряйте клиентов</b> <br />
-                из-за пропущенных чатов
+                {rich(TITLE)}
             </span>
             <span className={style.cstBlock29description}>
-                Оставьте заявку — покажем, как выстроить<br/>
-                работу с чатами и ускорить ответы
+                {rich(DESCRIPTION)}
             </span>
-            <WhiteButton href="https://app.reputa.ru">Попробовать бесплатно <b>14 дней</b></WhiteButton>
-
+            <WhiteButton href={CTA_HREF} hideIcon={true} label={CTA_LABEL}/>
         </section>
     )
 }

@@ -96,3 +96,60 @@
     font-weight: 500;
     line-height: 25px;
 }
+
+@media (max-width: 1280px) {
+    .cstBlock15section {
+        width: 320px;
+        margin-top: 70px;
+        padding: 0 10px;
+        align-items: start;
+    }
+
+    .cstBlock15title {
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .cstBlock15titleBlue {
+        font-size: 25px;
+    }
+
+    .cstBlock15cardContainer {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .cstBlock15card {
+        width: 100%;
+        padding: 20px 20px 30px 20px;
+    }
+
+    .cstBlock15cardImage {
+        width: 65px;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cstBlock15cardImage img {
+        max-width: 80%;
+        max-height: 80%;
+    }
+
+    .cstBlock15cardTitle {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .cstBlock15cardDescription {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .cstBlock15btn {
+        margin-top: 25px;
+    }
+}

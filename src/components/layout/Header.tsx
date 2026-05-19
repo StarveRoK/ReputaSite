@@ -16,6 +16,7 @@ import {ROUTES} from "@/lib/routes";
 import RegisterButton from "@/components/buttons/RegisterButton/RegisterButton";
 import LoginButton from "@/components/buttons/LoginButton/LoginButton";
 import {useEffect, useRef, useState} from "react";
+import Burger from "@/components/ui/Burger";
 
 
 export default function Header() {
@@ -87,6 +88,10 @@ export default function Header() {
                 <div className={style.cstHeaderBtnContainer}>
                     <LoginButton />
                     <RegisterButton />
+                </div>
+
+                <div className={style.cstHeaderBtnBurger}>
+                    <Burger/>
                 </div>
             </div>
         </header>

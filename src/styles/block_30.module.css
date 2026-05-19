@@ -90,3 +90,45 @@
     line-height: 22px;
     margin-top: 25px;
 }
+
+@media (max-width: 1280px) {
+    .cstBlock30section {
+        width: 320px;
+        margin-top: 70px;
+        padding: 0 10px;
+        align-items: start;
+    }
+
+    .cstBlock30ownManager {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .cstBlock30title {
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .cstBlock30titleBlue {
+        font-size: 25px;
+    }
+
+    .cstBlock30cardContainer {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 25px;
+    }
+
+    .cstBlock30card {
+        padding: 20px 20px 30px 20px;
+    }
+
+    .cstBlock30cardTitle {
+        font-size: 25px;
+    }
+
+    .cstBlock30cardDescription {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+}

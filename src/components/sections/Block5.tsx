@@ -1,63 +1,48 @@
-import style from '@/styles/block_5.module.css'
+import style from '@/styles/block_5.module.css';
+import { rich } from '@/lib/richText';
+
+const TAG_LABEL = 'Ваш личный менеджер <b>24/7</b>';
+const TITLE = 'От настройки  до автоматизации <blue> за 4 шага </blue>';
+
+const STEPS = [
+    { step: 'Шаг 1', description: 'Подключаем кабинет  через API' },
+    { step: 'Шаг 2', description: 'Добавляете базу знаний,  настраиваете стиль  общения и допродажи' },
+    { step: 'Шаг 3', description: 'Система анализирует  отзывы, вопросы  и чаты' },
+    { step: 'Шаг 4', description: 'AI генерирует ответы  на основе вашей базы  знаний и отправляет  покупателям' },
+];
+
+const titleTags = {
+    blue: (c: string | null, k: number) => (
+        <span key={k} className={style.cstBlock5titleBlue}>{c}</span>
+    ),
+};
 
 export default function Block5() {
     return (
         <section className={style.cstBlock5section}>
-
             <div className={style.cstBlock5ownManager}>
-                Ваш личный менеджер <b>24/7</b>
+                {rich(TAG_LABEL)}
             </div>
 
             <div className={style.cstBlock5title}>
-                От настройки <br />
-                до автоматизации <span className={style.cstBlock5titleBlue}> за 4 шага </span>
+                {rich(TITLE, titleTags)}
             </div>
 
             <div className={style.cstBlock5cardContainer}>
-                <div className={style.cstBlock5card}>
-                    <div className={style.cstBlock5step}>
-                        Шаг 1
+                {STEPS.map((item) => (
+                    <div key={item.step} className={style.cstBlock5card}>
+                        <div className={style.cstBlock5step}>{item.step}</div>
+                        <div className={style.cstBlock5img} />
+                        <div className={style.cstBlock5descriptionContainer}>
+                            <div className={style.cstBlock5stepMobile}>{item.step}</div>
+                            <div className={style.cstBlock5description}>
+                                {rich(item.description)}
+                            </div>
+                        </div>
+
                     </div>
-                    <div className={style.cstBlock5img}></div>
-                    <div className={style.cstBlock5description}>
-                        Подключаем кабинет <br /> через API
-                    </div>
-                </div>
-                <div className={style.cstBlock5card}>
-                    <div className={style.cstBlock5step}>
-                        Шаг 2
-                    </div>
-                    <div className={style.cstBlock5img}></div>
-                    <div className={style.cstBlock5description}>
-                        Добавляете базу знаний, <br />
-                        настраиваете стиль <br />
-                        общения и допродажи
-                    </div>
-                </div>
-                <div className={style.cstBlock5card}>
-                    <div className={style.cstBlock5step}>
-                        Шаг 3
-                    </div>
-                    <div className={style.cstBlock5img}></div>
-                    <div className={style.cstBlock5description}>
-                        Система анализирует <br />
-                        отзывы, вопросы <br />
-                        и чаты
-                    </div>
-                </div>
-                <div className={style.cstBlock5card}>
-                    <div className={style.cstBlock5step}>
-                        Шаг 4
-                    </div>
-                    <div className={style.cstBlock5img}></div>
-                    <div className={style.cstBlock5description}>
-                        AI генерирует ответы <br />
-                        на основе вашей базы <br />
-                        знаний и отправляет <br />
-                        покупателям
-                    </div>
-                </div>
+                ))}
             </div>
         </section>
-    )
+    );
 }

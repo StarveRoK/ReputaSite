@@ -5,67 +5,73 @@ import Benefit3 from "@/components/ui/Benefit3";
 import Benefit4 from "@/components/ui/Benefit4";
 import BlueButton from "@/components/buttons/BlueButton/BlueButton";
 import ForSellerButton from "@/components/buttons/ForSellerButton/ForSellerButton";
+import { rich } from "@/lib/richText";
+
+const TAG_LABEL = 'Для селлеров';
+
+const HEADING = 'Управляем отзывами и репутацией% для роста ваших продаж%';
+
+const SUBTITLE = 'Убираем негатив, автоматизируем ответы на отзывы, вопросы с помощью AI';
+
+const CTA_HREF = 'https://app.reputa.ru';
+const CTA_TEXT = 'Попробовать бесплатно <b>14 дней</b>';
+
+const SOCIAL_PROOF_COUNT = '700+';
+const SOCIAL_PROOF_TEXT = '<b>Более 700 продавцов</b><br/>уже растут с Reputa';
+const SOCIAL_PROOF_IMAGES = [
+    { src: '/images/social_proof_1.png', alt: 'social_proof_1' },
+    { src: '/images/social_proof_2.png', alt: 'social_proof_2' },
+    { src: '/images/social_proof_3.png', alt: 'social_proof_3' },
+];
+
+const BENEFITS = [
+    { Icon: Benefit1, title: 'Безопасно',       description: 'Работаем в рамках правил площадки' },
+    { Icon: Benefit2, title: 'Конфиденциально', description: 'Ваш магазин и данные под защитой' },
+    { Icon: Benefit3, title: 'Быстро',          description: 'Оперативная реакция на каждый отзыв' },
+    { Icon: Benefit4, title: 'Результативно',   description: 'Выше рейтинг — больше продаж' },
+];
+
+const HERO_IMAGE = { src: '/images/hero_big_image.png', alt: 'hero_big_image' };
 
 export default function HeroSection() {
     return (
         <section className={style.cstHeroSection}>
-            <ForSellerButton hasStar={true}>Для селлеров</ForSellerButton>
+            <ForSellerButton hasStar={true}>{TAG_LABEL}</ForSellerButton>
 
             <span className={style.cstFeatures}>
-                Управляем отзывами <br/>и репутацией
-                <span className={style.cstFeaturesBlue}> для роста <br/>ваших продаж</span>
+                {rich(HEADING, undefined, {
+                    '%': (c, k) => <span key={k} className={style.cstFeaturesBlue}>{c}</span>,
+                })}
             </span>
 
-            <span className={style.cstFeatures2}>
-                Убираем негатив, автоматизируем ответы на отзывы, вопросы с помощью AI
-            </span>
+            <span className={style.cstFeatures2}>{SUBTITLE}</span>
 
-            <BlueButton href="https://app.reputa.ru">Попробовать бесплатно <b>14 дней</b></BlueButton>
-
+            <BlueButton href={CTA_HREF} label={CTA_TEXT} />
 
             <div className={style.cstSocialProofContainer}>
                 <div className={style.cstSocialProofIconsContainer}>
-                    <img src="/images/social_proof_1.png" alt='social_proof_1' className={style.cstSocialProofImage}/>
-                    <img src="/images/social_proof_2.png" alt='social_proof_2' className={style.cstSocialProofImage}/>
-                    <img src="/images/social_proof_3.png" alt='social_proof_3' className={style.cstSocialProofImage}/>
-                    <div className={style.cstSocialProofImageBackground}>700+</div>
+                    {SOCIAL_PROOF_IMAGES.map((img) => (
+                        <img key={img.src} src={img.src} alt={img.alt} className={style.cstSocialProofImage}/>
+                    ))}
+                    <div className={style.cstSocialProofImageBackground}>{SOCIAL_PROOF_COUNT}</div>
                 </div>
-                <span className={style.cstSocialProofText}><b>Более 700 продавцов</b> <br/>уже растут с Reputa</span>
-            </div>
-
-            <div className={style.cstHeroBenefitContainer}>
-                <div className={style.cstHeroBenefitBlock}>
-                    <div className={style.cstHeroBenefitIcon}><Benefit1/></div>
-                    <div className={style.cstHeroBenefitTextContainer}>
-                        <span className={style.cstHeroBenefitTitle}>Безопасно</span>
-                        <span className={style.cstHeroBenefitDescription}>Работаем в рамках <br/> правил площадки</span>
-                    </div>
-                </div>
-                <div className={style.cstHeroBenefitBlock}>
-                    <div className={style.cstHeroBenefitIcon}><Benefit2/></div>
-                    <div className={style.cstHeroBenefitTextContainer}>
-                        <span className={style.cstHeroBenefitTitle}>Конфиденциально</span>
-                        <span className={style.cstHeroBenefitDescription}>Ваш магазин и данные <br/> под защитой</span>
-                    </div>
-                </div>
-                <div className={style.cstHeroBenefitBlock}>
-                    <div className={style.cstHeroBenefitIcon}><Benefit3/></div>
-                    <div className={style.cstHeroBenefitTextContainer}>
-                        <span className={style.cstHeroBenefitTitle}>Быстро</span>
-                        <span
-                            className={style.cstHeroBenefitDescription}>Оперативная реакция <br/> на каждый отзыв</span>
-                    </div>
-                </div>
-                <div className={style.cstHeroBenefitBlock}>
-                    <div className={style.cstHeroBenefitIcon}><Benefit4/></div>
-                    <div className={style.cstHeroBenefitTextContainer}>
-                        <span className={style.cstHeroBenefitTitle}>Результативно</span>
-                        <span className={style.cstHeroBenefitDescription}>Выше рейтинг — <br/>больше продаж</span>
-                    </div>
-                </div>
+                <span className={style.cstSocialProofText}>
+                    {rich(SOCIAL_PROOF_TEXT)}
+                </span>
             </div>
             <div className={style.cstHeroBigImage}>
-                <img src="/images/hero_big_image.png" alt="hero_big_image"/>
+                <img src={HERO_IMAGE.src} alt={HERO_IMAGE.alt}/>
+            </div>
+            <div className={style.cstHeroBenefitContainer}>
+                {BENEFITS.map(({Icon, title, description}) => (
+                    <div key={title} className={style.cstHeroBenefitBlock}>
+                        <div className={style.cstHeroBenefitIcon}><Icon/></div>
+                        <div className={style.cstHeroBenefitTextContainer}>
+                            <span className={style.cstHeroBenefitTitle}>{title}</span>
+                            <span className={style.cstHeroBenefitDescription}>{description}</span>
+                        </div>
+                    </div>
+                ))}
             </div>
         </section>
     )

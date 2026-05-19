@@ -75,4 +75,267 @@
 
 .cstBlock11sectionRight {
     width: 550px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid var(--color-border);
+    background: var(--color-bg);
+    display: flex;
+    gap: 10px;
+}
+
+.cstBlock11sectionRightName {
+    display: flex;
+    width: 35px;
+    padding: 6px 11px 7px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: var(--color-primary);
+    color: var(--color-bg);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    line-height: 22px;
+    height: min-content;
+}
+.cstBlock11sectionRightNameMobile{
+    display: none;
+}
+.cstBlock11sectionRightContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.cstBlock11sectionNameTop {
+    display: flex;
+    gap: 12px;
+}
+
+.cstBlock11sectionNameTopSpan {
+    color: var(--color-dark);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-md);
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.cstBlock11sectionNameTopStar {
+    color: var(--color-primary);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-md);
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.cstBlock11sectionNameTopStarBad {
+    color: var(--color-border);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-md);
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.cstBlock11sectionDescription {
+    width: 270px;
+    color: var(--color-gray);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 12px;
+}
+
+.cstBlock11sectionRightBot {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+    background: var(--color-bg);
+    margin-top: 23px;
+}
+
+.cstBlock11sectionRightNameSub {
+    min-width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    background: var(--color-blue-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cstBlock11sectionRightNameSubMobile{
+    display: none;
+}
+
+.cstBlock11sectionRightContainerSub {
+    display: flex;
+    flex-direction: column;
+}
+
+.cstBlock11sectionNameTopAI {
+    color: var(--color-primary);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-md);
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.cstBlock11sectionDescriptionSub {
+    color: var(--color-gray);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 12px;
+}
+
+.cstBlock11sectionItemContainer {
+    border-radius: 10px;
+    border: 1px solid var(--color-border);
+    background: var(--color-bg);
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.cstBlock11sectionItemImage {
+    width: 47px;
+}
+
+.cstBlock11sectionItemDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cstBlock11sectionItemTitle {
+    color: var(--color-dark);
+    font-family: var(--font-inter);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.cstBlock11sectionItemDescriptionDiv {
+    display: flex;
+    gap: 15px;
+}
+
+.cstBlock11sectionItemMark {
+    color: var(--color-primary);
+    font-family: var(--font-inter);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.cstBlock11sectionItemLink {
+    color: var(--color-primary);
+    font-family: var(--font-inter);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+@media (max-width: 1280px) {
+    .cstBlock11section {
+        width: 320px;
+        margin-top: 70px;
+        padding: 0 10px;
+        gap: 25px;
+    }
+
+    .cstBlock11sectionContainer {
+        flex-direction: column;
+    }
+
+    .cstBlock11background {
+        padding: 10px 15px;
+    }
+
+    .cstBlock11backgroundText {
+        font-size: 12px;
+    }
+
+    .cstBlock11title {
+        font-size: 25px;
+    }
+
+    .cstBlock11titleBlue {
+        font-size: 25px;
+    }
+
+    .cstBlock11description {
+        font-size: 20px;
+    }
+
+    .cstBlock11sectionRight {
+        width: 100%;
+    }
+    .cstBlock11sectionRightName{
+        display: none;
+    }
+    .cstBlock11sectionRightNameMobile{
+        display: flex;
+width: 35px;
+padding: 6px 11px 7px 12px;
+justify-content: center;
+align-items: center;
+        border-radius: 100px;
+background: #066AFC;
+        color: #FBFBFD;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 137.5% */
+    }
+    .cstBlock11sectionRightNameSubMobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+height: 35px;
+    }
+    .cstBlock11sectionRightNameSub{
+        display: none;
+    }
+    .cstBlock11sectionDescription{
+        display: flex;
+        width: 100%;
+    }
+    .cstBlock11sectionItemDescriptionDiv {
+    flex-direction: column;
+        gap: 10px;
+}
+    .cstBlock11sectionItemContainer{
+        align-items: start;
+        padding: 10px;
+    }
+    .cstBlock11sectionRightNameSubContainer{
+        display: flex;
+        gap: 12px;
+    }
+.cstBlock11sectionRightBot{
+    padding: 15px;
+}
+.cstBlock11sectionRight{
+    margin-top: 25px;
+}
+.cstBlock11sectionDescription{
+    font-size: 14px;
+}
+.cstBlock11sectionDescriptionSub{
+    font-size: 12px;
+}
+.cstBlock11sectionItemTitle{
+    font-size: 12px;
+}
+.cstBlock11sectionItemImage{
+    min-width: 47px;
+}
 }

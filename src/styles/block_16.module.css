@@ -95,3 +95,47 @@
     width: 87px;
     height: 87px;
 }
+
+@media (max-width: 1280px) {
+    .cstBlock16section {
+        width: 320px;
+        margin-top: 70px;
+        padding: 0 10px;
+    }
+
+    .cstBlock16title {
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .cstBlock16titleBlue {
+        font-size: 25px;
+    }
+
+    .cstBlock16productContainer {
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .cstBlock16productBlock {
+        width: 100%;
+    }
+
+    .cstBlock16productDescriptionNumber {
+        padding: 12px 19px;
+    }
+
+    .cstBlock16productDescriptionTitle {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .cstBlock16productDescriptionTitleBlue {
+        font-size: 20px;
+    }
+
+    .cstBlock16productDescriptionDescription {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+}

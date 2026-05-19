@@ -59,3 +59,27 @@
     border-radius: 15px;
     overflow: hidden;
 }
+
+@media (max-width: 1280px) {
+    .cstBlock31section {
+        width: 320px;
+        margin-top: 70px;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .cstBlock31title {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+
+    .cstBlock31description {
+        font-size: 12px;
+        padding: 10px 15px;
+        width: auto;
+    }
+
+    .cstBlock31imgContainer {
+        display: none;
+    }
+}

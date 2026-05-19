@@ -61,3 +61,38 @@
     right: -70px;
     z-index: -1;
 }
+
+@media (max-width: 1280px) {
+    .cstBlock10section {
+        width: 320px;
+        margin-top: 70px;
+        padding: 0 10px;
+    }
+
+    .cstBlock10features {
+        font-size: 25px;
+    }
+
+    .cstBlock10featuresBlue {
+        font-size: 25px;
+    }
+
+    .cstBlock10features2 {
+        width: 100%;
+        font-size: 14px;
+        margin-top: 25px;
+    }
+
+    .cstBlock10btn {
+        font-size: 14px;
+        padding: 18px 25px;
+    }
+
+    .cstBlock10bigImage {
+        width: 100%;
+        height: auto;
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+}

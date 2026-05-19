@@ -25,3 +25,18 @@
 .cstWhiteButton:hover path {
     fill: var(--color-bg);
 }
+
+.cstWhiteButtonNoMargin {
+    margin: 0;
+}
+
+@media (max-width: 1280px) {
+    .cstWhiteButton {
+        display: flex;
+        padding: 15px 20px;
+        width: 100%;
+        max-width: 300px;
+        margin-top: 20px;
+        font-size: var(--font-size-sm);
+    }
+}

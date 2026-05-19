@@ -86,3 +86,48 @@ top: 62%;
     transform: translate(-50%, -50%);
         z-index: 0;
 }
+
+@media (max-width: 1280px) {
+    .cstBlock21section {
+        width: 320px;
+        margin-top: 70px;
+        padding: 0 10px;
+        align-items: start;
+    }
+
+    .cstBlock21title {
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .cstBlock21titleBlue {
+        font-size: 25px;
+    }
+
+    .cstBlock21cardContainer {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .cstBlock21card {
+        min-width: unset;
+        width: 100%;
+        padding: 20px 20px 30px 20px;
+        gap: 15px;
+        position: relative;
+    }
+
+    .cstBlock21cardText {
+        font-size: 20px;
+    }
+
+    .cstBlock21cardSvgArrow {
+        display: none;
+    }
+    .cstBlock21cardStep{
+        font-size: 10px;
+        padding: 10px 15px;
+    }
+}
