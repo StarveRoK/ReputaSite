@@ -6,7 +6,7 @@ import Block19svg2 from "@/components/ui/Block19svg2"
 import { rich } from '@/lib/richText'
 
 const TAG_LABEL = '<b>Кейсы</b> REPUTA'
-const TITLE = 'Работали с <blue> 100+ нишами.</blue> Посмотрите <br/><blue>рост рейтинга</blue> наших клиентов'
+const TITLE = 'Работали с <blue> 100+ нишами.</blue> Посмотрите <blue>рост рейтинга</blue> наших клиентов'
 
 const CARDS = [
     { src: '/images/Block19Img1.png', alt: 'Block19Img1' },

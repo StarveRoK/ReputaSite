@@ -3,8 +3,8 @@ import style from '@/styles/block_3.module.css';
 import Block3GooglePlay from '@/components/ui/Block3GooglePlay';
 import { rich } from '@/lib/richText';
 
-const TITLE = '<b>Приложение</b><br/>REPUTA на вашем <br/>устройстве';
-const DESCRIPTION = 'Установите приложение через <br/>App Store и Google Play';
+const TITLE = '<b>Приложение</b>REPUTA на вашем устройстве';
+const DESCRIPTION = 'Установите приложение через App Store и Google Play';
 
 const APP_STORE_IMAGE = { src: '/images/Block3AppStore.png', alt: 'App Store' };
 const PHONE_IMAGE = { src: '/images/Block3Phone.png', alt: 'Мобильное приложение REPUTA' };

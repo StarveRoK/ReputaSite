@@ -4,7 +4,7 @@ import ForSellerButton from "@/components/buttons/ForSellerButton/ForSellerButto
 import { rich } from '@/lib/richText'
 
 const SELLER_BADGE = 'Для селлеров'
-const TITLE = 'Удаляем <br/>и исправляем<br/><blue> до 90% негативных<br/> отзывов</blue>'
+const TITLE = 'Удаляем и исправляем<blue> до 90% негативных отзывов</blue>'
 const LIST_ITEMS = [
     'Для селлеров WB и OZON',
     'С оплатой за результат',

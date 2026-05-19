@@ -4,11 +4,11 @@ import Block25svg1 from "@/components/ui/Block25svg1"
 import { rich } from '@/lib/richText'
 
 const PRE_TITLE = 'Полная автоматизация рассылок <b>в один клик</b>'
-const TITLE = 'Запускайте рассылки <br/>по базе покупателей<br/>с оценкой 5★, просто <br/>нажав кнопку «Отправить»'
-const DESCRIPTION = 'От вас нужен только текст сообщения <b>— напишите свой,<br/>или адаптируйте готовые шаблоны Reputa</b> под вашу <br/>акцию, новинку или повторную продажу'
+const TITLE = 'Запускайте рассылки по базе покупателейс оценкой 5★, просто нажав кнопку «Отправить»'
+const DESCRIPTION = 'От вас нужен только текст сообщения <b>— напишите свой,или адаптируйте готовые шаблоны Reputa</b> под вашу акцию, новинку или повторную продажу'
 const IMAGE = { src: '/images/Block25.png', alt: 'Block25' }
 const FLOAT_TITLE = 'Ваша рассылка:'
-const FLOAT_DESCRIPTION = 'Как насчет зaказать<br/>новый набор?'
+const FLOAT_DESCRIPTION = 'Как насчет зaказатьновый набор?'
 const CTA_HREF = 'https://app.reputa.ru'
 const CTA_LABEL = 'Отправить'
 

@@ -4,8 +4,8 @@ import ForSellerButton from "@/components/buttons/ForSellerButton/ForSellerButto
 import { rich } from '@/lib/richText'
 
 const SELLER_BADGE = 'Для селлеров'
-const TITLE = '<blue> Возвращайте <br/> до 40% покупателей</blue> <br />через рассылки <br/>по вашей базе'
-const SUBTITLE = 'Сообщайте о скидках, новинках и акциях <br/>клиентам Wildberries и Ozon и увеличивайте <br/>повторные продажи без дополнительных <br/>затрат на рекламу'
+const TITLE = '<blue> Возвращайте  до 40% покупателей</blue> <br />через рассылки по вашей базе'
+const SUBTITLE = 'Сообщайте о скидках, новинках и акциях клиентам Wildberries и Ozon и увеличивайте повторные продажи без дополнительных затрат на рекламу'
 const CTA_HREF = 'https://app.reputa.ru'
 const CTA_LABEL = 'Попробовать бесплатно <b>14 дней</b>'
 const IMAGE = { src: '/images/Block22.png', alt: 'Block22' }

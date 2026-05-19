@@ -4,7 +4,7 @@ import ForSellerButton from "@/components/buttons/ForSellerButton/ForSellerButto
 import { rich } from '@/lib/richText'
 
 const SELLER_BADGE = 'Начните работать со своей <b>базой покупателей</b>'
-const TITLE = '<blue>Запустите первую рассылку бесплатно</blue> <br/>и начните делать повторные<br/>продажи <blue>без дополнительных<br/>затрат на рекламу</blue>'
+const TITLE = '<blue>Запустите первую рассылку бесплатно</blue> и начните делать повторныепродажи <blue>без дополнительныхзатрат на рекламу</blue>'
 const CTA_HREF = 'https://app.reputa.ru'
 const CTA_LABEL = 'Попробовать бесплатно <b>14 дней</b>'
 

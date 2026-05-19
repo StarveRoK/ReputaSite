@@ -4,8 +4,8 @@ import ForSellerButton from "@/components/buttons/ForSellerButton/ForSellerButto
 import { rich } from '@/lib/richText'
 
 const SELLER_BADGE = 'Для селлеров'
-const TITLE = '<blue>Все чаты <br/>с покупателями<br/>в одном месте</blue><br/>— без задержек <br/>и потерь'
-const SUBTITLE = 'Единый интерфейс, мгновенная загрузка <br/>и уведомления, если вы не ответили <br/>в течение 5 минут — ни один клиент <br/>не останется без ответа'
+const TITLE = '<blue>Все чаты с покупателямив одном месте</blue>— без задержек и потерь'
+const SUBTITLE = 'Единый интерфейс, мгновенная загрузка и уведомления, если вы не ответили в течение 5 минут — ни один клиент не останется без ответа'
 const CTA_HREF = 'https://app.reputa.ru'
 const CTA_LABEL = 'Попробовать бесплатно <b>14 дней</b>'
 const IMAGE = { src: '/images/Block27.png', alt: 'Block27' }

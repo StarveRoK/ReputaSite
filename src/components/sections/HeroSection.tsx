@@ -17,7 +17,7 @@ const CTA_HREF = 'https://app.reputa.ru';
 const CTA_TEXT = 'Попробовать бесплатно <b>14 дней</b>';
 
 const SOCIAL_PROOF_COUNT = '700+';
-const SOCIAL_PROOF_TEXT = '<b>Более 700 продавцов</b><br/>уже растут с Reputa';
+const SOCIAL_PROOF_TEXT = '<b>Более 700 продавцов</b>уже растут с Reputa';
 const SOCIAL_PROOF_IMAGES = [
     { src: '/images/social_proof_1.png', alt: 'social_proof_1' },
     { src: '/images/social_proof_2.png', alt: 'social_proof_2' },

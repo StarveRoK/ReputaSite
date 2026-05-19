@@ -4,14 +4,14 @@ import { rich } from '@/lib/richText'
 
 const TAG_LABEL = 'Где мы <b>находимся?</b>'
 const TITLE = '<blue>Офис REPUTA</blue> в Москве'
-const DESCRIPTION = 'Работаем с селлерами по всей России из офиса в Москве <br/>и развиваем экосистему для клиентов Reputa'
-const SUB_DESCRIPTION = 'Проводим закрытые мероприятия<br/><blue>для клиентов Reputa:</blue>'
+const DESCRIPTION = 'Работаем с селлерами по всей России из офиса в Москве и развиваем экосистему для клиентов Reputa'
+const SUB_DESCRIPTION = 'Проводим закрытые мероприятия<blue>для клиентов Reputa:</blue>'
 
 const EVENTS = [
     { title: 'Мастермайнды', imageSrc: '/images/Block33Img1.png', imageAlt: 'Block33Img1.png' },
-    { title: 'Знакомства <br/>для селлеров', imageSrc: '/images/Block33Img2.png', imageAlt: 'Block33Img2.png' },
-    { title: 'Выступления <br/>экспертов и спикеров', imageSrc: '/images/Block33Img3.png', imageAlt: 'Block33Img3.png' },
-    { title: 'Внутренние встречи<br/>сообщества', imageSrc: '/images/Block33Img4.png', imageAlt: 'Block33Img4.png' },
+    { title: 'Знакомства для селлеров', imageSrc: '/images/Block33Img2.png', imageAlt: 'Block33Img2.png' },
+    { title: 'Выступления экспертов и спикеров', imageSrc: '/images/Block33Img3.png', imageAlt: 'Block33Img3.png' },
+    { title: 'Внутренние встречисообщества', imageSrc: '/images/Block33Img4.png', imageAlt: 'Block33Img4.png' },
 ]
 
 const titleTags = {

@@ -1,14 +1,14 @@
 import style from '@/styles/block_36.module.css'
 import { rich } from '@/lib/richText'
 
-const TITLE = 'Почему селлеры<br/><blue>выбирают REPUTA?</blue>'
+const TITLE = 'Почему селлеры<blue>выбирают REPUTA?</blue>'
 
 const CARDS = [
-    '<blue>Официальная <br/>работа </blue>по договору',
-    'Подключение<br/><blue>через API</blue>',
+    '<blue>Официальная работа </blue>по договору',
+    'Подключение<blue>через API</blue>',
     'Собственные<blue> AI- и IT-разработки</blue>',
-    '<blue>Автоматизация<br/></blue>работы<br/>с покупателями',
-    '<blue>Постоянное развитие <br/> платформы </blue> и новых <br/>инструментов',
+    '<blue>Автоматизация</blue>работыс покупателями',
+    '<blue>Постоянное развитие  платформы </blue> и новых инструментов',
 ]
 
 const titleTags = {

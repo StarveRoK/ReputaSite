@@ -5,7 +5,7 @@ import Block30svg2 from "@/components/ui/Block30svg2"
 import Block30svg3 from "@/components/ui/Block30svg3"
 import { rich } from '@/lib/richText'
 
-const DESCRIPTION = 'Помогаем селлерам <blue>убирать до 90% <br/>негативных отзывов</blue>, повышать рейтинг товаров <br/>и выстраивать <blue>автоматизированную работу <br/>с отзывами, вопросами, чатами и рассылками</blue>'
+const DESCRIPTION = 'Помогаем селлерам <blue>убирать до 90% негативных отзывов</blue>, повышать рейтинг товаров и выстраивать <blue>автоматизированную работу с отзывами, вопросами, чатами и рассылками</blue>'
 
 const STATS = [
     {

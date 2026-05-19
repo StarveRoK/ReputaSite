@@ -5,11 +5,11 @@ import HeadphoneSVG from '@/components/ui/HeadphoneSVG';
 import { ROUTES } from '@/lib/routes';
 import { rich } from '@/lib/richText';
 
-const TITLE = 'Остались <br/><blue>вопросы?</blue>';
-const DESCRIPTION = 'Оставьте номер телефона — наш менеджер <br/>перезвонит в удобное для вас время';
+const TITLE = 'Остались <blue>вопросы?</blue>';
+const DESCRIPTION = 'Оставьте номер телефона — наш менеджер перезвонит в удобное для вас время';
 const PHONE_PLACEHOLDER = '+7 (___) ___-__-__';
 const BUTTON_LABEL = 'Перезвонить мне';
-const AGREEMENT_TEXT = 'Соглашаюсь с условиями<br/><link>политики конфиденциальности</link>';
+const AGREEMENT_TEXT = 'Соглашаюсь с условиями<link>политики конфиденциальности</link>';
 
 const HEADPHONES_IMAGE = { src: '/images/Block6Headphones.png', alt: 'Поддержка REPUTA' };
 

@@ -5,12 +5,12 @@ import { rich } from '@/lib/richText'
 const TITLE = 'От заявки <br />до результата <blue>за 6 шагов</blue>'
 
 const STEPS = [
-    { step: 'Шаг 1', text: 'Разбираем <br />ситуацию <br/><blue>на созвоне</blue>', hasArrow: true },
-    { step: 'Шаг 2', text: 'Готовим<br/><blue> стратегию <br/>и расчёт</blue>', hasArrow: true },
-    { step: 'Шаг 3', text: 'Заключаем<br/><blue>договор</blue>', hasArrow: false },
-    { step: 'Шаг 4', text: 'Подключаем<br/><blue> работу <br/>на кабинете</blue>', hasArrow: true },
-    { step: 'Шаг 5', text: 'Обрабатываем<br/><blue>негативные <br />отзывы</blue>', hasArrow: true },
-    { step: 'Шаг 6', text: 'Получаем<br/><blue>результат</blue>', hasArrow: false },
+    { step: 'Шаг 1', text: 'Разбираем <br />ситуацию <blue>на созвоне</blue>', hasArrow: true },
+    { step: 'Шаг 2', text: 'Готовим<blue> стратегию и расчёт</blue>', hasArrow: true },
+    { step: 'Шаг 3', text: 'Заключаем<blue>договор</blue>', hasArrow: false },
+    { step: 'Шаг 4', text: 'Подключаем<blue> работу на кабинете</blue>', hasArrow: true },
+    { step: 'Шаг 5', text: 'Обрабатываем<blue>негативные <br />отзывы</blue>', hasArrow: true },
+    { step: 'Шаг 6', text: 'Получаем<blue>результат</blue>', hasArrow: false },
 ]
 
 const titleTags = {

@@ -2,7 +2,7 @@ import style from '@/styles/block_15.module.css'
 import BlueButton from "@/components/buttons/BlueButton/BlueButton"
 import { rich } from '@/lib/richText'
 
-const TITLE = 'Как работа с рейтингом <br/>и отзывами <blue> влияет на продажи</blue>'
+const TITLE = 'Как работа с рейтингом и отзывами <blue> влияет на продажи</blue>'
 const CTA_HREF = '#'
 const CTA_LABEL = 'Повысить рейтинг'
 
@@ -10,20 +10,20 @@ const CARDS = [
     {
         imageSrc: '/images/Block15Img1.png',
         imageAlt: 'Block15Img1',
-        title: '<blue>До +70%</blue><br/>к продажам',
-        description: 'По нашим кейсам улучшение <br/>рейтинга и отзывов может давать <br/>рост продаж до 70% за счёт CTR <br/>воронки продаж карточки',
+        title: '<blue>До +70%</blue>к продажам',
+        description: 'По нашим кейсам улучшение рейтинга и отзывов может давать рост продаж до 70% за счёт CTR воронки продаж карточки',
     },
     {
         imageSrc: '/images/Block15Img2.png',
         imageAlt: 'Block15Img2',
-        title: '+ 0,1 балла <br/>рейтинга <blue> влияет<br/>на всю воронку</blue>',
-        description: 'По нашим кейсам улучшение <br/>рейтинга и отзывов может давать <br/>рост продаж до 70% за счёт CTR <br/>воронки продаж карточки',
+        title: '+ 0,1 балла рейтинга <blue> влияетна всю воронку</blue>',
+        description: 'По нашим кейсам улучшение рейтинга и отзывов может давать рост продаж до 70% за счёт CTR воронки продаж карточки',
     },
     {
         imageSrc: '/images/Block15Img3.png',
         imageAlt: 'Block15Img3',
-        title: '<blue>До +40%</blue> к выбору <br/>товара при равных <br/>условиях',
-        description: 'По нашим наблюдениям, <br/>при схожей цене, сроках доставки <br/>и характеристиках покупатели <br/>чаще выбирают товар с более <br/>высоким рейтингом',
+        title: '<blue>До +40%</blue> к выбору товара при равных условиях',
+        description: 'По нашим наблюдениям, при схожей цене, сроках доставки и характеристиках покупатели чаще выбирают товар с более высоким рейтингом',
     },
 ]
 
