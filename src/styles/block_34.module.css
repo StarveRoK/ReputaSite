@@ -91,6 +91,7 @@
     top: 61px;
     width: 488px;
     height: 575px;
+    z-index: 1000;
     overflow: hidden;
 }
 
@@ -101,6 +102,7 @@
     border-top: 1px solid var(--color-border);
     left: 0;
     position: absolute;
+    z-index: 0;
 }
 
 .cstBlock34blockBottom {
