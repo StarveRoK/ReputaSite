@@ -82,6 +82,20 @@
     }
 
     .cstBlock31imgContainer {
+        /*display: none;*/
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .cstBlock31whiteBtn{
         display: none;
+    }
+    .cstBlock31imgDiv{
+        height: 160px;
+        overflow: hidden;
+        width: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
     }
 }

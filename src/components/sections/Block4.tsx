@@ -1,5 +1,5 @@
 import style from '@/styles/block_4.module.css';
-import { rich } from '@/lib/richText';
+import {rich} from '@/lib/richText';
 
 const TITLE = 'Мы объединили<blue> лучшие </blue> <blue> инструменты </blue>в одном сервисе';
 

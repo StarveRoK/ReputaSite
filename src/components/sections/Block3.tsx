@@ -1,14 +1,14 @@
 import Image from 'next/image';
 import style from '@/styles/block_3.module.css';
 import Block3GooglePlay from '@/components/ui/Block3GooglePlay';
-import { rich } from '@/lib/richText';
+import {rich} from '@/lib/richText';
 
-const TITLE = '<b>Приложение</b>REPUTA на вашем устройстве';
+const TITLE = '<b>Приложение</b> REPUTA на вашем устройстве';
 const DESCRIPTION = 'Установите приложение через App Store и Google Play';
 
-const APP_STORE_IMAGE = { src: '/images/Block3AppStore.png', alt: 'App Store' };
-const PHONE_IMAGE = { src: '/images/Block3Phone.png', alt: 'Мобильное приложение REPUTA' };
-const BACKGROUND_IMAGE = { src: '/images/Block3BackgroundPhone.png', alt: '' };
+const APP_STORE_IMAGE = {src: '/images/Block3AppStore.png', alt: 'App Store'};
+const PHONE_IMAGE = {src: '/images/Block3Phone.png', alt: 'Мобильное приложение REPUTA'};
+const BACKGROUND_IMAGE = {src: '/images/Block3BackgroundPhone.png', alt: ''};
 
 export default function Block3() {
     return (
@@ -32,7 +32,7 @@ export default function Block3() {
                     />
                 </div>
                 <div className={style.cstBlock3titleContainerGooglePlay}>
-                    <Block3GooglePlay />
+                    <Block3GooglePlay/>
                 </div>
             </div>
             <div className={style.cstBlock3titleImages}>

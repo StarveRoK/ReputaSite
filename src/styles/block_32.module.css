@@ -1,9 +1,12 @@
 .cstBlock32section {
     display: flex;
     gap: 15px;
-    padding: 40px 35px 50px;
+    padding: 40px 35px 0;
     width: 1160px;
     margin-top: 130px;
+    border-radius: 30px;
+    background: #FBFBFD;
+    box-shadow: 0 10px 40px 0 rgba(23, 82, 251, 0.06);
 }
 
 .cstBlock32left,
@@ -14,33 +17,19 @@
 }
 
 .cstBlock32leftTop,
-.cstBlock32leftBot,
-.cstBlock32rightBot {
+.cstBlock32rightTop {
     display: flex;
     flex-direction: column;
+    height: auto;
+    margin-top: auto;
 }
 
 .cstBlock32leftTop {
     max-width: 530px;
 }
 
-.cstBlock32leftBot {
-    max-width: 507px;
-}
-
 .cstBlock32rightTop {
     max-width: 560px;
-}
-
-.cstBlock32rightBot {
-    max-width: 430px;
-    margin-left: auto;
-  margin-right: auto;
-}
-
-.cstBlock32leftTop,
-.cstBlock32rightTop{
-    height: 513px;
 }
 
 .cstBlock32title {
@@ -56,10 +45,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: var(--font-onest);
-    font-size: var(--font-size-2xl);
     font-weight: 500;
-    line-height: 110%;
 }
 
 .cstBlock32description {
@@ -71,26 +57,11 @@
     margin-bottom: 51px;
 }
 
-.cstBlock32icon {
-    width: 55px;
-    height: 55px;
-    border-radius: 12px;
-    background: var(--color-blue-light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 27px;
-}
-
-.cstBlock32noMargin{
-    margin: 0 !important;
-}
-
 @media (max-width: 1280px) {
     .cstBlock32section {
         width: 320px;
         margin-top: 70px;
-        padding: 20px;
+        padding: 20px 20px 0 20px;
         flex-direction: column;
         gap: 25px;
     }
@@ -101,15 +72,8 @@
     }
 
     .cstBlock32leftTop,
-    .cstBlock32leftBot,
-    .cstBlock32rightTop,
-    .cstBlock32rightBot {
-        max-width: 100%;
-    }
-
-    .cstBlock32leftTop,
     .cstBlock32rightTop {
-        height: auto;
+        max-width: 100%;
     }
 
     .cstBlock32title {

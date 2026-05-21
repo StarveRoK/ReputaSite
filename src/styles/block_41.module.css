@@ -1,0 +1,153 @@
+.cstBlock41section {
+    display: flex;
+    padding: 40px 35px 30px;
+    width: 1160px;
+    margin-top: 130px;
+    border-radius: 30px;
+    background: #FBFBFD;
+    box-shadow: 0 10px 40px 0 rgba(23, 82, 251, 0.06);
+    gap: 80px;
+}
+
+.cstBlock41left,
+.cstBlock41right {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.cstBlock41leftBot,
+.cstBlock41rightBot {
+    display: flex;
+    flex-direction: column;
+}
+
+.cstBlock41leftBot {
+    max-width: 507px;
+}
+
+.cstBlock41rightBot {
+    max-width: 430px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cstBlock41title {
+    font-family: var(--font-onest);
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    line-height: 110%;
+    margin-bottom: 35px;
+}
+
+.cstBlock41titleBlue {
+    background: var(--gradient-blue-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+}
+
+.cstBlock41missionDiv {
+    padding: 20px 25px 35px 25px;
+    display: flex;
+    gap: 20px;
+    border-radius: 20px;
+    background: #EEF3FD;
+    width: 509px;
+    position: relative;
+}
+
+.cstBlock41missionDiv:before {
+    content: '';
+    position: absolute;
+    right: -40px;
+    top: 0;
+    border-left: 1px solid #E5E8F1;
+    height: 100%;
+}
+
+.cstBlock41missionIcon {
+    width: 20px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cstBlock41missionText {
+    color: #6B728E;
+    font-family: var(--font-inter);
+    font-size: var(--font-size-md);
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 22px;
+}
+
+.cstBlock41description {
+    color: var(--color-gray);
+    font-family: var(--font-inter);
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.cstBlock41noMargin {
+    margin: 0;
+}
+
+.cstBlock41icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    background: var(--color-blue-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+@media (max-width: 1280px) {
+    .cstBlock41section {
+        width: 320px;
+        margin-top: 70px;
+        padding: 20px;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .cstBlock41left,
+    .cstBlock41right {
+        gap: 20px;
+    }
+
+    .cstBlock41leftBot,
+    .cstBlock41rightBot {
+        max-width: 100%;
+    }
+
+    .cstBlock41title {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .cstBlock41titleBlue {
+        font-size: 25px;
+    }
+
+    .cstBlock41missionDiv:before {
+        display: none;
+    }
+
+    .cstBlock41missionDiv {
+        width: 100%;
+    }
+
+    .cstBlock41missionText {
+        font-size: 14px;
+    }
+}

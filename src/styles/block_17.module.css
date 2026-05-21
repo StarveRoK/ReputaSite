@@ -90,7 +90,7 @@
     min-width: 386px;
 }
 
-.cstBlock17cardButton {
+.cstBlock17badge {
     display: flex;
     flex-direction: column;
     padding: 12px 20px;
@@ -103,6 +103,9 @@
     font-weight: 500;
     line-height: 20px;
     height: max-content;
+    position: absolute;
+    top: 25px;
+    right: 25px;
 }
 
 @media (max-width: 1280px) {
@@ -139,6 +142,13 @@
     }
     .cstBlock17cardButton{
         position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .cstBlock17badge {
+        font-size: 10px;
+        padding: 10px 15px;
+        line-height: 16px;
         top: 20px;
         right: 20px;
     }

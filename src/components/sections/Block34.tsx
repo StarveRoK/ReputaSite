@@ -4,21 +4,20 @@ import { ROUTES } from "@/lib/routes"
 import MaxIcon from "@/components/ui/MaxIcon"
 import YouTubeIcon from "@/components/ui/YouTubeIcon"
 import { rich } from '@/lib/richText'
+import Image from 'next/image'
 
 const JOURNAL = {
-    imageSrc: '/images/Block34Img1.png',
-    imageAlt: 'Block34Img1',
-    title: 'Первый журнал<blue>о репутации на маркетплейсах</blue>',
-    description: 'Делимся кейсами, исследованиями, аналитикойи практическим опытом работы с отзывами, покупателями и репутацией брендов',
+    illustrationSrc: '/images/Block34Img3.png',
+    title: 'Первый журнал<blue> о репутации на маркетплейсах</blue>',
+    description: 'Делимся кейсами, исследованиями, аналитикой и практическим опытом работы с отзывами, покупателями и репутацией брендов',
     ctaHref: '#',
     ctaLabel: '<b>Подписаться</b> на журнал',
 }
 
 const PODCAST = {
     imageSrc: '/images/Block34Img2.png',
-    imageAlt: 'Block34Img2',
-    title: 'Подкасты Reputa<blue>о маркетплейсах и репутации</blue>',
-    description: 'Записываем интервью и подкасты с селлерами,экспертами и предпринимателями рынкамаркетплейсов',
+    title: 'Подкасты Reputa<blue> о маркетплейсах и репутации</blue>',
+    description: 'Записываем интервью и подкасты с селлерами, экспертами и предпринимателями рынка маркетплейсов',
 }
 
 const titleTags = {
@@ -31,30 +30,34 @@ export default function Block34() {
     return (
         <section className={style.cstBlock34section}>
             <div className={style.cstBlock34block}>
-                <div className={style.cstBlock34icon}>
-                    <img src={JOURNAL.imageSrc} alt={JOURNAL.imageAlt}/>
-                </div>
                 <div className={style.cstBlock34title}>
                     {rich(JOURNAL.title, titleTags)}
                 </div>
                 <div className={style.cstBlock34description}>
                     {rich(JOURNAL.description)}
                 </div>
-                <BlueButton href={JOURNAL.ctaHref} label={JOURNAL.ctaLabel}/>
+                <BlueButton href={JOURNAL.ctaHref} label={JOURNAL.ctaLabel} />
             </div>
-            <div className={style.cstBlock34block}>
-                <div className={style.cstBlock34icon}>
-                    <img src={PODCAST.imageSrc} alt={PODCAST.imageAlt}/>
+            <div className={style.cstBlock34imgDiv}>
+                <Image src={JOURNAL.illustrationSrc} alt="Иллюстрация журнала" fill style={{ objectFit: 'cover' }} />
+            </div>
+            <div className={`${style.cstBlock34block} ${style.cstBlock34blockBottom}`}>
+                <div className={style.cstBlock34blockTop}>
+                    <div className={style.cstBlock34icon}>
+                        <Image src={PODCAST.imageSrc} alt="Логотип подкаста" fill style={{ objectFit: 'cover' }} />
+                    </div>
+                    <div className={style.cstBlock34subTitle}>
+                        {rich(PODCAST.title, titleTags)}
+                    </div>
                 </div>
-                <div className={style.cstBlock34title}>
-                    {rich(PODCAST.title, titleTags)}
-                </div>
-                <div className={style.cstBlock34description}>
-                    {rich(PODCAST.description)}
-                </div>
-                <div className={style.cstBlock34iconsContainer}>
-                    <a target="_blank" href={ROUTES.social.youtube}><YouTubeIcon/></a>
-                    <a target="_blank" href={ROUTES.social.max}><MaxIcon/></a>
+                <div className={style.cstBlock34blockBot}>
+                    <div className={style.cstBlock34iconsContainer}>
+                        <a target="_blank" href={ROUTES.social.youtube}><YouTubeIcon /></a>
+                        <a target="_blank" href={ROUTES.social.max}><MaxIcon /></a>
+                    </div>
+                    <div className={style.cstBlock34description}>
+                        {rich(PODCAST.description)}
+                    </div>
                 </div>
             </div>
         </section>

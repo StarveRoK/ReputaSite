@@ -1,10 +1,10 @@
-import style from '@/styles/icons/headerIconBlue.module.css'
+﻿import style from '@/styles/icons/headerIconBlue.module.css'
 
 export default function DzenIconBlue() {
     return (
         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" className={style.headerIconBlue}>
             <rect width="36" height="36" rx="10" fill="#0163FC"/>
-            <g clip-path="url(#clip0_29_19)">
+            <g clipPath="url(#clip0_29_19)">
                 <mask id="mask0_29_19" style={{maskType: 'luminance'}} maskUnits="userSpaceOnUse" x="10" y="9" width="17"
                       height="18">
                     <path d="M26.9405 9.61035H10.0371V26.5138H26.9405V9.61035Z" fill="white"/>

@@ -11,6 +11,15 @@ const TITLE = 'Работали с <blue> 100+ нишами.</blue> Посмот
 const CARDS = [
     { src: '/images/Block19Img1.png', alt: 'Block19Img1' },
     { src: '/images/Block19Img2.png', alt: 'Block19Img2' },
+    { src: '/images/Block19Img3.png', alt: 'Block19Img3' },
+    { src: '/images/Block19Img4.png', alt: 'Block19Img4' },
+    { src: '/images/Block19Img5.png', alt: 'Block19Img5' },
+    { src: '/images/Block19Img6.png', alt: 'Block19Img6' },
+    { src: '/images/Block19Img7.png', alt: 'Block19Img7' },
+    { src: '/images/Block19Img8.png', alt: 'Block19Img8' },
+    { src: '/images/Block19Img9.png', alt: 'Block19Img9' },
+    { src: '/images/Block19Img10.png', alt: 'Block19Img10' },
+    { src: '/images/Block19Img11.png', alt: 'Block19Img11' },
 ]
 
 const titleTags = {
@@ -19,8 +28,11 @@ const titleTags = {
     ),
 }
 
+const VISIBLE = 2
+
 export default function Block19() {
     const [index, setIndex] = useState(0)
+    const maxIndex = CARDS.length - VISIBLE
 
     return (
         <section className={style.cstBlock19section}>
@@ -34,17 +46,27 @@ export default function Block19() {
 
             {/* Desktop */}
             <div className={style.cstBlock19cardContainer}>
-                <div className={`${style.cstBlock19cardArrow} ${style.arrowLeft}`}>
+                <button
+                    className={`${style.cstBlock19cardArrow} ${style.arrowLeft} ${index === 0 ? style.cstBlock19arrowDisabled : ''}`}
+                    onClick={() => setIndex(i => Math.max(0, i - 1))}
+                    disabled={index === 0}
+                    aria-label="Назад"
+                >
                     <Block19svg1/>
-                </div>
-                {CARDS.map((card) => (
+                </button>
+                {CARDS.slice(index, index + VISIBLE).map((card) => (
                     <div key={card.src} className={style.cstBlock19card}>
                         <img src={card.src} alt={card.alt}/>
                     </div>
                 ))}
-                <div className={`${style.cstBlock19cardArrow} ${style.arrowRight}`}>
+                <button
+                    className={`${style.cstBlock19cardArrow} ${style.arrowRight} ${index >= maxIndex ? style.cstBlock19arrowDisabled : ''}`}
+                    onClick={() => setIndex(i => Math.min(maxIndex, i + 1))}
+                    disabled={index >= maxIndex}
+                    aria-label="Вперёд"
+                >
                     <Block19svg2/>
-                </div>
+                </button>
             </div>
 
             {/* Mobile slider */}

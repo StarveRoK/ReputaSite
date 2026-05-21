@@ -28,7 +28,7 @@
 }
 
 .cstBlock10features2 {
-    width: 379px;
+    width: 436px;
     color: var(--color-gray);
     font-family: var(--font-inter), sans-serif;
     font-size: var(--font-size-lg);
@@ -59,7 +59,7 @@
     height: 621.144px;
     aspect-ratio: 203/152;
     position: absolute;
-    top: 20px;
+    top: 0px;
     right: -70px;
     z-index: -1;
 }

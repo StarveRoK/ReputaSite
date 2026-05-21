@@ -1,7 +1,7 @@
 import style from '@/styles/block_36.module.css'
 import { rich } from '@/lib/richText'
 
-const TITLE = 'Почему селлеры<blue>выбирают REPUTA?</blue>'
+const TITLE = 'Почему селлеры<blue> выбирают REPUTA?</blue>'
 
 const CARDS = [
     '<blue>Официальная работа </blue>по договору',

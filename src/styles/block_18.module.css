@@ -45,12 +45,14 @@
     border: 1px solid var(--color-border);
     align-items: center;
     width: max-content;
-    max-width: 400px;
+    max-width: 460px;
 }
 
 .cstBlock18colIcon {
-    width: 35px;
-    height: 35px;
+    min-width: 35px;
+    min-height: 35px;
+    max-width: 35px;
+    max-height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,6 +75,7 @@
     font-weight: 500;
     line-height: 20px;
     margin-top: 25px;
+    max-width: 348px;
 }
 
 .cstBlock18bigImage {

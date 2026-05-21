@@ -4,7 +4,7 @@ import ForSellerButton from "@/components/buttons/ForSellerButton/ForSellerButto
 import { rich } from '@/lib/richText'
 
 const SELLER_BADGE = 'Для селлеров'
-const TITLE = '<blue>1 подписка = полный безлимит</blue> на работу с отзывами, вопросами,чатами и рассылками'
+const TITLE = '<blue>1 подписка = полный безлимит</blue> на работу с отзывами, вопросами, чатами и рассылками'
 const DESCRIPTION = 'Подключайте все инструменты Reputa в рамках одного тарифа и автоматизируйте коммуникацию с покупателями  без ограничений по объёму'
 const CTA_HREF = 'https://app.reputa.ru'
 const CTA_LABEL = 'Попробовать бесплатно <b>14 дней</b>'

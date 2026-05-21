@@ -1,12 +1,15 @@
 .cstBlock34section {
     width: 1160px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-top: 130px;
     border-radius: 30px;
     background: var(--color-bg);
     box-shadow: 0 10px 40px 0 rgba(23, 82, 251, 0.06);
     padding: 35px 98px 50px 35px;
+    gap: 60px;
+    position: relative;
 }
 
 .cstBlock34block {
@@ -22,14 +25,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .cstBlock34title {
     margin-top: 20px;
     font-family: var(--font-onest);
+    font-size: var(--font-size-2xl);
+    font-weight: 500;
+    line-height: 115%;
+    max-width: 670px;
+}
+
+.cstBlock34subTitle {
+    font-family: var(--font-onest);
     font-size: var(--font-size-xl);
     font-weight: 500;
     line-height: 115%;
+    width: 442px;
 }
 
 .cstBlock34titleBlue {
@@ -45,7 +59,6 @@
     font-size: var(--font-size-md);
     font-weight: 500;
     line-height: 22px;
-    margin-top: 25px;
     margin-bottom: auto;
     max-width: 397px;
 }
@@ -53,12 +66,46 @@
 .cstBlock34iconsContainer {
     display: flex;
     gap: 15px;
-    margin-top: 30px;
 }
 
 .cstBlock34iconsContainer svg {
     width: 73px;
     height: 73px;
+}
+
+.cstBlock34blockTop {
+    display: flex;
+    gap: 27px;
+    align-items: flex-end;
+}
+
+.cstBlock34blockBot {
+    margin-top: 35px;
+    display: flex;
+    gap: 25px;
+}
+
+.cstBlock34imgDiv {
+    position: absolute;
+    right: 24px;
+    top: 61px;
+    width: 488px;
+    height: 575px;
+    overflow: hidden;
+}
+
+.cstBlock34blockBottom:before {
+    content: '';
+    width: 100%;
+    top: -30px;
+    border-top: 1px solid var(--color-border);
+    left: 0;
+    position: absolute;
+}
+
+.cstBlock34blockBottom {
+    width: 100%;
+    position: relative;
 }
 
 @media (max-width: 1280px) {
@@ -67,26 +114,52 @@
         margin-top: 70px;
         padding: 20px;
         flex-direction: column;
-        gap: 25px;
+        gap: 0;
     }
 
     .cstBlock34icon {
         width: 65px;
         height: 65px;
+        min-width: 75px;
+        min-height: 75px;
     }
 
     .cstBlock34title {
         font-size: 20px;
         margin-top: 15px;
+        max-width: 250px;
     }
 
     .cstBlock34description {
-        font-size: 14px;
+        font-size: var(--font-size-sm);
         margin-top: 20px;
     }
 
     .cstBlock34iconsContainer svg {
         width: 50px;
         height: 50px;
+    }
+
+    .cstBlock34imgDiv {
+        position: relative;
+        width: 100%;
+        margin-top: 18px;
+        top: 0;
+        right: 0;
+        height: auto;
+    }
+
+    .cstBlock34subTitle {
+        font-size: 20px;
+        line-height: 115%;
+    }
+
+    .cstBlock34blockBottom {
+        margin-top: 50px;
+    }
+
+    .cstBlock34blockBot {
+        flex-direction: column;
+        gap: 0;
     }
 }

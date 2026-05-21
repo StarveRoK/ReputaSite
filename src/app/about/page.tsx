@@ -8,6 +8,8 @@ import Block33 from "@/components/sections/Block33";
 import Block34 from "@/components/sections/Block34";
 import Block35 from "@/components/sections/Block35";
 import Block36 from "@/components/sections/Block36";
+import Block40 from "@/components/sections/Block40";
+import Block41 from "@/components/sections/Block41";
 
 
 export const metadata: Metadata = {
@@ -21,7 +23,9 @@ export default function AboutPage() {
             <Header />
             <Block30 />
             <Block31 />
+            <Block40 />
             <Block32 />
+            <Block41 />
             <Block33 />
             <Block34 />
             <Block35 />

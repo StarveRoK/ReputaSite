@@ -3,8 +3,8 @@ import BlueButton from "@/components/buttons/BlueButton/BlueButton"
 import ForSellerButton from "@/components/buttons/ForSellerButton/ForSellerButton"
 import { rich } from '@/lib/richText'
 
-const SELLER_BADGE = 'Начните работать со своей <b>базой покупателей</b>'
-const TITLE = '<blue>Запустите первую рассылку бесплатно</blue> и начните делать повторныепродажи <blue>без дополнительныхзатрат на рекламу</blue>'
+const SELLER_BADGE = 'Начните работать со своей<b> базой покупателей</b>'
+const TITLE = '<blue>Запустите первую рассылку бесплатно</blue> и начните делать повторные продажи<blue> без дополнительных затрат на рекламу</blue>'
 const CTA_HREF = 'https://app.reputa.ru'
 const CTA_LABEL = 'Попробовать бесплатно <b>14 дней</b>'
 

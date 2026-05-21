@@ -1,7 +1,7 @@
-export default function ReputaSVG() {
+﻿export default function ReputaSVG() {
     return (
         <svg width="130" height="21" viewBox="0 0 130 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_1_126)">
+            <g clipPath="url(#clip0_1_126)">
                 <path
                     d="M111.359 4.14502H123.093L130 20.529H123.422L122.19 17.3239H112.278L111.052 20.529H104.495L111.359 4.14502ZM120.701 13.3924L117.297 4.47385H117.202L113.795 13.3924H120.701Z"
                     fill="#1D2032"/>
@@ -24,8 +24,8 @@ export default function ReputaSVG() {
                 <radialGradient id="paint0_radial_1_126" cx="0" cy="0" r="1"
                                 gradientTransform="matrix(-13.2203 13.0805 -16.4241 -16.2504 85.9332 1.27818e-07)"
                                 gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#0047F2"/>
-                    <stop offset="1" stop-color="#202020"/>
+                    <stop stopColor="#0047F2"/>
+                    <stop offset="1" stopColor="#202020"/>
                 </radialGradient>
                 <clipPath id="clip0_1_126">
                     <rect width="130" height="21" fill="white"/>

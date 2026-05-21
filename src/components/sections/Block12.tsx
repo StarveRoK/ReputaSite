@@ -29,7 +29,7 @@ const ITEMS = [
         number: '4',
         imageSrc: '/images/Block12Img4.png',
         imageAlt: 'Block12Img4',
-        title: '<blue>Работает 24/7</blue>и обрабатывает любойобъем отзывов<blue>без потери качества</blue>',
+        title: '<blue>Работает 24/7</blue> и обрабатывает любой объем отзывов<blue> без потери качества</blue>',
         description: '',
     },
 ]

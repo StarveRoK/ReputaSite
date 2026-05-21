@@ -55,10 +55,13 @@
 @media (max-width: 1280px) {
     .cstForSellerbackground {
         padding: 10px;
+        max-width: 280px;
     }
 
     .cstForSellerbackgroundText {
         font-size: 12px;
+                line-height: 18px;
+
     }
 
     .cstForSellerForSeller {

@@ -13,7 +13,6 @@
 .cstBlock3titleContainer {
     display: flex;
     flex-direction: column;
-    gap: 25px;
 }
 
 .cstBlock3title {
@@ -32,12 +31,13 @@
     font-size: var(--font-size-md);
     font-weight: 500;
     line-height: 22px;
+    margin-top: 25px;
 }
 
 .cstBlock3titleApps {
     display: flex;
     gap: 10px;
-    margin-top: auto;
+    margin-top: 45px;
 }
 
 .cstBlock3titleContainerAppStore {

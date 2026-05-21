@@ -2,27 +2,26 @@ import style from '@/styles/block_17.module.css'
 import Block17svg1 from "@/components/ui/Block17svg1"
 import Block17svg2 from "@/components/ui/Block17svg2"
 import Block17svg3 from "@/components/ui/Block17svg3"
-import { rich } from '@/lib/richText'
+import {rich} from '@/lib/richText'
 
 const TITLE = 'Почему REPUTA — <blue> это безопасно?</blue>'
-const TRUST_BADGE = '<b>700+ селлеров</b>\nдоверяют нам'
+const TRUST_BADGE = '<b>700+ селлеров</b> доверяют нам'
 
 const CARDS = [
     {
         Icon: Block17svg1,
-        title: 'Работа строго<blue> в рамках </blue>правил маркетплейса',
+        title: 'Работа строго<blue> в рамках </blue> правил маркетплейса',
         description: 'Решаем вопросы через диалог с покупателем и юридическое обращения в поддержку',
     },
     {
         Icon: Block17svg2,
-        title: 'Опыт на<blue> 550+ </blue>кабинетах',
+        title: 'Опыт на<blue> 550+</blue> кабинетах',
         description: 'Отработанные алгоритмы и скрипты на 350 000+ негативных отзывов',
     },
     {
         Icon: Block17svg3,
-        title: 'Работает <blue>по договору</blue>',
+        title: 'Работает<blue> по договору</blue>',
         description: 'Оплата по факту выполненной работы, все договоренности закреплены юридически',
-        hasBadge: true,
     },
 ]
 
@@ -47,10 +46,10 @@ export default function Block17() {
 
             <div className={style.cstBlock17cardContainer}>
                 {CARDS.map((card) => {
-                    const cardEl = (
+                    return (
                         <div key={card.title} className={style.cstBlock17card}>
                             <div className={style.cstBlock17cardImage}>
-                                <card.Icon />
+                                <card.Icon/>
                             </div>
                             <div className={style.cstBlock17cardTitle}>
                                 {rich(card.title, cardTitleTags)}
@@ -60,19 +59,12 @@ export default function Block17() {
                             </div>
                         </div>
                     )
-                    if (card.hasBadge) {
-                        return (
-                            <div key={card.title} className={style.cstBlock17cardWithBtn}>
-                                {cardEl}
-                                <div className={style.cstBlock17cardButton}>
-                                    {rich(TRUST_BADGE)}
-                                </div>
-                            </div>
-                        )
-                    }
-                    return cardEl
                 })}
+                <div className={style.cstBlock17badge}>
+                    {rich(TRUST_BADGE)}
+                </div>
             </div>
+
         </section>
     )
 }

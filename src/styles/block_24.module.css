@@ -54,8 +54,10 @@
 }
 
 .cstBlock24icon {
-    width: 55px;
-    height: 55px;
+    min-width: 55px;
+    min-height: 55px;
+    max-width: 55px;
+    max-height: 55px;
     border-radius: 12px;
     background: var(--color-blue-light);
     display: flex;
@@ -100,6 +102,109 @@
     box-shadow: 0 10px 40px 0 rgba(23, 82, 251, 0.06);
 }
 
+.cstBlock24rightCard {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    width: 260px;
+    height: 260px;
+    border-radius: 15px;
+    border: 1px solid #E5E8F1;
+    background: #FBFBFD;
+    box-shadow: 0 10px 40px 0 rgba(23, 82, 251, 0.06);
+}
+
+.cstBlock24rightCardTitle {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.cstBlock24rightCardTitleIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    background: #EEF3FD;
+}
+
+.cstBlock24rightCardTitleText {
+    color: #1D2032;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+}
+
+.cstBlock24rightCardDescription {
+    margin-top: 15px;
+    color: #6B728E;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+}
+
+
+.cstBlock24rightCardButton {
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #0163FC;
+    height: 41px;
+    color: #FEFEFE;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cstBlock24rightCardBot {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    position: relative;
+}
+
+.cstBlock24rightCardImg2 {
+    max-height: 23px;
+    margin-bottom: 10px;
+}
+
+.cstBlock24rightCardImg3 {
+    width: 82px;
+    position: absolute;
+    right: 0;
+    bottom: -9px;
+}
+
+.cstBlock24rightCardDescription3 {
+    max-width: 156px;
+}
+
+.cstBlock24rightCardButton3 {
+    max-width: 120px;
+}
+
+.cstBlock24rightCardImg4 {
+    width: 78px;
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+}
+
+.cstBlock24rightCardDescription4 {
+    max-width: 162px;
+}
+
+
 @media (max-width: 1280px) {
     .cstBlock24section {
         width: 320px;
@@ -137,6 +242,69 @@
     }
 
     .cstBlock24rightBlock {
-        display: none;
+        justify-content: center;
+        gap: 2px;
     }
+
+
+
+
+.cstBlock24rightCard {
+    padding: 11px;
+    width: 139px;
+    height: 139px;
+}
+
+.cstBlock24rightCardTitle {
+    gap: 10px;
+}
+
+.cstBlock24rightCardTitleIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.cstBlock24rightCardTitleText {
+    font-size: 8px;
+    line-height: 10px;
+}
+
+.cstBlock24rightCardDescription {
+    margin-top: 10px;
+    font-size: 8px;
+    line-height: 10px;
+}
+
+.cstBlock24rightCardButton {
+    margin-top: 6px;
+    font-size: 8px;
+    width: 100%;
+height: 23.13px;
+}
+
+.cstBlock24rightCardImg2 {
+    max-height: 13px;
+    margin-bottom: 5px;
+}
+
+.cstBlock24rightCardImg3 {
+    width: 46px;
+    bottom: -5px;
+}
+
+.cstBlock24rightCardDescription3 {
+    max-width: 65px;
+}
+
+.cstBlock24rightCardButton3 {
+    max-width: 68px;
+}
+
+.cstBlock24rightCardImg4 {
+    width: 44px;
+}
+
+.cstBlock24rightCardDescription4 {
+    max-width: 87px;
+}
 }

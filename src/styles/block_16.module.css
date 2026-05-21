@@ -69,6 +69,7 @@
     font-weight: 500;
     line-height: 115%;
     margin-top: 20px;
+    max-width: 358px;
 }
 
 .cstBlock16productDescriptionTitleBlue {
@@ -89,6 +90,7 @@
     font-weight: 500;
     line-height: 22px;
     margin-top: 25px;
+    max-width: 392px;
 }
 
 .cstBlock16image {

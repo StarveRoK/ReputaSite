@@ -10,13 +10,13 @@ const CARDS = [
     {
         imageSrc: '/images/Block15Img1.png',
         imageAlt: 'Block15Img1',
-        title: '<blue>До +70%</blue>к продажам',
+        title: '<blue>До +70%</blue> к продажам',
         description: 'По нашим кейсам улучшение рейтинга и отзывов может давать рост продаж до 70% за счёт CTR воронки продаж карточки',
     },
     {
         imageSrc: '/images/Block15Img2.png',
         imageAlt: 'Block15Img2',
-        title: '+ 0,1 балла рейтинга <blue> влияетна всю воронку</blue>',
+        title: '+ 0,1 балла рейтинга<blue> влияет на всю воронку</blue>',
         description: 'По нашим кейсам улучшение рейтинга и отзывов может давать рост продаж до 70% за счёт CTR воронки продаж карточки',
     },
     {
