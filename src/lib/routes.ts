@@ -25,9 +25,12 @@ export const ROUTES = {
 
     social: {
         telegram: 'https://t.me/+uAjNNy-_DEFiZGEy',
+        telegramManager: 'https://t.me/reputaMP',
         vk: 'https://vk.com/reputa ',
         max: 'https://rutube.ru/channel/73236118',
         youtube: 'https://youtube.com/@reputamp',
         dzen: 'https://dzen.ru/reputamp',
     },
+
+    calculator: '/calculator',
 } as const

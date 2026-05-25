@@ -72,6 +72,7 @@ export default function Header() {
 
                     </div>
                     <a href={ROUTES.pricing} className={style.cstHeaderText}>Цены</a>
+                    <a href={ROUTES.calculator} className={style.cstHeaderText}>Калькулятор</a>
                     <a href={ROUTES.partners} className={style.cstHeaderText}>Партнёры</a>
                     <a href={ROUTES.about} className={style.cstHeaderText}>О нас</a>
                     <a href={ROUTES.blog} className={style.cstHeaderText}>Блог</a>

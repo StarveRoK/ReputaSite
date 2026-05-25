@@ -1,0 +1,1044 @@
+/* ─── Страница калькулятора ─────────────────────────────────────────────────── */
+
+.page {
+    width: 100%;
+    background: var(--color-bg);
+    padding-bottom: 80px;
+}
+
+.section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 48px 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* ─── Шапка ─────────────────────────────────────────────────────────────────── */
+
+.header {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.tag {
+    display: inline-block;
+    background: var(--color-blue-light);
+    color: var(--color-primary);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 18px;
+}
+
+.title {
+    font-family: var(--font-onest);
+    font-size: clamp(26px, 5vw, 42px);
+    font-weight: 800;
+    color: var(--color-dark);
+    line-height: 1.15;
+    margin: 0 0 14px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: var(--color-gray);
+    line-height: 1.55;
+    max-width: 520px;
+    margin: 0 auto 24px;
+}
+
+.instructionBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: transparent;
+    border: 1.5px solid var(--color-border);
+    border-radius: 40px;
+    font-size: 14px;
+    font-family: var(--font-inter);
+    color: var(--color-dark);
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.instructionBtn:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.questionMark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background: var(--color-primary);
+    color: white;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: 800;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+/* ─── Карточка ───────────────────────────────────────────────────────────────── */
+
+.card {
+    background: #ffffff;
+    border: 1.5px solid var(--color-border);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 2px 20px rgba(1, 99, 252, 0.05);
+}
+
+.cardTitle {
+    font-family: var(--font-onest);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin: 0 0 24px;
+}
+
+/* ─── Поля ввода оценок ──────────────────────────────────────────────────────── */
+
+.inputsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.inputRow {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 18px;
+    border: 1.5px solid var(--color-border);
+    border-radius: 14px;
+    background: var(--color-bg);
+    transition: border-color 0.2s;
+}
+
+.inputRow:focus-within {
+    border-color: var(--color-primary);
+    background: white;
+}
+
+.inputRowLabel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.starsDisplay {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+.star1 { color: #F5A623; }
+.star2 { color: #F5A623; }
+.star3 { color: #F5A623; }
+.star4 { color: #F5A623; }
+.star5 { color: #F5A623; }
+.starEmpty { color: #D1D5DB; }
+
+.inputLabelText {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-dark);
+}
+
+.input {
+    width: 100px;
+    padding: 8px 12px;
+    border: 1.5px solid var(--color-border);
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: var(--font-onest);
+    font-weight: 600;
+    color: var(--color-dark);
+    background: white;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input:focus {
+    border-color: var(--color-primary);
+}
+
+.input::placeholder {
+    color: var(--color-gray-hover);
+    font-weight: 400;
+}
+
+/* убираем стрелки у number input */
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* ─── Текущий рейтинг (превью) ───────────────────────────────────────────────── */
+
+.currentRating {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 20px;
+    padding: 16px 20px;
+    background: var(--color-blue-light);
+    border-radius: 14px;
+}
+
+.currentLabel {
+    font-size: 14px;
+    color: var(--color-gray);
+    flex-shrink: 0;
+}
+
+.currentValue {
+    font-family: var(--font-onest);
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1;
+}
+
+.currentStars {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #F5A623;
+}
+
+.currentTotal {
+    font-size: 13px;
+    color: var(--color-gray);
+    margin-left: auto;
+}
+
+/* ─── Выбор целевого рейтинга ────────────────────────────────────────────────── */
+
+.targetOptions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.targetBtn {
+    padding: 10px 26px;
+    border: 1.5px solid var(--color-border);
+    border-radius: 40px;
+    background: transparent;
+    font-family: var(--font-onest);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-gray);
+    cursor: pointer;
+    transition: all 0.2s;
+    line-height: 1;
+}
+
+.targetBtn:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.targetBtnActive {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: white;
+}
+
+.customInputWrap {
+    margin-top: 16px;
+}
+
+.customInput {
+    width: 180px;
+    padding: 10px 16px;
+    border: 1.5px solid var(--color-primary);
+    border-radius: 12px;
+    font-size: 18px;
+    font-family: var(--font-onest);
+    font-weight: 600;
+    color: var(--color-dark);
+    background: white;
+    outline: none;
+}
+
+.customInput::placeholder {
+    color: var(--color-gray-hover);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* ─── Кнопка расчёта ────────────────────────────────────────────────────────── */
+
+.submitBtn {
+    width: 100%;
+    padding: 18px;
+    background: var(--gradient-blue);
+    color: white;
+    font-family: var(--font-onest);
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.15s;
+    letter-spacing: -0.2px;
+}
+
+.submitBtn:hover:not(:disabled) {
+    opacity: 0.92;
+    transform: translateY(-1px);
+}
+
+.submitBtn:disabled {
+    opacity: 0.38;
+    cursor: not-allowed;
+}
+
+/* ─── Блок: что нужно убрать ─────────────────────────────────────────────────── */
+
+.removalsList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.removalRow {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 18px;
+    border-radius: 14px;
+}
+
+.removalRow1 { background: #FFF1F0; border: 1px solid #FFCDD2; }
+.removalRow2 { background: #FFF8F0; border: 1px solid #FFE0B2; }
+.removalRow3 { background: #FFFDE8; border: 1px solid #FFF9C4; }
+
+.removalStars {
+    font-size: 15px;
+    letter-spacing: 2px;
+    min-width: 90px;
+}
+
+.removalCount {
+    font-family: var(--font-onest);
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--color-dark);
+    min-width: 64px;
+    line-height: 1;
+}
+
+.removalLabel {
+    font-size: 14px;
+    color: var(--color-gray);
+}
+
+.noRemovals {
+    font-size: 14px;
+    color: var(--color-gray);
+    padding: 16px 0;
+}
+
+/* ─── Карточка успеха ────────────────────────────────────────────────────────── */
+
+.successCard {
+    text-align: center;
+    padding: 48px 32px;
+}
+
+.successIcon {
+    font-size: 52px;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.successTitle {
+    font-family: var(--font-onest);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin: 0 0 8px;
+}
+
+.successText {
+    font-size: 15px;
+    color: var(--color-gray);
+    margin: 0;
+}
+
+/* ─── Бейдж карточки ────────────────────────────────────────────────────────── */
+
+.cardBadge {
+    display: inline-block;
+    padding: 4px 14px;
+    background: var(--color-primary);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+
+.cardBadgeGray {
+    background: var(--color-gray);
+}
+
+/* ─── Блок Reputa ───────────────────────────────────────────────────────────── */
+
+.reputaCard {
+    border-color: var(--color-primary);
+}
+
+.reputaStats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.reputaStat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px 12px;
+    background: var(--color-blue-light);
+    border-radius: 16px;
+    gap: 4px;
+}
+
+.reputaBig {
+    font-family: var(--font-onest);
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--color-dark);
+    line-height: 1.1;
+}
+
+.reputaBigBlue {
+    color: var(--color-primary);
+}
+
+.reputaDesc {
+    font-size: 12px;
+    color: var(--color-gray);
+    line-height: 1.3;
+}
+
+.reputaHint {
+    font-size: 11px;
+    color: var(--color-gray-hover);
+    line-height: 1.2;
+}
+
+.reputaExample {
+    padding: 14px 18px;
+    background: var(--color-blue-light);
+    border-radius: 12px;
+    font-size: 15px;
+    color: var(--color-dark);
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.priceNote {
+    font-size: 12px;
+    color: var(--color-gray-hover);
+    line-height: 1.55;
+    margin: 0;
+}
+
+/* ─── Блок выкупов ──────────────────────────────────────────────────────────── */
+
+.buyoutBreakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.buyoutRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: var(--color-dark);
+    padding: 10px 14px;
+    background: var(--color-bg);
+    border-radius: 10px;
+}
+
+.buyoutStars {
+    font-size: 14px;
+    letter-spacing: 2px;
+    min-width: 80px;
+}
+
+.buyoutTotal {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background: #F0F0F5;
+    border-radius: 14px;
+    font-size: 15px;
+    color: var(--color-dark);
+    flex-wrap: wrap;
+}
+
+.buyoutHint {
+    font-size: 12px;
+    color: var(--color-gray);
+    margin-left: auto;
+}
+
+/* ─── Блок сравнения ────────────────────────────────────────────────────────── */
+
+.comparisonTitle {
+    font-family: var(--font-onest);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-dark);
+    text-align: center;
+    margin: 0;
+}
+
+.comparisonGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: start;
+}
+
+.compareCard {
+    border-radius: 20px;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.compareCardReputa {
+    background: linear-gradient(145deg, #EEF3FD 0%, #DDE8FF 100%);
+    border: 2px solid var(--color-primary);
+}
+
+.compareCardBuyout {
+    background: #F7F7FA;
+    border: 2px solid #E0E0EB;
+}
+
+.compareBadge {
+    display: inline-block;
+    padding: 3px 12px;
+    background: var(--color-primary);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    align-self: flex-start;
+}
+
+.compareBadgeGray {
+    background: var(--color-gray);
+}
+
+.compareTitle {
+    font-family: var(--font-onest);
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--color-dark);
+    line-height: 1.3;
+    margin: 0;
+}
+
+.compareStat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.compareNum {
+    font-family: var(--font-onest);
+    font-size: 34px;
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1;
+}
+
+.compareCardBuyout .compareNum {
+    color: var(--color-dark);
+}
+
+.compareDesc {
+    font-size: 13px;
+    color: var(--color-gray);
+}
+
+.comparePriceBlock {
+    padding: 14px 16px;
+    background: var(--color-primary);
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.comparePriceBlockExpensive {
+    background: #E5E5EA;
+}
+
+.comparePrice {
+    font-family: var(--font-onest);
+    font-size: 22px;
+    font-weight: 800;
+    color: white;
+    line-height: 1.1;
+}
+
+.comparePriceBlockExpensive .comparePrice {
+    color: var(--color-dark);
+}
+
+.compareOverprice {
+    font-size: 12px;
+    color: #FF453A;
+    font-weight: 700;
+}
+
+.comparePoints {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.comparePointGood {
+    font-size: 13px;
+    color: #30D158;
+    font-weight: 500;
+    display: flex;
+    gap: 6px;
+}
+
+.comparePointBad {
+    font-size: 13px;
+    color: #FF453A;
+    font-weight: 500;
+    display: flex;
+    gap: 6px;
+}
+
+/* ─── CTA ───────────────────────────────────────────────────────────────────── */
+
+.cta {
+    background: var(--gradient-blue);
+    border-radius: 24px;
+    padding: 48px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.ctaTitle {
+    font-family: var(--font-onest);
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.ctaText {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    line-height: 1.5;
+    max-width: 460px;
+}
+
+.ctaBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 40px;
+    background: white;
+    color: var(--color-primary);
+    font-family: var(--font-onest);
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 40px;
+    text-decoration: none !important;
+    margin-top: 6px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ctaBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.18);
+}
+
+/* ─── Модальное окно ─────────────────────────────────────────────────────────── */
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.52);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 20px;
+    backdrop-filter: blur(2px);
+}
+
+.modal {
+    background: white;
+    border-radius: 24px;
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.22);
+}
+
+.modalClose {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-bg);
+    border: none;
+    border-radius: 50%;
+    font-size: 16px;
+    color: var(--color-gray);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.modalClose:hover {
+    background: var(--color-border);
+    color: var(--color-dark);
+}
+
+.modalTitle {
+    font-family: var(--font-onest);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin: 0 0 28px;
+    padding-right: 32px;
+    line-height: 1.3;
+}
+
+.modalSteps {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.modalStep {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.modalStepNum {
+    min-width: 32px;
+    height: 32px;
+    background: var(--color-primary);
+    color: white;
+    font-family: var(--font-onest);
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.modalStepText {
+    font-size: 15px;
+    color: var(--color-dark);
+    line-height: 1.55;
+    padding-top: 4px;
+}
+
+.modalHint {
+    padding: 14px 18px;
+    background: var(--color-blue-light);
+    border-radius: 12px;
+    font-size: 13px;
+    color: var(--color-gray);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.modalBtn {
+    width: 100%;
+    padding: 14px;
+    background: var(--gradient-blue);
+    color: white;
+    font-family: var(--font-onest);
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.modalBtn:hover {
+    opacity: 0.9;
+}
+
+/* ─── Медиа-запросы ─────────────────────────────────────────────────────────── */
+
+@media (max-width: 1280px) {
+    .section {
+        padding: 40px 24px 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section {
+        padding: 36px 20px 0;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 28px 24px;
+    }
+
+    .cta {
+        padding: 40px 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 32px 16px 0;
+        gap: 18px;
+    }
+
+    .card {
+        padding: 24px 20px;
+    }
+
+    .cardTitle {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+
+    .currentRating {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .currentTotal {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .removalRow {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .buyoutRow {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .reputaStats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .comparisonGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .comparisonTitle {
+        font-size: 20px;
+    }
+
+    .cta {
+        padding: 32px 20px;
+    }
+
+    .ctaTitle {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 24px 12px 0;
+        gap: 14px;
+    }
+
+    .card {
+        padding: 18px 14px;
+        border-radius: 16px;
+    }
+
+    .cardTitle {
+        font-size: 15px;
+        margin-bottom: 14px;
+    }
+
+    .input {
+        width: 80px;
+        font-size: 16px;
+    }
+
+    .inputLabelText {
+        font-size: 13px;
+    }
+
+    .currentRating {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 12px 14px;
+    }
+
+    .currentValue {
+        font-size: 26px;
+    }
+
+    .currentTotal {
+        margin-left: 0;
+    }
+
+    .targetOptions {
+        gap: 8px;
+    }
+
+    .targetBtn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .removalRow {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 12px 14px;
+    }
+
+    .removalStars {
+        min-width: auto;
+    }
+
+    .removalCount {
+        font-size: 26px;
+        min-width: auto;
+    }
+
+    .reputaStats {
+        grid-template-columns: 1fr;
+    }
+
+    .reputaBig {
+        font-size: 24px;
+    }
+
+    .compareCard {
+        padding: 20px 16px;
+    }
+
+    .compareNum {
+        font-size: 28px;
+    }
+
+    .buyoutRow {
+        flex-wrap: wrap;
+        gap: 6px;
+        font-size: 14px;
+    }
+
+    .buyoutStars {
+        min-width: auto;
+    }
+
+    .buyoutTotal {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 12px 14px;
+    }
+
+    .buyoutHint {
+        margin-left: 0;
+    }
+
+    .submitBtn {
+        font-size: 16px;
+        padding: 16px;
+    }
+
+    .cta {
+        padding: 28px 16px;
+        border-radius: 18px;
+        gap: 10px;
+    }
+
+    .ctaTitle {
+        font-size: 20px;
+    }
+
+    .ctaText {
+        font-size: 14px;
+    }
+
+    .ctaBtn {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 24px;
+        font-size: 15px;
+    }
+
+    .modal {
+        padding: 28px 16px;
+        border-radius: 18px;
+    }
+
+    .modalTitle {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .modalStepText {
+        font-size: 14px;
+    }
+}
