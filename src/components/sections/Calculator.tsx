@@ -114,40 +114,36 @@ function InstructionModal({ onClose }: { onClose: () => void }) {
                     <div className={s.modalStep}>
                         <div className={s.modalStepNum}>1</div>
                         <p className={s.modalStepText}>
-                            Войдите в личный кабинет продавца по адресу{' '}
-                            <a href="https://seller.wildberries.ru" target="_blank" rel="noopener noreferrer">
-                                seller.wildberries.ru
-                            </a>
+                            Войдите в личный кабинет продавца
                         </p>
                     </div>
                     <div className={s.modalStep}>
                         <div className={s.modalStepNum}>2</div>
-                        <p className={s.modalStepText}>
-                            В левом меню откройте раздел <b>«Отзывы и вопросы»</b> → вкладку <b>«Отзывы»</b>
-                        </p>
+                        <div className={s.modalStepText}>
+                            <p>В левом меню откройте раздел:<br /><b>Аналитика → Оценка товара</b></p>
+                            <p className={s.modalSubHeading}>Если хотите посмотреть конкретный артикул:</p>
+                            <ul className={s.modalList}>
+                                <li>нажмите <b>«Фильтр»</b>;</li>
+                                <li>выберите <b>«Артикул»</b>;</li>
+                                <li>поставьте галочку возле нужного артикула.</li>
+                            </ul>
+                            <p className={s.modalNote}>Можно выбрать один или несколько артикулов.</p>
+                        </div>
                     </div>
                     <div className={s.modalStep}>
                         <div className={s.modalStepNum}>3</div>
                         <p className={s.modalStepText}>
-                            Выберите нужный <b>артикул</b> в выпадающем списке или строке поиска
+                            Нажмите <b>«Применить»</b>
                         </p>
                     </div>
                     <div className={s.modalStep}>
                         <div className={s.modalStepNum}>4</div>
                         <p className={s.modalStepText}>
-                            Используйте <b>фильтр по оценке</b> (1★, 2★, 3★ и т.д.) —
-                            рядом с каждым значением отображается количество отзывов
+                            Справа появится блок <b>«Прирост оценок»</b>.
+                            Внизу этого блока будет суммарное количество всех оценок, которое влияет на рейтинг.
+                            Именно эти значения нужно ввести в калькулятор, чтобы узнать, сколько отзывов нужно убрать для роста рейтинга.
                         </p>
                     </div>
-                    <div className={s.modalStep}>
-                        <div className={s.modalStepNum}>5</div>
-                        <p className={s.modalStepText}>
-                            Перенесите эти числа в калькулятор и узнайте, что нужно сделать для роста рейтинга
-                        </p>
-                    </div>
-                </div>
-                <div className={s.modalHint}>
-                    💡 Если артикулов несколько — суммируйте оценки по всем карточкам, которые хотите улучшить
                 </div>
                 <button className={s.modalBtn} onClick={onClose}>Понятно, закрыть</button>
             </div>
@@ -299,11 +295,11 @@ export default function Calculator() {
                 <div className={s.card}>
                     <h2 className={s.cardTitle}>Введите количество оценок вашей карточки</h2>
                     <div className={s.inputsGrid}>
-                        {(['s1', 's2', 's3', 's4', 's5'] as StarKey[]).map((key, i) => (
+                        {(['s5', 's4', 's3', 's2', 's1'] as StarKey[]).map((key, i) => (
                             <div key={key} className={s.inputRow}>
                                 <div className={s.inputRowLabel}>
                                     <span className={s.starsDisplay}>
-                                        <Stars filled={i + 1} />
+                                        <Stars filled={5 - i} />
                                     </span>
                                     <span className={s.inputLabelText}>{STAR_LABELS[key]}</span>
                                 </div>
