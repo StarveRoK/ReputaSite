@@ -4,6 +4,7 @@
     width: 100%;
     background: var(--color-bg);
     padding-bottom: 80px;
+    z-index: auto;
 }
 
 .section {
