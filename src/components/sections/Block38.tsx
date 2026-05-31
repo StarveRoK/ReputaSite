@@ -4,7 +4,7 @@ import { rich } from '@/lib/richText'
 const TITLE = 'Скидка <blue> при работе вдолгую</blue>'
 
 const PLANS = [
-    { period: '1 месяц', originalPrice: '', discount: '', price: '9.999 ₽' },
+    { period: '1 месяц', originalPrice: '', discount: '', price: '9.990 ₽' },
     { period: '3 месяца', originalPrice: '30.000 ₽', discount: '-10%', price: '26.990 ₽' },
     { period: '6 месяцев', originalPrice: '60.000 ₽', discount: '-19%', price: '49.990 ₽' },
     { period: '12 месяцев', originalPrice: '120.000 ₽', discount: '-25%', price: '89.990 ₽' },

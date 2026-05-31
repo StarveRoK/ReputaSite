@@ -11,7 +11,7 @@ const LIST_ITEMS = [
     'Без нарушения оферты',
     'Первые результаты в течении 48 часов',
 ]
-const CTA_HREF = 'https://app.reputa.ru'
+const CTA_HREF = 'https://t.me/reputamp'
 const CTA_LABEL = 'Оставить заявку'
 const IMAGE = { src: '/images/Block13.png', alt: 'Block13' }
 

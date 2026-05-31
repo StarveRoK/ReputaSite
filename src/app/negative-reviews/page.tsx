@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
-import Block8 from '@/components/sections/Block8'
+import Block42 from '@/components/sections/Block42'
 import Block13 from '@/components/sections/Block13'
 import Block14 from '@/components/sections/Block14'
 import Block15 from '@/components/sections/Block15'
@@ -30,7 +30,7 @@ export default function NegativeReviewsPage() {
             <Block19 />
             <Block20 />
             <Block21 />
-            <Block8 />
+            <Block42 />
             <Footer />
         </main>
     )
