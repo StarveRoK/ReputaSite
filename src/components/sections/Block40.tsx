@@ -4,8 +4,8 @@ import { rich } from '@/lib/richText'
 const TITLE = '<blue>Видео </blue> с конференций'
 
 const VIDEO = [
-    '',
-    '',
+    { src: 'https://www.youtube.com/embed/FdWeFWMi1ew', title: 'Репута на Seller Expo Сочи 2026' },
+    { src: 'https://www.youtube.com/embed/ZEwE1H5df2M', title: 'Репута на MarketGuru Conf 2026' },
 ]
 
 const titleTags = {
@@ -22,9 +22,17 @@ export default function Block40() {
             </div>
 
             <div className={style.cstBlock40cardContainer}>
-                {VIDEO.map((link, i) => (
+                {VIDEO.map((video, i) => (
                     <div key={i} className={style.cstBlock40videoDiv}>
-                        <video className={style.cstBlock40video} src={link} controls />
+                        <iframe
+                            className={style.cstBlock40video}
+                            src={video.src}
+                            title={video.title}
+                            frameBorder={0}
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        />
                     </div>
                 ))}
             </div>

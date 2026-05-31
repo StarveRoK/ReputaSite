@@ -10,7 +10,7 @@ const JOURNAL = {
     illustrationSrc: '/images/Block34Img3.png',
     title: 'Первый журнал<blue> о репутации на маркетплейсах</blue>',
     description: 'Делимся кейсами, исследованиями, аналитикой и практическим опытом работы с отзывами, покупателями и репутацией брендов',
-    ctaHref: '#',
+    ctaHref: 'https://t.me/Reputamp_Bot?start=start_line_002',
     ctaLabel: '<b>Подписаться</b> на журнал',
 }
 
