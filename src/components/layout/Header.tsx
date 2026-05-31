@@ -117,7 +117,7 @@ export default function Header() {
                     className={style.cstMobileNavItem}
                     onClick={() => setIsMobileProductsOpen(prev => !prev)}
                 >
-                    <span className={style.cstMobileNavLink}>Продукты</span>
+                    <span className={`${style.cstMobileNavLink} ${style.cstMobileNavLinkNoPad}`}>Продукты</span>
                     <div className={`${style.cstProductArrow} ${isMobileProductsOpen ? style.cstProductArrowOpen : ''}`}>
                         <ArrowDownIcon/>
                     </div>

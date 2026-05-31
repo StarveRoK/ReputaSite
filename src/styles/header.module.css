@@ -200,6 +200,11 @@
     color: var(--color-primary);
 }
 
+.cstMobileNavLinkNoPad{
+    padding: 0;
+  border: 0;
+}
+
 .cstMobileProducts {
     display: flex;
     flex-direction: column;
