@@ -153,6 +153,93 @@
     flex-shrink: 0;
     border-radius: 7px;
     background: #EEF3FD;
+    border: none;
+    cursor: pointer;
+}
+
+.cstMobileMenu {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--color-bg);
+    z-index: 999;
+    flex-direction: column;
+    padding: 0 20px 32px;
+    overflow-y: auto;
+}
+
+.cstMobileNav {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #EAEAEA;
+}
+
+.cstMobileNavItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 1px solid #EAEAEA;
+    cursor: pointer;
+}
+
+.cstMobileNavLink {
+    display: block;
+    padding: 16px 0;
+    font-family: var(--font-inter);
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    color: var(--color-dark);
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.cstMobileNavLink:hover {
+    color: var(--color-primary);
+}
+
+.cstMobileProducts {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.cstMobileProductsOpen {
+    max-height: 300px;
+    padding: 14px 0 14px 8px;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.cstMobileProductLink {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-inter);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-dark);
+}
+
+.cstMobileProductLink:hover {
+    color: var(--color-primary);
+}
+
+.cstMobileSocial {
+    display: flex;
+    gap: 14px;
+    margin-top: 24px;
+}
+
+.cstMobileButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 /* Десктоп */
@@ -175,6 +262,20 @@
     .cstHeaderLinksIcons,
     .cstGapHeaderDiv{
         display: none;
+    }
+
+    .cstMobileMenu {
+        display: flex;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-6px);
+        transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+
+    .cstMobileMenuOpen {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
     }
 }
 
