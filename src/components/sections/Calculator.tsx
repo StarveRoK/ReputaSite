@@ -32,46 +32,53 @@ function calcCurrentRating(n1: number, n2: number, n3: number, n4: number, n5: n
     return (n1 * 1 + n2 * 2 + n3 * 3 + n4 * 4 + n5 * 5) / total
 }
 
-/** Возвращает, сколько 1★/2★/3★ нужно убрать для достижения targetRating.
- *  Жадная стратегия: сначала убираем 1★ (максимальный эффект), потом 2★, потом 3★. */
-function calcRemovalsNeeded(
+const CONVERSION_RATE = 0.6
+
+/** Возвращает, сколько оценок нужно убрать с учётом конверсии Reputa 60%.
+ *  Жадная стратегия: сначала 1★ → 2★ → 3★ → 4★, каждый уровень ограничен max*0.6. */
+function calcRemovalsWithConversion(
     n1: number, n2: number, n3: number, n4: number, n5: number,
     target: number
-): { r1: number; r2: number; r3: number; reachable: boolean } {
+): { r1: number; r2: number; r3: number; r4: number; reachable: boolean } {
     let S = n1 * 1 + n2 * 2 + n3 * 3 + n4 * 4 + n5 * 5
     let N = n1 + n2 + n3 + n4 + n5
 
-    if (N === 0) return { r1: 0, r2: 0, r3: 0, reachable: false }
-    if (S / N >= target) return { r1: 0, r2: 0, r3: 0, reachable: true }
+    if (N === 0) return { r1: 0, r2: 0, r3: 0, r4: 0, reachable: false }
+    if (S / N >= target) return { r1: 0, r2: 0, r3: 0, r4: 0, reachable: true }
 
-    let r1 = 0, r2 = 0, r3 = 0
+    const max1 = Math.round(n1 * CONVERSION_RATE)
+    const max2 = Math.round(n2 * CONVERSION_RATE)
+    const max3 = Math.round(n3 * CONVERSION_RATE)
+    const max4 = Math.round(n4 * CONVERSION_RATE)
 
-    // Убираем 1★
-    if (n1 > 0 && target > 1) {
+    let r1 = 0, r2 = 0, r3 = 0, r4 = 0
+
+    if (max1 > 0 && target > 1) {
         const needed = Math.ceil((target * N - S) / (target - 1))
-        r1 = Math.min(needed, n1)
-        S -= r1 * 1
-        N -= r1
+        r1 = Math.min(needed, max1)
+        S -= r1; N -= r1
     }
 
-    // Убираем 2★, если цели ещё не достигли
-    if (N > 0 && S / N < target && n2 > 0 && target > 2) {
+    if (N > 0 && S / N < target && max2 > 0 && target > 2) {
         const needed = Math.ceil((target * N - S) / (target - 2))
-        r2 = Math.min(needed, n2)
-        S -= r2 * 2
-        N -= r2
+        r2 = Math.min(needed, max2)
+        S -= r2 * 2; N -= r2
     }
 
-    // Убираем 3★
-    if (N > 0 && S / N < target && n3 > 0 && target > 3) {
+    if (N > 0 && S / N < target && max3 > 0 && target > 3) {
         const needed = Math.ceil((target * N - S) / (target - 3))
-        r3 = Math.min(needed, n3)
-        S -= r3 * 3
-        N -= r3
+        r3 = Math.min(needed, max3)
+        S -= r3 * 3; N -= r3
+    }
+
+    if (N > 0 && S / N < target && max4 > 0 && target > 4) {
+        const needed = Math.ceil((target * N - S) / (target - 4))
+        r4 = Math.min(needed, max4)
+        S -= r4 * 4; N -= r4
     }
 
     const reachable = N === 0 || S / N >= target
-    return { r1, r2, r3, reachable }
+    return { r1, r2, r3, r4, reachable }
 }
 
 function formatMoney(n: number): string {
@@ -211,8 +218,8 @@ export default function Calculator() {
     // ── Блок 4: сколько убрать ───────────────────────────────────────────────
 
     const removals = useMemo(() => {
-        if (!targetRating || totalCount === 0) return { r1: 0, r2: 0, r3: 0, reachable: false }
-        return calcRemovalsNeeded(n.s1, n.s2, n.s3, n.s4, n.s5, targetRating)
+        if (!targetRating || totalCount === 0) return { r1: 0, r2: 0, r3: 0, r4: 0, reachable: false }
+        return calcRemovalsWithConversion(n.s1, n.s2, n.s3, n.s4, n.s5, targetRating)
     }, [n, targetRating, totalCount])
 
     const alreadyAtTarget = targetRating !== null && totalCount > 0 && currentRating >= targetRating
@@ -220,25 +227,28 @@ export default function Calculator() {
     // ── Блок 5: Reputa ───────────────────────────────────────────────────────
 
     const totalNegatives = n.s1 + n.s2 + n.s3
-    const canRemoveReputa = Math.round(totalNegatives * 0.6)
 
-    // Пропорциональное распределение удаляемых по звёздам (для расчёта итогового рейтинга)
-    const r1reputa = Math.round(n.s1 * 0.6)
-    const r2reputa = Math.round(n.s2 * 0.6)
-    const r3reputa = Math.round(n.s3 * 0.6)
+    // Для каждой категории, которую показал Блок 4, берём полные 60% от всего количества.
+    // Если Блок 4 не задействовал категорию — она не попадает в работу Reputa.
+    // Когда цель уже достигнута — показываем полный потенциал по всем 1–3★.
+    const r1forReputa = (alreadyAtTarget || removals.r1 > 0) ? Math.round(n.s1 * CONVERSION_RATE) : 0
+    const r2forReputa = (alreadyAtTarget || removals.r2 > 0) ? Math.round(n.s2 * CONVERSION_RATE) : 0
+    const r3forReputa = (alreadyAtTarget || removals.r3 > 0) ? Math.round(n.s3 * CONVERSION_RATE) : 0
+    const r4forReputa = removals.r4 > 0 ? Math.round(n.s4 * CONVERSION_RATE) : 0
+    const canRemoveReputa = r1forReputa + r2forReputa + r3forReputa + r4forReputa
 
     const pricePerReview = getPricePerReview(totalNegatives)
     const costReputa = canRemoveReputa * pricePerReview
 
     const finalRatingReputa = useMemo(() => {
         return calcCurrentRating(
-            n.s1 - r1reputa,
-            n.s2 - r2reputa,
-            n.s3 - r3reputa,
-            n.s4,
+            n.s1 - r1forReputa,
+            n.s2 - r2forReputa,
+            n.s3 - r3forReputa,
+            n.s4 - r4forReputa,
             n.s5,
         )
-    }, [n, r1reputa, r2reputa, r3reputa])
+    }, [n, r1forReputa, r2forReputa, r3forReputa, r4forReputa])
 
     // ── Блок 6: выкупы ───────────────────────────────────────────────────────
 
@@ -388,49 +398,74 @@ export default function Calculator() {
                             <div className={s.card}>
                                 <h2 className={s.cardTitle}>
                                     Для выхода на рейтинг{' '}
-                                    {targetRating?.toString().replace('.', ',')} вам необходимо убрать примерно:
+                                    {targetRating?.toString().replace('.', ',')} нужно убрать примерно:
                                 </h2>
                                 <div className={s.removalsList}>
                                     {removals.r1 > 0 && (
                                         <div className={`${s.removalRow} ${s.removalRow1}`}>
                                             <span className={s.removalStars}><Stars filled={1} /></span>
-                                            <span className={s.removalCount}>{removals.r1}</span>
+                                            <span className={s.removalCount}>~{removals.r1}</span>
                                             <span className={s.removalLabel}>
                                                 {plural(removals.r1, 'оценку', 'оценки', 'оценок')} 1★
+                                                <span className={s.removalOf}> из {n.s1}</span>
                                             </span>
                                         </div>
                                     )}
                                     {removals.r2 > 0 && (
                                         <div className={`${s.removalRow} ${s.removalRow2}`}>
                                             <span className={s.removalStars}><Stars filled={2} /></span>
-                                            <span className={s.removalCount}>{removals.r2}</span>
+                                            <span className={s.removalCount}>~{removals.r2}</span>
                                             <span className={s.removalLabel}>
                                                 {plural(removals.r2, 'оценку', 'оценки', 'оценок')} 2★
+                                                <span className={s.removalOf}> из {n.s2}</span>
                                             </span>
                                         </div>
                                     )}
                                     {removals.r3 > 0 && (
                                         <div className={`${s.removalRow} ${s.removalRow3}`}>
                                             <span className={s.removalStars}><Stars filled={3} /></span>
-                                            <span className={s.removalCount}>{removals.r3}</span>
+                                            <span className={s.removalCount}>~{removals.r3}</span>
                                             <span className={s.removalLabel}>
                                                 {plural(removals.r3, 'оценку', 'оценки', 'оценок')} 3★
+                                                <span className={s.removalOf}> из {n.s3}</span>
                                             </span>
                                         </div>
                                     )}
-                                    {removals.r1 === 0 && removals.r2 === 0 && removals.r3 === 0 && (
+                                    {removals.r4 > 0 && (
+                                        <div className={`${s.removalRow} ${s.removalRow4}`}>
+                                            <span className={s.removalStars}><Stars filled={4} /></span>
+                                            <span className={s.removalCount}>~{removals.r4}</span>
+                                            <span className={s.removalLabel}>
+                                                {plural(removals.r4, 'оценку', 'оценки', 'оценок')} 4★
+                                                <span className={s.removalOf}> из {n.s4}</span>
+                                            </span>
+                                        </div>
+                                    )}
+                                    {removals.r1 === 0 && removals.r2 === 0 && removals.r3 === 0 && removals.r4 === 0 && (
                                         <p className={s.noRemovals}>
-                                            Даже удалив все отзывы 1–3★, цель недостижима только через удаление.
+                                            Даже убрав все доступные оценки с учётом конверсии 60%, цель недостижима только через удаление.
                                             Рекомендуем комбинировать удаление с наработкой новых положительных отзывов.
                                         </p>
                                     )}
-                                    {!removals.reachable && (removals.r1 > 0 || removals.r2 > 0 || removals.r3 > 0) && (
-                                        <p className={s.noRemovals} style={{ marginTop: 8 }}>
-                                            ⚠️ Только за счёт удаления этих отзывов целевой рейтинг недостижим.
-                                            Дополнительно потребуются новые отзывы на 5★.
-                                        </p>
+                                    {removals.r4 > 0 && (
+                                        <div className={s.fourStarNote}>
+                                            ⚠️ Для выхода на рейтинг {targetRating?.toString().replace('.', ',')} необходимо также работать с оценками 4★.
+                                            Без работы с 4★ целевой рейтинг достигнуть не получится.
+                                        </div>
+                                    )}
+                                    {!removals.reachable && (removals.r1 > 0 || removals.r2 > 0 || removals.r3 > 0 || removals.r4 > 0) && (
+                                        <div className={s.unreachableNote}>
+                                            <p>⚠️ С учётом конверсии 60%, целевой рейтинг {targetRating?.toString().replace('.', ',')} недостижим только через удаление.</p>
+                                            <p>Максимально возможный рейтинг с помощью Reputa:{' '}
+                                                <b>{formatRating(finalRatingReputa)}</b>
+                                            </p>
+                                            <p>Для достижения цели дополнительно потребуются новые отзывы 5★.</p>
+                                        </div>
                                     )}
                                 </div>
+                                <p className={s.conversionNote}>
+                                    Расчёт выполнен с учётом средней конверсии удаления 60%
+                                </p>
                             </div>
                         )}
 
@@ -592,7 +627,7 @@ export default function Calculator() {
                                             </span>
                                         </div>
                                         <div className={s.compareStat}>
-                                            <span className={s.compareNum}>{formatRating(finalRatingBuyout)}</span>
+                                            <span className={s.compareNum}>{formatRating(finalRatingReputa)}</span>
                                             <span className={s.compareDesc}>итоговый рейтинг</span>
                                         </div>
                                         <div className={`${s.comparePriceBlock} ${s.comparePriceBlockExpensive}`}>

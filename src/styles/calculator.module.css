@@ -330,6 +330,7 @@
 .removalRow1 { background: #FFF1F0; border: 1px solid #FFCDD2; }
 .removalRow2 { background: #FFF8F0; border: 1px solid #FFE0B2; }
 .removalRow3 { background: #FFFDE8; border: 1px solid #FFF9C4; }
+.removalRow4 { background: #FFF8E1; border: 1px solid #FFD54F; }
 
 .removalStars {
     font-size: 15px;
@@ -349,6 +350,53 @@
 .removalLabel {
     font-size: 14px;
     color: var(--color-gray);
+}
+
+.removalOf {
+    font-size: 13px;
+    color: var(--color-gray-hover);
+}
+
+.conversionNote {
+    margin: 16px 0 0;
+    font-size: 12px;
+    color: var(--color-gray-hover);
+    font-style: italic;
+    text-align: center;
+}
+
+.fourStarNote {
+    padding: 14px 18px;
+    background: #FFF8E1;
+    border: 1px solid #FFD54F;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #5D4037;
+    line-height: 1.55;
+    margin-top: 4px;
+}
+
+.unreachableNote {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px 18px;
+    background: #FFF3E0;
+    border: 1px solid #FFCC80;
+    border-radius: 12px;
+    font-size: 14px;
+    color: var(--color-dark);
+    line-height: 1.6;
+    margin-top: 8px;
+}
+
+.unreachableNote p {
+    margin: 0;
+}
+
+.unreachableNote b {
+    color: var(--color-primary);
+    font-size: 16px;
 }
 
 .noRemovals {
